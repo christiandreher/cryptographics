@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
-  <idleTimeout>300000</idleTimeout>
-  <resetTimeout>60000</resetTimeout>
+  <idleTimeout>900000</idleTimeout>
+  <resetTimeout>30000</resetTimeout>
   <debugMode>true</debugMode>
-  <fullscreenMode>true</fullscreenMode>
+  <fullscreenMode>false</fullscreenMode>
   <lookAndFeel>true</lookAndFeel>
   <mouseCursor>true</mouseCursor>
   <languageCode>en</languageCode>

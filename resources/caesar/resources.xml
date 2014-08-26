@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Caesar>
+    <CaesarIdea path="/caesar/CaesarIdea.png" />
+    <Courier path="/caesar/Courier.png" />
+    <FlyingCourier path="/caesar/CourierFlying.png" />
+    <Kryptolix path="/caesar/KryptolixReading.png" />
+    <CaesarAngry path="/caesar/CaesarAngry.png" />
+    <CaesarPositive path="/caesar/CaesarPositive.png"/>
+    <CaesarNegative path="/caesar/CaesarNegative.png"/>
+</Caesar>

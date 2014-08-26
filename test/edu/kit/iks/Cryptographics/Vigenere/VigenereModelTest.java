@@ -21,7 +21,7 @@ package edu.kit.iks.Cryptographics.Vigenere;
 
 import org.junit.Test;
 
-import edu.kit.iks.Cryptographics.Vigenere.VigenereModel;
+import edu.kit.iks.cryptographics.Vigenere.VigenereModel;
 import junit.framework.TestCase;
 
 public class VigenereModelTest extends TestCase {

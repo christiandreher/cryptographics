@@ -26,9 +26,10 @@ import javax.swing.JFrame;
 import org.junit.Before;
 import org.junit.Test;
 
-import edu.kit.iks.Cryptographics.Caesar.CaesarVisualizationInfo;
-import edu.kit.iks.CryptographicsLib.AbstractController;
-import edu.kit.iks.CryptographicsLib.AbstractVisualizationInfo;
+import edu.kit.iks.cryptographics.MainController;
+import edu.kit.iks.cryptographics.CaesarOld.CaesarVisualizationInfo;
+import edu.kit.iks.cryptographicslib.AbstractVisualizationInfo;
+import edu.kit.iks.cryptographicslib.controller.AbstractController;
 
 /**
  * Tests for the MainController

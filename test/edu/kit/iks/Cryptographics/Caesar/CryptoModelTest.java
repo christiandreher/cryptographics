@@ -24,7 +24,7 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 
-import edu.kit.iks.Cryptographics.Caesar.Experiment.CryptoModel;
+import edu.kit.iks.cryptographics.CaesarOld.Experiment.CryptoModel;
 
 /**
  * JUnit testcase class for testing the functionality of the model in the visualization of Caesar.

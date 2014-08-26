@@ -34,7 +34,7 @@
     </state>
   </style>
 
-    <!-- Visualization container controller footer style -->
+  <!-- Visualization container controller footer style -->
   <style id="containerControllerFooterStyle">
     <opaque value="TRUE"/>
     <state>
@@ -52,6 +52,9 @@
       <imagePainter method="buttonBackground" path="/theme/button.png" sourceInsets="11 11 11 11" />
       <color value="WHITE" type="TEXT_FOREGROUND" />
     </state>
+    <state value="PRESSED">
+      <imagePainter method="buttonBackground" path="/theme/button_clicked.png" sourceInsets="11 11 11 11" />
+    </state>
     <state value="DISABLED">
       <imagePainter method="buttonBackground" path="/theme/button_disabled.png" sourceInsets="11 11 11 11" />
     </state>
@@ -65,8 +68,12 @@
   <!-- Close button -->
   <style id="closeButtonStyle">
     <font name="Verdana" size="20" style="BOLD" />
+    <!-- Override default button background image to none -->
     <state>
-      <!-- Override default button background image to none -->
+      <imagePainter method="buttonBackground" path="" sourceInsets="0 0 0 0" />
+      <color value="#999999" type="TEXT_FOREGROUND" />
+    </state>
+    <state value="PRESSED">
       <imagePainter method="buttonBackground" path="" sourceInsets="0 0 0 0" />
       <color value="#777777" type="TEXT_FOREGROUND" />
     </state>

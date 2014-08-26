@@ -24,7 +24,7 @@ import java.awt.Color;
 import org.junit.Before;
 import org.junit.Test;
 
-import edu.kit.iks.Cryptographics.DiffieHellman.Model;
+import edu.kit.iks.cryptographics.DiffieHellman.Model;
 import junit.framework.TestCase;
 
 public class ModelTest extends TestCase  {

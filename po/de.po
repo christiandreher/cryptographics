@@ -1,198 +1,108 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Cryptographics\n"
-"POT-Creation-Date: 2014-04-10 11:35+0100\n"
-"PO-Revision-Date: 2014-04-10 11:38+0100\n"
-"Last-Translator: Christian Dreher <cdreher3011@gmail.com>\n"
+"POT-Creation-Date: 2014-06-13 01:10+0100\n"
+"PO-Revision-Date: 2014-06-13 01:10+0100\n"
+"Last-Translator: Christian Dreher <CDreher3011@gmail.com>\n"
 "Language-Team: \n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.7\n"
+"X-Generator: Poedit 1.6.5\n"
 "X-Poedit-KeywordsList: tr;trc;trn:1,2\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SearchPath-0: ../src\n"
 
-#: ../src/edu/kit/iks/Cryptographics/IdlePopoverView.java:97
-msgid ""
-"You haven't done anything in a while. To keep this exhibit functional, the "
-"system will reset itself soon. If you want to continue using the system, "
-"just dismiss this dialog."
-msgstr ""
-"Du hast längere Zeit keine Aktivität gezeigt. Um dieses Exponat "
-"betriebsbereit zu halten, wird es sich in Kürze zurücksetzen. Verwirf dieses "
-"Dialogfenster, um fortzufahren."
-
-#: ../src/edu/kit/iks/Cryptographics/IdlePopoverView.java:114
-#: ../src/edu/kit/iks/Cryptographics/DiffieHellman/Experiment/DHExperimentView.java:101
-msgid "Continue"
-msgstr "Weiter"
-
-#: ../src/edu/kit/iks/Cryptographics/TimelinePopoverView.java:108
-msgid "Start"
-msgstr ""
-
-#: ../src/edu/kit/iks/Cryptographics/TimelineView.java:197
-#, java-format
-msgid "{0} B.C."
-msgstr "{0} v.Chr."
-
-#: ../src/edu/kit/iks/Cryptographics/VisualizationContainerView.java:73
-msgid "Exit"
-msgstr "Beenden"
-
-#: ../src/edu/kit/iks/Cryptographics/VisualizationContainerView.java:92
-msgid "Help"
-msgstr "Hilfe"
-
-#: ../src/edu/kit/iks/Cryptographics/WelcomeView.java:33
-msgid "Welcome"
-msgstr "Willkommen"
-
-#: ../src/edu/kit/iks/Cryptographics/WelcomeView.java:39
-msgid ""
-"This is Cryptographics, a small tool with the aim to show how basic and "
-"advanced cryptographic procedures work in principle. Below you can see a "
-"timeline with some procedures. Tap on the dots representing their date of "
-"invention to view a small description and start the visualization."
-msgstr ""
-"Das ist Cryptographics, ein kleines Programm um zu zeigen, wie einfache und "
-"fortgeschrittene kryptographische Verfahren im Prinzip funktionieren. Unten "
-"siehst du eine Zeitleiste mit einigen Verfahren. Berühre die Punkte die das "
-"Erfindungsjahr repräsentieren, um eine kleine Übersicht zu sehen und die "
-"Visualisierung zu starten."
-
-#: ../src/edu/kit/iks/Cryptographics/AES/VisualizationInfo.java:33
+#: ../src/edu/kit/iks/cryptographics/aes/VisualizationInfo.java:53
 msgid "AES"
 msgstr ""
 
-#: ../src/edu/kit/iks/Cryptographics/AES/VisualizationInfo.java:41
+#: ../src/edu/kit/iks/cryptographics/aes/VisualizationInfo.java:61
 msgid ""
 "Learn about one of the most important modern ciphers, the Advanced "
-"Encryption Standard!"
+"Encryption Standard."
 msgstr ""
 "Erfahre mehr über die wichtigste moderne Chiffre, dem Advanced Encryption "
-"Standard!"
+"Standard."
 
-#: ../src/edu/kit/iks/Cryptographics/AES/VisualizationInfo.java:73
+#: ../src/edu/kit/iks/cryptographics/aes/VisualizationInfo.java:93
 msgid "http://en.wikipedia.org/wiki/Advanced_Encryption_Standard"
 msgstr "https://de.wikipedia.org/wiki/Advanced_Encryption_Standard"
 
-#: ../src/edu/kit/iks/Cryptographics/Caesar/CaesarVisualizationInfo.java:59
+#: ../src/edu/kit/iks/cryptographics/caesar/VisualizationInfo.java:74
 msgid ""
-"Get to know how Ceasar fooled his enemys that intercepted his orders and see "
-"one of the oldest attempts to make confidential material unreadable for "
+"Get to know how Caesar fooled his enemies that intercepted his orders and "
+"see one of the oldest attempts to make confidential material unreadable for "
 "undesireable readers."
 msgstr ""
 "Erfahre, wie Caesar seine Feinde an der Nase herumführte, die seine Befehle "
 "abgefangen haben, und sehe einen der ersten Versuche, Geheimnisse unlesbar "
 "für unerwünschte Empfänger zu machen."
 
-#: ../src/edu/kit/iks/Cryptographics/Caesar/CaesarVisualizationInfo.java:88
+#: ../src/edu/kit/iks/cryptographics/caesar/VisualizationInfo.java:103
 msgid "Caesar"
 msgstr "Caesar"
 
-#: ../src/edu/kit/iks/Cryptographics/Caesar/CaesarVisualizationInfo.java:96
+#: ../src/edu/kit/iks/cryptographics/caesar/VisualizationInfo.java:111
 msgid "http://en.wikipedia.org/wiki/Caesar_cipher"
 msgstr "http://de.wikipedia.org/wiki/Caesar-Verschl%C3%BCsselung"
 
-#: ../src/edu/kit/iks/Cryptographics/Caesar/CryptoView.java:316
-msgid "Key"
-msgstr "Schlüssel"
-
-#: ../src/edu/kit/iks/Cryptographics/Caesar/Demonstration/CryptoDemonstrationController.java:185
-msgid ""
-"Great work oh mighty Caesar. May your enemies shutter over your "
-"intelligence. Now we can move on to the real experiment and test your skills."
-msgstr ""
-"Gute Arbeit, oh mächtiger Caesar. Mögen deine Feinde vor deiner Intelligenz "
-"erzittern. Nun können wir fortfahren um deine Fähigkeiten zu prüfen."
-
-#: ../src/edu/kit/iks/Cryptographics/Caesar/Demonstration/CryptoDemonstrationController.java:208
-msgid "Very nice! Let's encrypt the rest of your name. Touch proceed."
-msgstr "Sehr gut! Nun verschlüssle noch den Rest. Drücke 'Weiter'."
-
-#: ../src/edu/kit/iks/Cryptographics/Caesar/Demonstration/CryptoDemonstrationController.java:221
-#, java-format
-msgid "Only {0} left."
-msgid_plural "Only {0} left."
-msgstr[0] "Es ist {0} übrig."
-msgstr[1] "Es sind {0} übrig."
-
-#: ../src/edu/kit/iks/Cryptographics/Caesar/Demonstration/CryptoDemonstrationController.java:412
-msgid ""
-"Because of your inferior intelligence you look at the first letter of your "
-"name: C. Then you look at the 3rd letter after C and take F. Great! Now you "
-"encrypted the first letter of your name. Touch proceed."
-msgstr ""
-"Aufgrund deiner überragenden Intelligenz schaust du dir den ersten "
-"Buchstabens des Namens an: C. Dann schaust du dir den dritten Buchstaben "
-"nach dem C an und wählst das F. Super! Nun hast du schon den ersten "
-"Buchstaben deines Namens verschlüsselt. Drücke 'Weiter'."
-
-#: ../src/edu/kit/iks/Cryptographics/Caesar/Demonstration/CryptoDemonstrationController.java:438
-msgid ""
-"Now try to encrypt the next letter yourself. If you need help, you can "
-"always use the help button."
-msgstr ""
-"Versuche nun den nächsten Buchstaben selbst zu verschlüsseln. Wenn du Hilfe "
-"brauchst, kannst du jederzeit den Hilfe-Button drücken."
-
-#: ../src/edu/kit/iks/Cryptographics/Caesar/Demonstration/CryptoDemonstrationController.java:465
-msgid ""
-"Oh mighty Caesar. No one will ever be able to destroy you! Because of that "
-"fact lets end this childish games and finish the rest of the fields fast. "
-"Then we can send the courier again but this time your enemies will have no "
-"idea who wrote it and you will conquer the world."
-msgstr ""
-"Oh mächtiger Caesar. Keiner wird jemals in der Lage sein dich zu zerstören! "
-"Verschlüssle nun schnell noch die restlichen Buchstaben, dann können wir den "
-"Kurier erneut losschicken, doch dieses Mal wird der Feind keine Ahnung "
-"haben, wer die Nachricht gesendet hat, und du wirst die Welt erobern."
-
-#: ../src/edu/kit/iks/Cryptographics/Caesar/Demonstration/CryptoDemonstrationController.java:493
-msgid ""
-"Remember: Position of C in the alphabet is 3 and the key is also 3. C + key "
-"= C + 3 = 3 + 3 = 6. And 6 is the position of letter F in the alphabet. Et "
-"voila you encrypted C with the key of 3."
-msgstr ""
-"Denke dran: Die Position von C im Alphabet ist 3 und der Schlüssel ist auch "
-"3. C + Schlüssel = C + 3 = 3 + 3 = 6, was die Position von F im Alphabet "
-"ist. Et voila, du hast C mit dem Schlüssel 3 verschlüsselt."
-
-#: ../src/edu/kit/iks/Cryptographics/Caesar/Demonstration/CryptoDemonstrationView.java:54
-#: ../src/edu/kit/iks/Cryptographics/DiffieHellman/Demonstration/DemoOneWayView.java:61
-#: ../src/edu/kit/iks/Cryptographics/DiffieHellman/Demonstration/DHDemoView.java:86
-msgid "Back to Introduction"
-msgstr "Zurück zur Einführung"
-
-#: ../src/edu/kit/iks/Cryptographics/Caesar/Demonstration/CryptoDemonstrationView.java:56
-msgid "Skip the demonstration"
+#: ../src/edu/kit/iks/cryptographics/caesar/controller/DemoController.java:45
+msgid "Skip demonstration"
 msgstr "Demonstration überspringen"
 
-#: ../src/edu/kit/iks/Cryptographics/Caesar/Demonstration/CryptoDemonstrationView.java:59
-msgid "CAESAR"
-msgstr ""
+#: ../src/edu/kit/iks/cryptographics/caesar/controller/DemoController.java:46
+msgid "Back to introduction"
+msgstr "Zurück zur Einführung"
 
-#: ../src/edu/kit/iks/Cryptographics/Caesar/Demonstration/CryptoDemonstrationView.java:83
-#: ../src/edu/kit/iks/Cryptographics/Caesar/Experiment/HistogramView.java:501
+#: ../src/edu/kit/iks/cryptographics/caesar/controller/DemoController.java:47
 msgid "Proceed"
 msgstr "Weiter"
 
-#: ../src/edu/kit/iks/Cryptographics/Caesar/Demonstration/CryptoDemonstrationView.java:89
-msgid ""
-"Imagine now you are the mighty Caesar! Of course your first idea is to "
-"substitute each letter from your name with another one from the alphabet. "
-"But which one? Press proceed to move on."
+#: ../src/edu/kit/iks/cryptographics/caesar/controller/DemoController.java:48
+msgid "No help can be offered at the moment."
 msgstr ""
-"Stell dir nun vor du wärst der mächtige Caesar! Natürlich ist deine erste "
-"Idee, Buchstaben des Alphabets auf andere abzubilden. Doch nur auf welche? "
-"Drücke 'Weiter'."
 
-#: ../src/edu/kit/iks/Cryptographics/Caesar/Demonstration/IntroductionController.java:163
+#: ../src/edu/kit/iks/cryptographics/caesar/controller/DemoController.java:51
+msgid ""
+"Caesar's idea was to simply shift each letter in his name by three, so no "
+"undesired reader will know who sent the plan in the future. Press 'Proceed' "
+"and see how it works."
+msgstr ""
+
+#: ../src/edu/kit/iks/cryptographics/caesar/controller/DemoController.java:54
+msgid ""
+"Just click 'Proceed' at the bottom to see how Caesars idea exactly works."
+msgstr ""
+
+#: ../src/edu/kit/iks/cryptographics/caesar/controller/IntroController.java:46
+msgid "Skip introduction"
+msgstr "Einführung überspringen"
+
+#: ../src/edu/kit/iks/cryptographics/caesar/controller/IntroController.java:47
+msgid "Tell me more"
+msgstr "Erzähl' mir mehr"
+
+#: ../src/edu/kit/iks/cryptographics/caesar/controller/IntroController.java:50
+msgid ""
+"If you want to hear the story of how Caesar came up with encrypting, click "
+"'Tell me more', otherwise click 'Skip Introduction'"
+msgstr ""
+
+#: ../src/edu/kit/iks/cryptographics/caesar/controller/IntroController.java:55
+msgid ""
+"One fine day, at about 70 B.C., Caesar was puzzling on an extremely "
+"brilliant plan to finally conquer Gallia and was about to send it to his "
+"generals."
+msgstr ""
+"Eines Tages, etwa 70 v.Chr., tüftelte Caesar an einem extrem intelligenten "
+"Plan um endlich Gallien zu erobern und war dabei, ihn an seine Generäle zu "
+"schicken."
+
+#: ../src/edu/kit/iks/cryptographics/caesar/controller/IntroController.java:58
 msgid ""
 "Unfortunately his courier took the way through the forest, where Kryptolix "
 "chased some wild boars."
@@ -200,7 +110,7 @@ msgstr ""
 "Zu seinem Unglück ging der Bote durch den Wald, wo Kryptolix seine "
 "Wildschweine jagte."
 
-#: ../src/edu/kit/iks/Cryptographics/Caesar/Demonstration/IntroductionController.java:181
+#: ../src/edu/kit/iks/cryptographics/caesar/controller/IntroController.java:60
 msgid ""
 "When Kryptolix noticed the unsuspecting and whistling roman courier, he "
 "punched him back to Rome as the crow flies. But the courier had lost his "
@@ -210,7 +120,7 @@ msgstr ""
 "Luftlinie direkt nach Rom zurück! Doch der Kurier verlor eine unschätzbar "
 "wertvolle Schriftrolle!"
 
-#: ../src/edu/kit/iks/Cryptographics/Caesar/Demonstration/IntroductionController.java:196
+#: ../src/edu/kit/iks/cryptographics/caesar/controller/IntroController.java:63
 msgid ""
 "When reading the scroll the courier lost, Kryptolix identified it as "
 "Caesar's plan to conquer Gallia. Because of this, Kryptolix and his friends "
@@ -220,1250 +130,102 @@ msgstr ""
 "Caesars Pläne Gallien zu erobern. Dadurch waren Kryptolix und seine Freunde "
 "in der Lage, Caesar erneut zu schlagen!"
 
-#: ../src/edu/kit/iks/Cryptographics/Caesar/Demonstration/IntroductionController.java:212
+#: ../src/edu/kit/iks/cryptographics/caesar/controller/IntroController.java:66
 msgid ""
-"Caesar was raging! While he was torturing some Gauls, suddenly an hellacious "
-"and foolproof idea crossed his mind. In his next message he would encrypt "
-"his name! Hue Hue Hue. Help him!"
+"Caesar was raging! While he was torturing some minions, suddenly an "
+"hellacious and foolproof idea crossed his mind. In his next message he would "
+"encrypt his name! Hue Hue Hue. Help him!"
 msgstr ""
 "Caesar tobte! Während er ein paar arme Schweine folterte, hatte er plötzlich "
 "einen teuflischen und idiotensicheren Plan. In seiner nächsten Nachricht "
 "wird er seinen Namen verschlüsseln! Hue Hue Hue. Hilf ihm!"
 
-#: ../src/edu/kit/iks/Cryptographics/Caesar/Demonstration/IntroductionController.java:215
-msgid "To Caesar's idea"
-msgstr "Zu Caesars Idee"
-
-#: ../src/edu/kit/iks/Cryptographics/Caesar/Demonstration/IntroductionController.java:243
+#: ../src/edu/kit/iks/cryptographics/main/views/IdlePopoverView.java:116
 msgid ""
-"If you want to hear the awesome legend about Caesar and Kryptolix press the "
-"button below the text. Otherwise you can skip this with the button in the "
-"top right corner!"
+"You haven't done anything in a while. To keep this exhibit functional, the "
+"system will reset itself soon. If you want to continue using the system, "
+"just dismiss this dialog."
 msgstr ""
-"Wenn du die großartige Legende über Caesar und Kryptolix hören möchtest, "
-"drücke den Button unterhalb des Texts. Andernfalls überspringe diesen "
-"Schritt mit dem 'Überspringen'-Button."
-
-#: ../src/edu/kit/iks/Cryptographics/Caesar/Demonstration/IntroductionView.java:85
-msgid "Skip the introduction"
-msgstr "Einführung überspringen"
-
-#: ../src/edu/kit/iks/Cryptographics/Caesar/Demonstration/IntroductionView.java:106
-msgid "Tell me more"
-msgstr "Erzähl' mir mehr"
-
-#: ../src/edu/kit/iks/Cryptographics/Caesar/Demonstration/IntroductionView.java:119
-msgid ""
-"One fine day, ca 70 B.C., Caesar was puzzling on an extremely intelligent "
-"plan to finally conquer Gallia and was about to send it to his generals."
-msgstr ""
-"Eines Tages, etwa 70 v.Chr., tüftelte Caesar an einem extrem intelligenten "
-"Plan um endlich Gallien zu erobern und war dabei, ihn an seine Generäle zu "
-"schicken."
-
-#: ../src/edu/kit/iks/Cryptographics/Caesar/Experiment/CryptoExperimentController.java:99
-msgid ""
-"Remember: If you want to decrypt for example D with the key of 3. You need "
-"to substract 3 from the position of D in the alphabet. D - key = 4 - 3 = 1 = "
-"A. And if you get a negative Value add 26. For example: A - 8 = 1 - 8 = -7. "
-"Now add 26 + (-7) = 19 = S."
-msgstr ""
-"Denke dran: Wenn du beispielsweise D mit dem Schlüssel 3 entschlüsseln "
-"willst, musst du 3 von der Position von D im Alphabet abziehen. D - "
-"Schlüssel = 4 - 3 = 1 = A. Wenn der Wert negativ wird, addiere einfach 26. "
-"Beispiel: A - 8 = 1 - 8 = -7 => -7 + 26 = 19 = S."
-
-#: ../src/edu/kit/iks/Cryptographics/Caesar/Experiment/CryptoExperimentController.java:105
-msgid ""
-"Remember: If you want to encrypt for example A with the key of 3. You need "
-"to add 3 to the position of A in the alphabet. A + key = 1 + 3 = 4 = D. And "
-"if you get a value that is bigger then 26 then substract 26 from it. For "
-"example: S + 8 = 19 + 8 = 27. Now substract 26: 27 - 26 = 1 = A."
-msgstr ""
-"Denke dran: Wenn du z.B. A mit dem Schlüssel 3 verschlüsseln willst, musst "
-"du 3 an die Position von A addieren. A + Schlüssel = 1 + 3 = 4 = D. Wenn das "
-"Ergebnis größer als 26 wird, musst du 26 subtrahieren. Beispiel: S + 8 = 19 "
-"+ 8 = 27 => 27 - 26 = 1 = A."
-
-#: ../src/edu/kit/iks/Cryptographics/Caesar/Experiment/CryptoExperimentController.java:261
-#: ../src/edu/kit/iks/Cryptographics/Caesar/Experiment/CryptoExperimentController.java:270
-msgid "All done right!"
-msgstr "Alles richtig!"
-
-#: ../src/edu/kit/iks/Cryptographics/Caesar/Experiment/CryptoExperimentController.java:266
-msgid ""
-"The next step is to decrypt a given message! Let's move on to decrypting."
-msgstr "Der nächste Schritt ist das entschlüsseln einer gegebenen Nachricht. "
-
-#: ../src/edu/kit/iks/Cryptographics/Caesar/Experiment/CryptoExperimentController.java:275
-msgid ""
-"In the next stage of the visualization you will learn how to decrypt without "
-"a key."
-msgstr ""
-"Im nächsten Schritt wirst du sehen, wie man ohne einen Schlüssel "
-"entschlüsseln kann."
-
-#: ../src/edu/kit/iks/Cryptographics/Caesar/Experiment/CryptoExperimentController.java:307
-#, java-format
-msgid "You have {0} left!"
-msgid_plural "You have {0} left!"
-msgstr[0] "Es ist {0} übrig."
-msgstr[1] "Es sind {0} übrig."
-
-#: ../src/edu/kit/iks/Cryptographics/Caesar/Experiment/CryptoExperimentController.java:438
-msgid ""
-"You have already learned much. But you've probably already asked yourself: "
-"How do I decrypt?"
-msgstr ""
-"Du hast nun schon viel gelernt, doch du hast dich sicher schon gefragt, wie "
-"man eine Nachricht jetzt entschlüsselt?"
-
-#: ../src/edu/kit/iks/Cryptographics/Caesar/Experiment/CryptoExperimentController.java:441
-msgid ""
-"It's simple: subtract the key from a given letter. And if you get a negative "
-"value add 26 to it."
-msgstr ""
-"Es ist einfach: Du musst den Schlüssel einfach von jedem Buchstaben "
-"subtrahieren. Wenn das Ergebnis negativ wird, addiere 26 dazu."
-
-#: ../src/edu/kit/iks/Cryptographics/Caesar/Experiment/CryptoExperimentController.java:447
-msgid "Go to Histograms"
-msgstr "Zu den Histogrammen"
-
-#: ../src/edu/kit/iks/Cryptographics/Caesar/Experiment/CryptoExperimentController.java:520
-msgid "Your input is invalid. Please try another one!"
-msgstr "Die Eingabe ist ungültig. Versuch einen anderen!"
-
-#: ../src/edu/kit/iks/Cryptographics/Caesar/Experiment/CryptoExperimentController.java:535
-msgid "This input is ok. Now only the key is left."
-msgstr "Die Eingabe ist in Ordnung. Nun noch der Schlüssel."
-
-#: ../src/edu/kit/iks/Cryptographics/Caesar/Experiment/CryptoExperimentController.java:661
-msgid ""
-"This key is not valid. Please put a number between 1 and 26. For "
-"demonstration purposes the keys between -1 and -26 are not necessary "
-"therefore not possible, but could be used in general as keys too."
-msgstr ""
-"Der Schlüssel ist ungültig. Bitte wähle eine Zahl zwischen 1 und 26. Aus "
-"Demonstrationsgründen seien die Schlüssel von -1 bis -26 nicht weiter von "
-"Belangen und demnach auch nicht möglich, aber im Allgemeinen können sie "
-"durchaus auch als Schlüssel verwendet werden."
-
-#: ../src/edu/kit/iks/Cryptographics/Caesar/Experiment/CryptoExperimentController.java:679
-msgid "The key field is empty!"
-msgstr "Der Schlüssel ist leer!"
-
-#: ../src/edu/kit/iks/Cryptographics/Caesar/Experiment/CryptoExperimentController.java:712
-msgid "This key is ok. Now put your name into the bigger box to the left."
-msgstr ""
-"Der Schlüssel ist okay. Nun schreibe noch deinen Namen in das Feld links."
-
-#: ../src/edu/kit/iks/Cryptographics/Caesar/Experiment/CryptoExperimentView.java:50
-#: ../src/edu/kit/iks/Cryptographics/DiffieHellman/Experiment/DHExperimentView.java:149
-#: ../src/edu/kit/iks/Cryptographics/DiffieHellman/Experiment/YourTurnController.java:63
-msgid "Back to Demonstration"
-msgstr "Zurück zur Demonstration"
-
-#: ../src/edu/kit/iks/Cryptographics/Caesar/Experiment/CryptoExperimentView.java:52
-#: ../src/edu/kit/iks/Cryptographics/Vigenere/Demonstration/SecondDemonstrationView.java:207
-msgid "Go to Decryption"
-msgstr "Zur Entschlüsselung"
-
-#: ../src/edu/kit/iks/Cryptographics/Caesar/Experiment/CryptoExperimentView.java:63
-msgid ""
-"In the demonstration you encrypted with the key 3. On further thought it "
-"seems logical that this key can vary from 1 to 26."
-msgstr ""
-"In der Demonstration hast du mit dem Schlüssel 3 verschlüsselt. Wenn man den "
-"Gedanken weiterspinnt, ist es logisch, dass der Schlüssel zwischen 1 bis 26 "
-"liegen kann."
-
-#: ../src/edu/kit/iks/Cryptographics/Caesar/Experiment/CryptoExperimentView.java:67
-msgid "Now you have 2 options:"
-msgstr "Du hast zwei Möglichkeiten:"
-
-#: ../src/edu/kit/iks/Cryptographics/Caesar/Experiment/CryptoExperimentView.java:71
-msgid "1. You can either put your own key and plaintext into the textfield,"
-msgstr "1. Du gibst deinen Namen und einen Schlüssel in das Textfeld ein,"
-
-#: ../src/edu/kit/iks/Cryptographics/Caesar/Experiment/CryptoExperimentView.java:75
-msgid ""
-"2. or you just click \"Generate\" and this awesome program will generate a "
-"key and plaintext for you."
-msgstr ""
-"2. oder du drückst einfach den 'Generiere Namen'-Button und das Programm "
-"wird es für dich generieren."
-
-#: ../src/edu/kit/iks/Cryptographics/Caesar/Experiment/CryptoExperimentView.java:103
-msgid "Let's test what you have learned. If help needed touch the help button."
-msgstr ""
-"Sehen wir was du gelernt hast. Wenn du Hilfe benötigst, drücke den 'Hilfe'-"
-"Button"
-
-#: ../src/edu/kit/iks/Cryptographics/Caesar/Experiment/CryptoExperimentView.java:204
-msgid "Put your name in here!"
-msgstr "Wähle hier deinen Namen!"
-
-#: ../src/edu/kit/iks/Cryptographics/Caesar/Experiment/CryptoExperimentView.java:224
-msgid "Or"
-msgstr "Oder"
-
-#: ../src/edu/kit/iks/Cryptographics/Caesar/Experiment/CryptoExperimentView.java:255
-msgid "Generate letters"
-msgstr "Generiere Buchstaben"
-
-#: ../src/edu/kit/iks/Cryptographics/Caesar/Experiment/CryptoModel.java:121
-msgid "Oh no. What a pity! It went wrong!"
-msgstr "Oh nein. Schade! Das stimmt nicht!"
-
-#: ../src/edu/kit/iks/Cryptographics/Caesar/Experiment/CryptoModel.java:122
-msgid "No my friend. This one doesn't work!"
-msgstr "Nein mein Freund... das klappt nicht!"
-
-#: ../src/edu/kit/iks/Cryptographics/Caesar/Experiment/CryptoModel.java:124
-msgid "Sorry, that was wrong. Don't give up now!"
-msgstr "Leider war das falsch. Gib nicht auf!"
-
-#: ../src/edu/kit/iks/Cryptographics/Caesar/Experiment/CryptoModel.java:148
-msgid "Great work, oh mighty Caesar!"
-msgstr "Gute Arbeit, oh mächtiger Caesar."
-
-#: ../src/edu/kit/iks/Cryptographics/Caesar/Experiment/CryptoModel.java:149
-msgid "Very nice. I like!"
-msgstr "Sehr gut. Gefällt mir!"
-
-#: ../src/edu/kit/iks/Cryptographics/Caesar/Experiment/CryptoModel.java:150
-msgid "No one could've done it better!"
-msgstr "Niemand hätte es besser machen können!"
-
-#: ../src/edu/kit/iks/Cryptographics/Caesar/Experiment/CryptoModel.java:161
-msgid "ANNA"
-msgstr ""
-
-#: ../src/edu/kit/iks/Cryptographics/Caesar/Experiment/CryptoModel.java:162
-msgid "HANNAH"
-msgstr ""
-
-#: ../src/edu/kit/iks/Cryptographics/Caesar/Experiment/CryptoModel.java:162
-msgid "BANANA"
-msgstr "BANANE"
-
-#: ../src/edu/kit/iks/Cryptographics/Caesar/Experiment/CryptoModel.java:163
-msgid "KOKOS"
-msgstr ""
-
-#: ../src/edu/kit/iks/Cryptographics/Caesar/Experiment/CryptoModel.java:163
-msgid "SECRET"
-msgstr "GEHEIM"
-
-#: ../src/edu/kit/iks/Cryptographics/Caesar/Experiment/CryptoModel.java:164
-msgid "EPSILON"
-msgstr ""
-
-#: ../src/edu/kit/iks/Cryptographics/Caesar/Experiment/CryptoModel.java:177
-msgid ""
-"The diagram you see here shows the frequency of each letter in the text you "
-"are reading at the moment. It is called a Histogram. If you would count all "
-"E's in this explanation you would get the number you see in the diagram on "
-"the column above the letter E. Now the program will encrypt this explanation "
-"with an unknown key in a most awesome way and we will see the  histogram of "
-"the cipher. Click Proceed and see the magic!"
-msgstr ""
-"Die Diagramme die du hier siehst zeigen die Häufigkeit jedes Buchstabens in "
-"dem Text den du gerade liest. Es nennt sich ein Histogramm. Würdest du alle "
-"E's in dieser Erklärung zählen, würdest du auf die Zahl kommen die in der "
-"Spalte über dem Buchstaben E steht. Das Programm wird nun diese Erklärung "
-"mit einem unbekannten Schlüssel verschlüsseln und du wirst das Histogramm "
-"des Chiffrats sehen. Klicke auf 'Weiter' und sieh es dir an."
-
-#: ../src/edu/kit/iks/Cryptographics/Caesar/Experiment/HistogramController.java:73
-msgid ""
-"Remember 'E' is in most cases the most frequent letter in a text. The column "
-"in the histogram above E would be the tallest one. So the tallest column in "
-"the histogram of a cipher would be the value E was shifted to. For example, "
-"'H' is the tallest one. Simply 'H'- 'E' = 8 - 5 = 3. Et voila 3 is the key."
-msgstr ""
-"Denke dran: 'E' ist in den meisten Fällen der häufigste Buchstabe in einem "
-"Text. Die Spalte für 'E' im Histogramm müsste also die größte sein. Also ist "
-"die größte Spalte im Histogramm des Chifrats jene, nach der 'E' geschoben "
-"wurde. Beispiel: 'H' ist die größte Spalte. 'H' - 'E' = 8 - 5 = 3. Et voila, "
-"3 ist der Schlüssel."
-
-#: ../src/edu/kit/iks/Cryptographics/Caesar/Experiment/HistogramController.java:79
-msgid ""
-"In order to find an unknown key you must try all of them. If you are lucky, "
-"you dont have to try many. In the worst case you have to try all of them."
-msgstr ""
-"Um einen unbekannten Schlüssel zu finden, musst du alle probieren. Wenn du "
-"Glück hast findest du ihn schnell. Im schlechtesten Fall musst du alle "
-"probieren."
-
-#: ../src/edu/kit/iks/Cryptographics/Caesar/Experiment/HistogramController.java:130
-msgid ""
-"You found the right key! See how easy it is with histograms? If you want to "
-"try one more press proceed. Otherwise you can go directly to further "
-"information. There you can learn more about caesar's cipher."
-msgstr ""
-"Du hast den Schlüssel gefunden! Siehst du wie einfach das mit Histogrammen "
-"ist? Wenn du nochmal eines ausprobieren möchtest, klicke auf 'Weiter'. "
-"Andernfalls kannst du zu den weiterführenden Informationen gehen. Dort "
-"erfährst du noch mehr über die Caesar-Chiffre."
-
-#: ../src/edu/kit/iks/Cryptographics/Caesar/Experiment/HistogramController.java:154
-msgid "The key was wrong."
-msgstr "Der Schlüssel ist falsch."
-
-#: ../src/edu/kit/iks/Cryptographics/Caesar/Experiment/HistogramController.java:172
-msgid ""
-"This key is invalid. Please type a number between 1 and 26. If you dont "
-"understand why, it is recommended to go to early stages."
-msgstr ""
-"Der Schlüssel ist ungültig. Bitte wähle eine Zahl zwischen 1 und 26. Wenn du "
-"nicht verstehst warum, dann schau dir die vorherigen Schritte nochmals an."
-
-#: ../src/edu/kit/iks/Cryptographics/Caesar/Experiment/HistogramController.java:192
-msgid "The key field was empty!"
-msgstr "Der Schlüssel ist leer!"
-
-#: ../src/edu/kit/iks/Cryptographics/Caesar/Experiment/HistogramController.java:314
-msgid ""
-"You found the secret key and are now able to read the secret message. The "
-"Key is"
-msgstr ""
-"Du hast den geheimen Schlüssel gefunden und bist nun in der Lage die geheime "
-"Nachricht zu lesen. Der Schlüssel war"
-
-#: ../src/edu/kit/iks/Cryptographics/Caesar/Experiment/HistogramController.java:319
-msgid "Now only the histogram technique left."
-msgstr "Nun ist nur noch die Histogramm-Methode ürbig."
-
-#: ../src/edu/kit/iks/Cryptographics/Caesar/Experiment/HistogramController.java:326
-msgid "The Key was"
-msgstr "Der Schlüssel war"
-
-#: ../src/edu/kit/iks/Cryptographics/Caesar/Experiment/HistogramController.java:331
-msgid "Congratulations! Yeay! Now lets try to break it with histograms."
-msgstr "Glückwunsch! Yeay! Lass es uns nun mit Histogrammen versuchen."
-
-#: ../src/edu/kit/iks/Cryptographics/Caesar/Experiment/HistogramController.java:415
-msgid ""
-"Or: If you want to try a more elaborate way breaking Caesar-cipher you can "
-"try histogram technique by pressing the button below."
-msgstr ""
-"Oder: Wenn du eine vornehmere Methode anwenden willst, um die Caesar-Chiffre "
-"zu brechen, kannst du die Histogramm-Methode probieren. Drücke den Button "
-"unten."
-
-#: ../src/edu/kit/iks/Cryptographics/Caesar/Experiment/HistogramController.java:424
-msgid "Try histogram technique"
-msgstr "Versuche Histogramm-Methode"
-
-#: ../src/edu/kit/iks/Cryptographics/Caesar/Experiment/HistogramController.java:473
-msgid ""
-"When you look at the histogram of the cipher you can see that 'H' is now the "
-"most frequent one. It is obvious that the letter 'E' was shifted to 'H'. "
-"When we substract 'H' - 'E' we get the key. Put the key 3 in the box below "
-"and let the programm decrypt the cipher with it."
-msgstr ""
-"Wenn du dir das Histogramm des Chiffrats ansiehst, erkennst du, dass 'H' der "
-"häufigste Buchstabe ist. Offenbar wurde also 'E' nach 'H' verschoben. Wenn "
-"du 'E' von 'H' subtrahierst, erhälst du den Schlüssel 3. Gib den Schlüssel "
-"in das Feld unten ein und das Programm wird das Chiffrat entschlüsseln."
-
-#: ../src/edu/kit/iks/Cryptographics/Caesar/Experiment/HistogramController.java:503
-msgid "Ok lets try another one!"
-msgstr "Okay, nochmal eins!"
-
-#: ../src/edu/kit/iks/Cryptographics/Caesar/Experiment/HistogramView.java:161
-msgid ""
-"Cryptologists call it 'breaking a cipher' when someone tries to decrypt text "
-"without knowing the key."
-msgstr ""
-"Kryptologen nennen es 'die Chiffre brechen' wenn jemand einen Text "
-"entschlüsselt, ohne den Schlüssel zu kennen."
-
-#: ../src/edu/kit/iks/Cryptographics/Caesar/Experiment/HistogramView.java:164
-msgid "There are always 2 options when it comes to this."
-msgstr "Es gibt immer 2 Möglichkeiten dies zu tun."
-
-#: ../src/edu/kit/iks/Cryptographics/Caesar/Experiment/HistogramView.java:167
-msgid ""
-"1. You use literally brute force, meaning you simply try each possible key."
-msgstr ""
-"1. Du verwendest Brute-Force, das bedeutet du versuchst einfach jeden "
-"Schlüssel."
-
-#: ../src/edu/kit/iks/Cryptographics/Caesar/Experiment/HistogramView.java:171
-msgid "2. You use elaborate cryptology techniques."
-msgstr "2. Du verwendest kryptographische Verfahren."
-
-#: ../src/edu/kit/iks/Cryptographics/Caesar/Experiment/HistogramView.java:174
-msgid "Lets try brute force"
-msgstr "Versuche Brute-Force"
-
-#: ../src/edu/kit/iks/Cryptographics/Caesar/Experiment/HistogramView.java:262
-msgid ""
-"Brute force means trying to decrypt with each possible key, till you find "
-"the right one.The Key is in the middle. And pressing buttons increments or "
-"decrements it. Let's search."
-msgstr ""
-"Brute-Force bedeutet, dass man alle möglichen Schlüssel durchprobiert, bis "
-"man den richtigen gefunden hat. Der Schlüssel ist in der Mitte. Die Buttons "
-"erhöhen oder erniedrigen den Schlüssel. Und los."
-
-#: ../src/edu/kit/iks/Cryptographics/Caesar/Experiment/HistogramView.java:301
-msgid "&darr;Histogram of the cipher.&darr;"
-msgstr "&darr;Histogramm des Chiffrats.&darr;"
-
-#: ../src/edu/kit/iks/Cryptographics/Caesar/Experiment/HistogramView.java:338
-msgid "&darr;Histogram of the original text.&darr;"
-msgstr "&darr;Histogramm des Originaltexts.&darr;"
-
-#: ../src/edu/kit/iks/Cryptographics/Caesar/Experiment/HistogramView.java:373
-msgid "Type your key in this&darr; box and click 'Enter'."
-msgstr "Wähle den Schlüssel hier&darr; und drücke 'Eingabe'."
-
-#: ../src/edu/kit/iks/Cryptographics/Caesar/Experiment/HistogramView.java:467
-msgid "Back to Experiment"
-msgstr "Zurück zum Selbstversuch"
-
-#: ../src/edu/kit/iks/Cryptographics/Caesar/Experiment/HistogramView.java:475
-msgid "Skip the Histograms"
-msgstr "Histogramme überspringen"
-
-#: ../src/edu/kit/iks/Cryptographics/DiffieHellman/DHVisualizationInfo.java:35
-msgid ""
-"The infamous Diffie-Hellman Key-Exchange explained with a color-mixing "
-"analogy. Establish a shared secret, without an eavesdropper getting the "
-"secret, too!"
-msgstr ""
-"Der berüchtigte Diffie-Hellman Schlüsseltausch, erklärt durch eine "
-"Farbenanalogie. Baue ein gemeinsames Geheimnis auf, ohne dass ein Angreifer "
-"das Geheimnis auch erfährt!"
-
-#: ../src/edu/kit/iks/Cryptographics/DiffieHellman/DHVisualizationInfo.java:54
-msgid "Diffie-Hellman"
-msgstr "Diffie-Hellman"
-
-#: ../src/edu/kit/iks/Cryptographics/DiffieHellman/DHVisualizationInfo.java:119
-msgid "http://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange"
-msgstr "http://de.wikipedia.org/wiki/Diffie-Hellman-Schl%C3%BCsselaustausch"
-
-#: ../src/edu/kit/iks/Cryptographics/DiffieHellman/Demonstration/ColorChannel.java:215
-msgid "Alice"
-msgstr ""
-
-#: ../src/edu/kit/iks/Cryptographics/DiffieHellman/Demonstration/ColorChannel.java:216
-msgid "Bob"
-msgstr ""
-
-#: ../src/edu/kit/iks/Cryptographics/DiffieHellman/Demonstration/ColorChannel.java:217
-msgid "Eve"
-msgstr ""
-
-#: ../src/edu/kit/iks/Cryptographics/DiffieHellman/Demonstration/DemoOneWayView.java:33
-#: ../src/edu/kit/iks/Cryptographics/DiffieHellman/Demonstration/DHDemoView.java:67
-#: ../src/edu/kit/iks/Cryptographics/DiffieHellman/Demonstration/ExplainAimView.java:36
-#: ../src/edu/kit/iks/Cryptographics/DiffieHellman/Demonstration/OnewayView.java:31
-msgid "No help"
-msgstr "Keine Hilfe"
-
-#: ../src/edu/kit/iks/Cryptographics/DiffieHellman/Demonstration/DemoOneWayView.java:36
-msgid ""
-"We use a simple analogy as the one-way function. Mixing colors is an easy "
-"process, determining which colors were originally used is a difficult "
-"process, thus this acts like an one-way function"
-msgstr ""
-"Wir verwenden eine einfache Analogie als Einwegfunktion. Das Farbenmischen "
-"ist einfach, aber herauszufinden aus welchen Farben eine Mixtur besteht, "
-"sehr schwer. Das fungiert als Einwegfunktion."
-
-#: ../src/edu/kit/iks/Cryptographics/DiffieHellman/Demonstration/DemoOneWayView.java:61
-msgid "Go to Demo"
-msgstr "Zur Demo"
-
-#: ../src/edu/kit/iks/Cryptographics/DiffieHellman/Demonstration/DemoOneWayView.java:108
-msgid "easy"
-msgstr "einfach"
-
-#: ../src/edu/kit/iks/Cryptographics/DiffieHellman/Demonstration/DemoOneWayView.java:113
-msgid "hard"
-msgstr "schwer"
-
-#: ../src/edu/kit/iks/Cryptographics/DiffieHellman/Demonstration/DemoOneWayView.java:129
-msgid ""
-"To achieve this, we use something called one-way function. This type of "
-"function is easy to compute in one direction, but difficult to reverse."
-msgstr ""
-"Um das zu erreichen, verwenden wir eine Einwegfunktion. Diese Funktion ist "
-"in eine Richtung leicht zu berechnen, aber sehr schwer umzukehren."
-
-#: ../src/edu/kit/iks/Cryptographics/DiffieHellman/Demonstration/DHDemoView.java:26
-msgid ""
-"Now to our Diffie-Hellman Key-Exchange Analogy. Here is how the protocol in "
-"principle works. Alice chooses a public color and sends it to Bob. As Eve "
-"listens to the channel she gets a copy."
-msgstr ""
-"Nun zu unserer Diffie-Hellman Schlüsselaustausch Analogie. Hier siehst du, "
-"wie das Protokoll im Prinzip funktioniert. Alice wählt eine öffentliche "
-"Farbe und sendet sie an Bob. Da Eve den Kanal abhorcht, erhält sie eine "
-"Kopie."
-
-#: ../src/edu/kit/iks/Cryptographics/DiffieHellman/Demonstration/DHDemoView.java:31
-msgid ""
-"Next, Alice chooses a private color, that she keeps for herself, she does "
-"not send it. Then she mixes her private color with the previously sent "
-"public color and sends the mixture to Bob. Note that because we use the "
-"mixing of colors as a one-way function, Eve cannot compute which private "
-"color Alice used to get the mixture. Keep this in mind, as this is critical "
-"to understand why this protocol works. As previously Bob and Eve have the "
-"sent color, that means the mixture of Alice."
-msgstr ""
-"Als nächstes wählt Alice eine geheime Farbe, die sie für sich behält und "
-"nicht sendet. Dann mischt sie ihre geheime Farbe mit der zuvor gesendeten "
-"öffentlichen Farbe und sendet die Mixtur an Bob. Beachte, dass wir das "
-"Farbenmischen als Einwegfunktion betrachten, also kann Eve die geheime Farbe "
-"nicht berechnen. Behalte das im Hinterkopf, denn das ist wichtig um zu "
-"verstehen wie das Protokoll funktioniert. Wie zuvor haben Bob und Eve die "
-"gesendete, gemischte Farbe von Alice."
-
-#: ../src/edu/kit/iks/Cryptographics/DiffieHellman/Demonstration/DHDemoView.java:40
-msgid ""
-"Now Bob does the exact same thing like Alice did in the previous step. He "
-"chooses a private color. Mixes it with the public color, and sends the "
-"mixture to Alice. Eve gets a copy, but can't compute the private color of "
-"Bob, because of the one-way function property"
-msgstr ""
-"Nun macht Bob das gleiche wie Alice zuvor. Er wählt eine geheime Farbe, "
-"mischt sie mit seiner öffentlichen Farbe, und sendet die Mixtur an Alice. "
-"Eve erhält auch dieses Mal eine Kopie, doch kann wieder nicht berechnen, was "
-"die geheime Farbe von Bob ist."
-
-#: ../src/edu/kit/iks/Cryptographics/DiffieHellman/Demonstration/DHDemoView.java:46
-msgid ""
-"Here we will produce the secret that Alice and Bob know, but Eve doesn't. "
-"Alice will mix her private color to the mixture of Bob and Bob will mix his "
-"private color to the mixture of Alice. The trick lies in the combination of "
-"the private Colors, that are kept private, through the use of the one-way "
-"function and that it doesn't matter in which order we mix the colors. So "
-"mixing first the public color with Alices private color and then Bobs "
-"private color yields the same color as mixing first the public color with "
-"Bobs private color and then Alices private color."
-msgstr ""
-"Hier erstellen wir ein Geheimnis, welches nur Alice und Bob kennen, aber Eve "
-"nicht. Alice mischt ihre geheime Farbe mit der Mixtur von Bob, und Bob "
-"mischt seine geheime Farbe mit der Mixtur von Alice. Der Trick liegt in der "
-"Kombination der geheimen Farben, die geheim gehalten werden durch das "
-"Verwenden der Einwegfunktion, dabei macht die Reihenfolge des Mischens kein "
-"Unterschied. Das heißt, das Mischen der öffentlichen Farbe mit Alice's "
-"geheimer Farbe und dann Bob's geheimer Farbe ist das gleiche wie die "
-"öffentliche Farbe, gemischt mit Bob's Farbe, gemischt mit Alice' Farbe."
-
-#: ../src/edu/kit/iks/Cryptographics/DiffieHellman/Demonstration/DHDemoView.java:86
-msgid "Skip the Demonstration"
-msgstr "Demonstration überspringen"
-
-#: ../src/edu/kit/iks/Cryptographics/DiffieHellman/Demonstration/DHDemoView.java:92
-msgid "Skip Introduction"
-msgstr "Einführung überspringen"
-
-#: ../src/edu/kit/iks/Cryptographics/DiffieHellman/Demonstration/ExplainAimView.java:41
-msgid ""
-"Our aim is to exchange a secret on a public channel, without Eve getting the "
-"secret too. Therefore we can't simply send the secret, as shown in the "
-"figure above as Eve would get the secret too. Thus we need to exchange the "
-"secret in a different way"
-msgstr ""
-"Unser Ziel ist es, ein Geheimnis über einen öffentlichen Kanal zu "
-"verschicken, ohne das auch Eve das Geheimnis erfährt. Deshalb können wir das "
-"Geheimnis nicht einfach verschicken, wie in der Animation oben gezeigt wird. "
-"Daher müssen wir das Geheimnis auf einen anderen Weg tauschen"
-
-#: ../src/edu/kit/iks/Cryptographics/DiffieHellman/Demonstration/ExplainAimView.java:63
-msgid "Skip the Introduction"
-msgstr "Einführung überspringen"
-
-#: ../src/edu/kit/iks/Cryptographics/DiffieHellman/Demonstration/LabelExplanation.java:23
-msgid "P - The base color"
-msgstr "P - Die Basisfarbe"
-
-#: ../src/edu/kit/iks/Cryptographics/DiffieHellman/Demonstration/LabelExplanation.java:25
-msgid "SA - Alice's secret color"
-msgstr "SA - Alice's geheime Farbe"
-
-#: ../src/edu/kit/iks/Cryptographics/DiffieHellman/Demonstration/LabelExplanation.java:27
-msgid "SB - Bob's secret color"
-msgstr "SB - Bob's geheime Farbe"
-
-#: ../src/edu/kit/iks/Cryptographics/DiffieHellman/Demonstration/LabelExplanation.java:29
-msgid "MA - Mixture of SA and P"
-msgstr "MA - Mischung von SA und P"
-
-#: ../src/edu/kit/iks/Cryptographics/DiffieHellman/Demonstration/LabelExplanation.java:31
-msgid "MB - Mixture of SB and P"
-msgstr "MB - Mischung von SB und P"
-
-#: ../src/edu/kit/iks/Cryptographics/DiffieHellman/Demonstration/OnewayView.java:34
-msgid ""
-"To achive this, we use something called one-way function. This function is "
-"easy to compute in one direction, but difficult to reverse."
-msgstr ""
-"Um das zu erreichen, verwenden wir eine Einwegfunktion. Diese Funktion ist "
-"in eine Richtung leicht zu berechnen, aber sehr schwer umzukehren."
-
-#: ../src/edu/kit/iks/Cryptographics/DiffieHellman/Experiment/CongratsView.java:30
-msgid "Congratulations"
-msgstr "Glückwunsch"
-
-#: ../src/edu/kit/iks/Cryptographics/DiffieHellman/Experiment/CongratsView.java:50
-#: ../src/edu/kit/iks/CryptographicsLib/VisualizationView.java:39
-msgid "Next"
+"Du hast längere Zeit keine Aktivität gezeigt. Um dieses Exponat "
+"betriebsbereit zu halten, wird es sich in Kürze zurücksetzen. Verwirf dieses "
+"Dialogfenster, um fortzufahren."
+
+#: ../src/edu/kit/iks/cryptographics/main/views/IdlePopoverView.java:133
+msgid "Continue"
 msgstr "Weiter"
 
-#: ../src/edu/kit/iks/Cryptographics/DiffieHellman/Experiment/DHExperimentView.java:34
-msgid ""
-"Now it is your turn! Choose a public color, which will be the basis for the "
-"coming operations. When you're are done, click the 'send color' button to "
-"send it to Bob."
+#: ../src/edu/kit/iks/cryptographics/main/views/TimelinePopoverView.java:127
+msgid "Start"
 msgstr ""
-"Nun bist du dran! Wähle eine öffentliche Farbe, welche die Grundlage des "
-"Selbstversuchs sein wird. Wenn du eine Farbe gewählt hast, Klicke 'Farbe "
-"senden' um sie an Bob zu schicken."
 
-#: ../src/edu/kit/iks/Cryptographics/DiffieHellman/Experiment/DHExperimentView.java:38
-msgid ""
-"Now you can choose a private color which you can mix with the public color "
-"you previously send to Bob. When you're done, click the 'Mix with public "
-"color' button."
+#: ../src/edu/kit/iks/cryptographics/main/views/TimelineView.java:247
+#, java-format
+msgid "{0} B.C."
+msgstr "{0} v.Chr."
+
+#: ../src/edu/kit/iks/cryptographics/main/views/VisualizationContainerView.java:92
+msgid "Exit"
+msgstr "Beenden"
+
+#: ../src/edu/kit/iks/cryptographics/main/views/VisualizationContainerView.java:111
+msgid "Help"
+msgstr "Hilfe"
+
+#: ../src/edu/kit/iks/cryptographics/main/views/WelcomeView.java:146
+msgid "Cryptographics"
 msgstr ""
-"Nun wähle eine geheime Farbe welche du mit der öffentlichen Farbe mischen "
-"kannst die du zuvor an Bob geschickt hast. Wenn du eine Farbe die dir "
-"gefällt gewählt hast, klicke 'Mische mit öffentlicher Farbe'."
 
-#: ../src/edu/kit/iks/Cryptographics/DiffieHellman/Experiment/DHExperimentView.java:42
-msgid ""
-"The next step is to send the right color to Bob, as shown in the "
-"demonstration. You have three possible colors to send and one is the right "
-"color. If you need help click the 'Help' button."
-msgstr ""
-"Der nächste Schritt ist das Senden der richtigen Farbe an Bob, wie in der "
-"Demonstration gezeigt. Du hast drei mögliche Farben zum verschicken, aber "
-"nur eine ist die richtige. Wenn du Hilfe benötigst, klicke den dafür "
-"vorgesehenen Button."
-
-#: ../src/edu/kit/iks/Cryptographics/DiffieHellman/Experiment/DHExperimentView.java:46
-msgid ""
-"Oh no. You chose the private color. This color is meant to be private. If "
-"you had sent this color, Eve would be able to get the secret too, "
-"afterwards. Please try again, by choosing another color and clicking the "
-"'send color' button."
-msgstr ""
-"Oh nein. Du hast die geheime Farbe gewählt. Diese Farbe soll auch geheim "
-"bleiben. Wenn du diese Farbe gesendet hättest, wäre Eve in der Lage das "
-"Geheimnis zu erlangen. Versuche es nochmal mit einer anderen Farbe und "
-"klicke den 'Farbe senden' Button."
-
-#: ../src/edu/kit/iks/Cryptographics/DiffieHellman/Experiment/DHExperimentView.java:52
-msgid ""
-"Oh no. You chose the public color. While Eve won't be able to get the secret "
-"shared color, you still didn't follow the protocol instructions. Try again "
-"by choosing another color."
-msgstr ""
-"Oh nein. Du hast die öffentliche Farbe gewählt. Eve wird zwar nicht in der "
-"Lage sein, das Geheimnis zu erfahren, aber genausowenig wird Bob es erlangen "
-"können. Versuche eine andere Farbe."
-
-#: ../src/edu/kit/iks/Cryptographics/DiffieHellman/Experiment/DHExperimentView.java:56
-msgid "Good. You sent your mixture to Bob. This is the right choice."
-msgstr ""
-"Gut. Du hast die richtige Farbe an Bob geschickt. Das war die richtige Wahl."
-
-#: ../src/edu/kit/iks/Cryptographics/DiffieHellman/Experiment/DHExperimentView.java:59
-msgid ""
-"Now it is Bobs turn. Click the continue button, so that Bob will choose his "
-"private color and send you his mixture."
-msgstr ""
-"Nun ist Bob an der Reihe. Klicke den 'Weiter' Button, sodass Bob seine "
-"geheime Farbe wählen, und die Mixtur schicken kann."
-
-#: ../src/edu/kit/iks/Cryptographics/DiffieHellman/Experiment/DHExperimentView.java:62
-msgid ""
-"This is the last step in the protocol. Choose the right colors to produce "
-"the final secret, just like how it was explained at the demonstration."
-msgstr ""
-"Dies ist der letzte Schritt des Protokolls. Wähle die richtige Farbe um das "
-"endgültige Geheimnis zu erstellen, genau so, wie in der Demonstration "
-"erklärt."
-
-#: ../src/edu/kit/iks/Cryptographics/DiffieHellman/Experiment/DHExperimentView.java:66
-msgid ""
-"Congratulations, you chose the right colors to mix, you and Bob established "
-"a shared secret that Eve does not know."
-msgstr ""
-"Glückwunsch, du hast die richtige Farbe gewählt. Du und Bob habt nun ein "
-"gemeinsames Geheimnis erstellt, welches Eve nicht kennt."
-
-#: ../src/edu/kit/iks/Cryptographics/DiffieHellman/Experiment/DHExperimentView.java:74
-msgid ""
-"You have to choose a public color, to choose a different color you have to "
-"click the '->' or '<-' Button. You can't do much wrong. When you are ready "
-"click the 'send color' button."
-msgstr ""
-"Du musst eine öffentliche Farbe wählen. Um eine Farbe zu wählen, drücke die "
-"Pfeilbuttons. Du kannst dabei nichts falsch machen. Wenn du fertig bist, "
-"klicke den 'Farbe senden' Button."
-
-#: ../src/edu/kit/iks/Cryptographics/DiffieHellman/Experiment/DHExperimentView.java:79
-msgid ""
-"You have to choose a private color, which is not the same as the public "
-"color. To choose a color, you have to click the '->' or the '<-' Button. You "
-"can't do much wrong. When you are ready, click the 'mix colors' button."
-msgstr ""
-"Du musst eine geheime Farbe wählen, welche eine andere sein soll als die "
-"öffentliche Farbe. Verwende die Pfeilbuttons um eine auszuwählen, und klicke "
-"den 'Farben mischen' Button."
-
-#: ../src/edu/kit/iks/Cryptographics/DiffieHellman/Experiment/DHExperimentView.java:84
-msgid ""
-"You have to send the right color, the right color is the one you have not "
-"already sent, and the one you don't want to keep private. If you still have "
-"no clue, try the three different colors."
-msgstr ""
-"Du musst die richtige Farbe wählen. Das ist diejenige, die du noch nicht "
-"gesendet hast und die die du nicht geheim halten willst. Wenn du es immer "
-"noch nicht weißt, probier herum."
-
-#: ../src/edu/kit/iks/Cryptographics/DiffieHellman/Experiment/DHExperimentView.java:88
-msgid ""
-"Just click the continue button and Bob will mix his color and will send it "
-"to you."
-msgstr ""
-"Klicke einfach auf den 'Weiter' Button und Bob wird seine Farben mischen und "
-"sie dir zuschicken."
-
-#: ../src/edu/kit/iks/Cryptographics/DiffieHellman/Experiment/DHExperimentView.java:91
-msgid ""
-"You have to choose the two colors that will be mixed to the final shared "
-"secret. Tip: Why can't Eve compute the secret. Right, you have a color that "
-"Eve does not have, so you have to use that one. It is the color with the "
-"label SA. The other color is the one you got from Bob which is the mixture "
-"of Bob, MB"
-msgstr ""
-"Du musst die Farben wählen die gemischt werden müssen um das endgültige "
-"Geheimnis zu erzeugen. Tipp: Warum kann Eve das Geheimnis nicht berechnen? "
-"Richtig, du hast eine Farbe die Eve nicht hat, also musst du diese "
-"verwenden, also SA. Die andere Farbe ist die, die du von Bob bekommen hast, "
-"also MB"
-
-#: ../src/edu/kit/iks/Cryptographics/DiffieHellman/Experiment/DHExperimentView.java:97
-msgid "Mix with public color"
-msgstr "Mische mit öffentlicher Farbe"
-
-#: ../src/edu/kit/iks/Cryptographics/DiffieHellman/Experiment/DHExperimentView.java:99
-msgid "Mix colors to final secret"
-msgstr "Endgültiges Geheimnis mischen"
-
-#: ../src/edu/kit/iks/Cryptographics/DiffieHellman/Experiment/DHExperimentView.java:103
-msgid "The private color can't be the same as the public color"
-msgstr "Die geheime Farbe kann nicht die gleiche sein wie die öffentliche"
-
-#: ../src/edu/kit/iks/Cryptographics/DiffieHellman/Experiment/DHExperimentView.java:106
-msgid "Send color"
-msgstr "Farbe senden"
-
-#: ../src/edu/kit/iks/Cryptographics/DiffieHellman/Experiment/DHExperimentView.java:108
-msgid "You chose the wrong colors, try again"
-msgstr "Du hast die falsche Farbe gewählt, versuch's nochmal"
-
-#: ../src/edu/kit/iks/Cryptographics/DiffieHellman/Experiment/DHExperimentView.java:149
-msgid "Skip the Experiment"
-msgstr "Selbstversuch überspringen"
-
-#: ../src/edu/kit/iks/Cryptographics/DiffieHellman/Experiment/YourTurnController.java:55
-msgid "Start Experiment"
-msgstr "Selbstversuch starten"
-
-#: ../src/edu/kit/iks/Cryptographics/DiffieHellman/Experiment/YourTurnView.java:33
-msgid ""
-"Now it's your turn! Now you are Alice and try to establish a shared secret "
-"with Bob, without Eve getting the secret. Your task will be to mix the right "
-"Colors and to send the right Colors, just like in the Demonstration"
-msgstr ""
-"Nun bist du an der Reihe! Nun bist du Alice und versuchst ein gemeinsames "
-"Geheimnis mit Bob aufzubauen, ohne das Eve es erfährt. Deine Aufgabe ist das "
-"richtige Mischen und Senden der Farben, genau wie in der Demonstration"
-
-#: ../src/edu/kit/iks/Cryptographics/OneTimePad/VisualizationInfo.java:33
+#: ../src/edu/kit/iks/cryptographics/onetimepad/VisualizationInfo.java:53
 msgid "One-Time Pad"
 msgstr ""
 
-#: ../src/edu/kit/iks/Cryptographics/OneTimePad/VisualizationInfo.java:41
+#: ../src/edu/kit/iks/cryptographics/onetimepad/VisualizationInfo.java:61
 msgid ""
 "Find out how you can encrypt something in such a way that it is impossible "
-"for someone else to crack it!"
+"for someone else to crack it."
 msgstr ""
 "Finde heraus, wie man etwas so verschlüsseln kann, dass es unmöglich für "
 "jemanden wird, es zu knacken!"
 
-#: ../src/edu/kit/iks/Cryptographics/OneTimePad/VisualizationInfo.java:73
+#: ../src/edu/kit/iks/cryptographics/onetimepad/VisualizationInfo.java:93
 msgid "http://en.wikipedia.org/wiki/One-time_pad"
 msgstr "https://de.wikipedia.org/wiki/One-Time-Pad"
 
-#: ../src/edu/kit/iks/Cryptographics/SHA2/VisualizationInfo.java:33
+#: ../src/edu/kit/iks/cryptographics/sha2/VisualizationInfo.java:53
 msgid "SHA-2"
 msgstr ""
 
-#: ../src/edu/kit/iks/Cryptographics/SHA2/VisualizationInfo.java:41
+#: ../src/edu/kit/iks/cryptographics/sha2/VisualizationInfo.java:61
 msgid ""
 "Learn about the cryptographic hash function SHA-2. A hash function allows "
 "you to transform your data in one direction only, making it impossible to "
-"reverse the process!"
+"reverse the process."
 msgstr ""
 "Erfahre mehr über die kryptographische Hashfunktion SHA-2. Eine Hashfunktion "
 "verschlüsselt Daten und macht es dabei unmöglich, die Daten wieder zu "
-"entschlüsseln!"
+"entschlüsseln."
 
-#: ../src/edu/kit/iks/Cryptographics/SHA2/VisualizationInfo.java:73
+#: ../src/edu/kit/iks/cryptographics/sha2/VisualizationInfo.java:93
 msgid "http://en.wikipedia.org/wiki/SHA_2"
 msgstr "https://de.wikipedia.org/wiki/SHA-2"
 
-#: ../src/edu/kit/iks/Cryptographics/Vigenere/VigenereVisualizationInfo.java:79
-msgid "Vigenère"
-msgstr ""
-
-#: ../src/edu/kit/iks/Cryptographics/Vigenere/VigenereVisualizationInfo.java:87
-msgid ""
-"Get to know how Vigenère fixed the weaknesses of Caesar to make a 'secure' "
-"cipher for many hundred years!"
-msgstr ""
-"Seh dir an, wie Vigenère die Schwäche der Caesar-Chiffre beseitigte, und "
-"eine für viele hunderte Jahre 'sichere' Chiffre erschuf."
-
-#: ../src/edu/kit/iks/Cryptographics/Vigenere/VigenereVisualizationInfo.java:95
-msgid "http://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher"
-msgstr ""
-"http://de.wikipedia.org/wiki/Polyalphabetische_Substitution#Vigen.C3.A8re-"
-"Verschl.C3.BCsselung"
-
-#: ../src/edu/kit/iks/Cryptographics/Vigenere/Demonstration/FirstDemonstrationView.java:74
-msgid ""
-"After Caesar's cipher was broken, Vigenère started to create his own cipher "
-"which would fix the weaknesses of Caesar. He also used the same logic by "
-"addition and subtraction of characters but this time the key would not be a "
-"simple number but a whole string. To understand how Vigenères cipher works, "
-"we need to know how 'modulo' works..."
-msgstr ""
-"Nachdem die Caesar-Chiffre gebrochen wurde, fing Vigenère an, seine eigene "
-"Chiffre zu erstellen, welche die Schwächen von Caesar beheben soll. Er "
-"verwendete die gleiche Logik, jedoch mit einem Schlüssel der mehr als nur "
-"ein Zeichen enthält. Um zu wissen wie die Vigenère-Chiffre funktioniert, "
-"müssen wir erst sehen wie 'Modulo' funktioniert..."
-
-#: ../src/edu/kit/iks/Cryptographics/Vigenere/Demonstration/FirstDemonstrationView.java:78
-msgid ""
-"We use modulo in our daily life without maybe noticing it: If you look at "
-"your clock, you have a cyclic sequence of numbers. Like you see in the "
-"picture at the bottom, 4 hours after 9 means it's 1. So our clock uses a "
-"modulo of 12, because we have only 12 steps in it. If we overflow, we start "
-"from the beginnig. The same system will now be used with the alphabet (which "
-"has 26 characters) to create Vigenère's cipher..."
-msgstr ""
-"Wir verwenden Modulo täglich in unserem Leben ohne es vielleicht zu merken: "
-"Wenn du auf die Uhr schaust, hast du eine zyklische Sequenz von Zahlen. Wie "
-"du in dem Bild unten sehen kannst, ist 4 Stunden nach 9: 1. Also verwendet "
-"unsere Uhr den Modulo von 12, da wir nur 12 Ziffern haben. Wenn es "
-"überläuft, fängt es von vorne an. Das selbe System wird nun für das Alphabet "
-"verwendet, welches 26 Zeichen hat..."
-
-#: ../src/edu/kit/iks/Cryptographics/Vigenere/Demonstration/FirstDemonstrationView.java:85
-msgid "Go to Encryption"
-msgstr "Zur Verschlüsselung"
-
-#: ../src/edu/kit/iks/Cryptographics/Vigenere/Demonstration/SecondDemonstrationController.java:51
-msgid ""
-"Now we want to encrypt 'ANNA'. First of all we add the position of evey "
-"character, as you can see in the bottom, in the alphabet under each "
-"character."
-msgstr ""
-"Nun wollen wir 'ANNA' verschlüsseln. Zuerst fügen wir unter jedem Buchstaben "
-"im Alphabet eine Position hinzu, wie du unten sehen kannst."
-
-#: ../src/edu/kit/iks/Cryptographics/Vigenere/Demonstration/SecondDemonstrationController.java:61
-#: ../src/edu/kit/iks/Cryptographics/Vigenere/Demonstration/SecondDemonstrationController.java:124
-msgid ""
-"This is the key for the encryption. Now we go to the next step and encrypt "
-"the first character."
-msgstr ""
-"Das ist der Schlüssel für die Verschlüsselung. Nun gehen wir zum nächsten "
-"Schritt und verschlüsseln das erste Zeichen."
-
-#: ../src/edu/kit/iks/Cryptographics/Vigenere/Demonstration/SecondDemonstrationController.java:70
-msgid ""
-"The position of 'A' in the alphabet is 1. The position of 'O' is 14. Now we "
-"calculate 1 + 14 and get 15."
-msgstr ""
-"Die Position von 'A' im Alphabet ist 1. Die Position von 'O' ist 14. Also "
-"berechnen wir 1 + 14 und erhalten 15."
-
-#: ../src/edu/kit/iks/Cryptographics/Vigenere/Demonstration/SecondDemonstrationController.java:85
-#: ../src/edu/kit/iks/Cryptographics/Vigenere/Demonstration/SecondDemonstrationController.java:147
-msgid ""
-"The number 16 represents 'P' in the alphabet. So the first encrypted "
-"character is 'P'. Lets go to the next one."
-msgstr ""
-"Die Zahl 16 repräsentiert 'P' im Alphabet. Also ist das erste verschlüsselte "
-"Zeichen 'P'. Weiter gehts mit dem nächsten."
-
-#: ../src/edu/kit/iks/Cryptographics/Vigenere/Demonstration/SecondDemonstrationController.java:95
-#: ../src/edu/kit/iks/Cryptographics/Vigenere/Demonstration/SecondDemonstrationController.java:155
-msgid ""
-"Now get to the next character. It's an 'N', which represents the number 14. "
-"The second character of the key is 'K', which is the 11. 14+11 = 25 -> 'Y'!"
-msgstr ""
-"Nun zum nächsten Buchstaben. Es ist ein 'N' welches durch 14 repräsentiert "
-"wird. Das zweite Zeichen des Schlüssels ist 'K', also 11. 14 + 11 = 25 -> "
-"'Y'!"
-
-#: ../src/edu/kit/iks/Cryptographics/Vigenere/Demonstration/SecondDemonstrationController.java:106
-#: ../src/edu/kit/iks/Cryptographics/Vigenere/Demonstration/SecondDemonstrationController.java:164
-msgid "Now we continue..."
-msgstr "Nun fahren wir fort..."
-
-#: ../src/edu/kit/iks/Cryptographics/Vigenere/Demonstration/SecondDemonstrationController.java:133
-msgid ""
-"The position of 'A' in the alphabet is 1. The position of 'O' is 15. Now we "
-"calculate 1 + 15 and get 16."
-msgstr ""
-"Die Position von 'A' im Alphabet ist 1. Die Position von 'O' ist 15. Also "
-"berechnen wir 1 + 15 und erhalten 16."
-
-#: ../src/edu/kit/iks/Cryptographics/Vigenere/Demonstration/SecondDemonstrationController.java:171
-msgid ""
-"E = 5 and Y = 25. 25 + 5 = 30, but our alphabet doesnt have 30 characters. "
-"So we now use the modulo: 30 modulo 26 = 4."
-msgstr ""
-"E = 5 und Y = 25. 25 + 5 = 30, aber unser Alphabet hat nur 26 Buchstaben. "
-"Also verwenden wir Modulo: 30 modulo 26 = 4."
-
-#: ../src/edu/kit/iks/Cryptographics/Vigenere/Demonstration/SecondDemonstrationController.java:230
-#: ../src/edu/kit/iks/Cryptographics/Vigenere/Demonstration/ThirdDemonstrationController.java:40
-msgid "Follow the explanations!"
-msgstr "Folge den Anweisungen!"
-
-#: ../src/edu/kit/iks/Cryptographics/Vigenere/Demonstration/SecondDemonstrationView.java:65
-msgid "OKAY"
-msgstr ""
-
-#: ../src/edu/kit/iks/Cryptographics/Vigenere/Demonstration/SecondDemonstrationView.java:108
-#: ../src/edu/kit/iks/Cryptographics/Vigenere/Demonstration/ThirdDemonstrationView.java:124
-msgid "Plaintext-Char"
-msgstr "Klartextzeichen"
-
-#: ../src/edu/kit/iks/Cryptographics/Vigenere/Demonstration/SecondDemonstrationView.java:109
-#: ../src/edu/kit/iks/Cryptographics/Vigenere/Demonstration/ThirdDemonstrationView.java:125
-msgid "Key-Char"
-msgstr "Schlüssel-Zeichen"
-
-#: ../src/edu/kit/iks/Cryptographics/Vigenere/Demonstration/SecondDemonstrationView.java:110
-#: ../src/edu/kit/iks/Cryptographics/Vigenere/Demonstration/ThirdDemonstrationView.java:126
-msgid "Result"
-msgstr "Ergebnis"
-
-#: ../src/edu/kit/iks/Cryptographics/Vigenere/Demonstration/SecondDemonstrationView.java:201
-msgid ""
-"Now we want to encrypt 'ANNE'. First of all we add the position of every "
-"character, as you can see in the bottom, in the alphabet under each "
-"character."
-msgstr ""
-"Nun wollen wir 'ANNA' verschlüsseln. Zuerst fügen wir unter jedem Buchstaben "
-"im Alphabet eine Position hinzu, wie du unten sehen kannst."
-
-#: ../src/edu/kit/iks/Cryptographics/Vigenere/Demonstration/SecondDemonstrationView.java:205
-#: ../src/edu/kit/iks/Cryptographics/Vigenere/Demonstration/ThirdDemonstrationView.java:191
-#: ../src/edu/kit/iks/Cryptographics/Vigenere/Experiment/FirstExperimentView.java:250
-msgid "Vigenere Key"
-msgstr "Vigenère Schlüssel"
-
-#: ../src/edu/kit/iks/Cryptographics/Vigenere/Demonstration/SecondDemonstrationView.java:208
-msgid "Return to Introduction"
-msgstr "Zurück zur Einführung"
-
-#: ../src/edu/kit/iks/Cryptographics/Vigenere/Demonstration/ThirdDemonstrationController.java:56
-#: ../src/edu/kit/iks/Cryptographics/Vigenere/Demonstration/ThirdDemonstrationView.java:188
-msgid ""
-"Now we want to decrypt 'ENQM'. Instead of adding up, we use substraction to "
-"decrypt it! So let's go..."
-msgstr ""
-"Nun wollen wir 'ENQM' entschlüsseln. Anstatt nun zu addieren, subtrahieren "
-"wir um zu entschlüsseln. Los geht's..."
-
-#: ../src/edu/kit/iks/Cryptographics/Vigenere/Demonstration/ThirdDemonstrationController.java:63
-#: ../src/edu/kit/iks/Cryptographics/Vigenere/Demonstration/ThirdDemonstrationController.java:110
-msgid ""
-"'E' = 5 and 'K' = 11. 3 - 11 = -6. What now? Well it's easy, just reverse "
-"the modulo..."
-msgstr ""
-"'E' = 5 und 'K' = 11. 3 - 11 = -6. Was jetzt? Ganz einfach, wir invertieren "
-"Modulo..."
-
-#: ../src/edu/kit/iks/Cryptographics/Vigenere/Demonstration/ThirdDemonstrationController.java:75
-#: ../src/edu/kit/iks/Cryptographics/Vigenere/Demonstration/ThirdDemonstrationController.java:121
-msgid ""
-"Negative numbers mean you start from the 'Z' and go 7 steps backwards. So we "
-"get 'T' = 20!"
-msgstr ""
-"Negative Zahlen bedeuten, du fängst bei 'Z' an und gehst 7 Schritte zurück. "
-"So erhalten wir 'T' = 20!"
-
-#: ../src/edu/kit/iks/Cryptographics/Vigenere/Demonstration/ThirdDemonstrationController.java:84
-#: ../src/edu/kit/iks/Cryptographics/Vigenere/Demonstration/ThirdDemonstrationController.java:129
-msgid "'N' = 14 and 'I' = 9. 14 - 9 = 5 -> 'E'"
-msgstr "'N' = 14 und 'I' = 9. 14 - 9 = 5 -> 'E'"
-
-#: ../src/edu/kit/iks/Cryptographics/Vigenere/Demonstration/ThirdDemonstrationController.java:92
-#: ../src/edu/kit/iks/Cryptographics/Vigenere/Demonstration/ThirdDemonstrationController.java:136
-msgid ""
-"'Q' = 17 and 'S' = 19. 17 - 19 = -2 -> Go 2 Steps backwards from 'Z' -> 'X'"
-msgstr ""
-"'Q' = 17 und 'S' = 19. 17 - 19 = -2 -> Gehe 2 Schritte zurück von 'Z' aus -> "
-"'X'"
-
-#: ../src/edu/kit/iks/Cryptographics/Vigenere/Demonstration/ThirdDemonstrationController.java:144
-msgid ""
-"'M' = 13 and 'S' = 19. 13 - 19 = -6 -> Go 6 Steps backwards from 'Z' -> 'T'"
-msgstr ""
-"'M' = 13 und 'S' = 19. 13 - 19 = -6 -> Gehe 6 Schritte zurück von 'Z' aus -> "
-"'T'"
-
-#: ../src/edu/kit/iks/Cryptographics/Vigenere/Demonstration/ThirdDemonstrationView.java:55
-msgid "KISS"
-msgstr ""
-
-#: ../src/edu/kit/iks/Cryptographics/Vigenere/Demonstration/ThirdDemonstrationView.java:194
-msgid "Go To Experiment"
-msgstr "Zum Selbstversuch"
-
-#: ../src/edu/kit/iks/Cryptographics/Vigenere/Demonstration/ThirdDemonstrationView.java:195
-msgid "Return to Encryption"
-msgstr "Zurück zur Verschlüsselung"
-
-#: ../src/edu/kit/iks/Cryptographics/Vigenere/Experiment/FirstExperimentController.java:78
-msgid "Very nice, now the second character!"
-msgstr "Sehr gut, nun der zweite Buchstabe!"
-
-#: ../src/edu/kit/iks/Cryptographics/Vigenere/Experiment/FirstExperimentController.java:89
-msgid "Second strike! Three left..."
-msgstr "Zweiter strike! Drei übrig..."
-
-#: ../src/edu/kit/iks/Cryptographics/Vigenere/Experiment/FirstExperimentController.java:100
-msgid "Not much left, 2 to go..."
-msgstr "Nur noch zwei übrig..."
-
-#: ../src/edu/kit/iks/Cryptographics/Vigenere/Experiment/FirstExperimentController.java:111
-msgid "Almost done, last character..."
-msgstr "Fast geschafft, letztes Zeichen..."
-
-#: ../src/edu/kit/iks/Cryptographics/Vigenere/Experiment/FirstExperimentController.java:122
-msgid "Nicely done!"
-msgstr "Sehr gut!"
-
-#: ../src/edu/kit/iks/Cryptographics/Vigenere/Experiment/FirstExperimentController.java:233
-msgid ""
-"'T' = 20 and 'A' = 1, so just substract 1 from 20 and you have the answer!"
-msgstr ""
-"'T' = 20 und 'A' = 1, also subtrahierst du 1 von 20 und du hast das Ergebnis!"
-
-#: ../src/edu/kit/iks/Cryptographics/Vigenere/Experiment/FirstExperimentController.java:237
-msgid ""
-"'W' = 23 and 'B' = 2, so just substract 2 from 23 and you have the answer!"
-msgstr ""
-"'W' = 23 und 'B' = 2, also subtrahierst du 2 von 23 und du hast das Ergebnis!"
-
-#: ../src/edu/kit/iks/Cryptographics/Vigenere/Experiment/FirstExperimentController.java:241
-msgid ""
-"'S' = 19 and 'C' = 3, so just substract 3 from 19 and you have the answer!"
-msgstr ""
-"'S' = 19 und 'C' = 3, also subtrahierst du 3 von 19 und du hast das Ergebnis!"
-
-#: ../src/edu/kit/iks/Cryptographics/Vigenere/Experiment/FirstExperimentController.java:245
-msgid ""
-"'I' = 9 and 'D' = 4, so just substract 4 from 9 and you have the answer!"
-msgstr ""
-"'I' = 9 und 'D' = 4, also subtrahierst du 4 von 9 und du hast das Ergebnis!"
-
-#: ../src/edu/kit/iks/Cryptographics/Vigenere/Experiment/FirstExperimentController.java:249
-msgid ""
-"'W' = 23 and 'E' = 5, so just substract 5 from 23 and you have the answer!"
-msgstr ""
-"'W' = 23 und 'E' = 5, also subtrahierst du 5 von 23 und du hast das Ergebnis!"
-
-#: ../src/edu/kit/iks/Cryptographics/Vigenere/Experiment/FirstExperimentView.java:246
-msgid "Now it's your turn! Decrypt this string..."
-msgstr "Nun bist du dran! Entschlüsse den Text..."
-
-#: ../src/edu/kit/iks/Cryptographics/Vigenere/Experiment/FirstExperimentView.java:248
-#: ../src/edu/kit/iks/Cryptographics/Vigenere/Explanation/SecondExplanationView.java:205
-msgid "Wrong Answer! Try again!"
-msgstr "Falsche Antwort! Versuchs nochmal!"
-
-#: ../src/edu/kit/iks/Cryptographics/Vigenere/Experiment/FirstExperimentView.java:252
-msgid "Go to Explanation"
-msgstr "Zur Erklärung"
-
-#: ../src/edu/kit/iks/Cryptographics/Vigenere/Experiment/FirstExperimentView.java:253
-msgid "Return to Decryption"
-msgstr "Zurück zur Entschlüsselung"
-
-#: ../src/edu/kit/iks/Cryptographics/Vigenere/Explanation/FirstExplanationController.java:61
-msgid ""
-"Vigenère fixed a few weaknesses of Caesar, but still has flaws. If the key "
-"is shorter than the text to encrypt, Vigenère simply concatinates it with "
-"itself until the key is long enough. This again makes it weak against key-"
-"length-guessing. As soon as we guess the key-length, we can use a histogram "
-"(explained in Caesar) to make a static analysis. So let's crack this chiffre "
-"by guessing the key-length (we will use the Kasiski test for it)"
-msgstr ""
-"Vigenère behob ein paar Schwächen von Caesar, hat aber immernoch ein paar. "
-"Wenn der Schlüssel kürzer als der Text ist, konkateniert Vigenère ihn "
-"einfach an sich selbst bis er lang genug ist. Das wiederrum macht ihn "
-"schwach für Schlüssellängeraten. Sobald wir die Schlüssellänge wissen, "
-"können wir Histogramme verwenden (wie in Caesar). Los geht's mit dem Brechen "
-"der Chiffre durch Raten der Schlüssellänge (wir verwenden den Kasiski-Test "
-"dafür)"
-
-#: ../src/edu/kit/iks/Cryptographics/Vigenere/Explanation/FirstExplanationController.java:81
-msgid "Length of key: 2"
-msgstr "Länge des Schlüssels: 2"
-
-#: ../src/edu/kit/iks/Cryptographics/Vigenere/Explanation/FirstExplanationController.java:92
-msgid ""
-"Since we know that the key-length is 2, every second character will be "
-"encrypted with the first character of the key. To guess which is the first "
-"character of the key we need the histogram of every second character in the "
-"chiffre"
-msgstr ""
-"Da wir wissen, dass die Schlüssellänge 2 ist, wird jedes zweite Zeichen mit "
-"dem ersten Buchstaben des Schlüssels verschlüsselt. Um herauszufinden, was "
-"der erste Buchstabe des Schlüssels ist, erstellen wir ein Histogramm mit "
-"jedem zweiten Buchstaben der Chiffre"
-
-#: ../src/edu/kit/iks/Cryptographics/Vigenere/Explanation/FirstExplanationController.java:136
-msgid "Just read the instructions!"
-msgstr "Les' einfach die Anleitungen!"
-
-#: ../src/edu/kit/iks/Cryptographics/Vigenere/Explanation/FirstExplanationView.java:174
-msgid "Go to Cracking"
-msgstr "Zum Knacken"
-
-#: ../src/edu/kit/iks/Cryptographics/Vigenere/Explanation/FirstExplanationView.java:175
-msgid "Return to Experiment"
-msgstr "Zurück zum Selbstversuch"
-
-#: ../src/edu/kit/iks/Cryptographics/Vigenere/Explanation/FirstExplanationView.java:177
-msgid ""
-"Vigenère fixed a few weaknesses of Caesar, but still has flaws. If the key "
-"is shorter then the text to encrypt, Vigenère simply concatinates it with "
-"itself until the key is long enough. This again makes it weak against key-"
-"length-guessing. As soon as we guess the key-length, we can use a histogram "
-"(explained in Caesar) to make a static analysis. So lets crack this chiffre "
-"by guessing the key-length (we will use the Kasiski test for it)"
-msgstr ""
-"Vigenère behob ein paar Schwächen von Caesar, hat aber immernoch ein paar. "
-"Wenn der Schlüssel kürzer als der Text ist, konkateniert Vigenère ihn "
-"einfach an sich selbst bis er lang genug ist. Das wiederrum macht ihn "
-"schwach für Schlüssellängeraten. Sobald wir die Schlüssellänge wissen, "
-"können wir Histogramme verwenden (wie in Caesar). Los geht's mit dem Brechen "
-"der Chiffre durch Raten der Schlüssellänge (wir verwenden den Kasiski-Test "
-"dafür)"
-
-#: ../src/edu/kit/iks/Cryptographics/Vigenere/Explanation/FirstExplanationView.java:188
-#: ../src/edu/kit/iks/Cryptographics/Vigenere/Explanation/SecondExplanationView.java:198
-msgid "This is the average distribution of the characters in English texts:"
-msgstr "Das ist die durchschnittliche Verteilung eines deutschen Texts:"
-
-#: ../src/edu/kit/iks/Cryptographics/Vigenere/Explanation/FirstExplanationView.java:190
-msgid "Find Key-Length"
-msgstr "Finde Schlüssellänge"
-
-#: ../src/edu/kit/iks/Cryptographics/Vigenere/Explanation/FirstExplanationView.java:192
-msgid "Length of key: ?"
-msgstr "Länge des Schlüssels: ?"
-
-#: ../src/edu/kit/iks/Cryptographics/Vigenere/Explanation/FirstExplanationView.java:195
-msgid ""
-"When we look closer at the histogram we see some differences in the "
-"distribution of the characters; 'S' is has the most common occurance. In an "
-"average normal English text 'E' is the most common one. So maybe our 'S' "
-"could've been an 'E' before the encryption. We calculate 19 (position of "
-"'S') - 5 (position of 'E') and we get 14, which means the first character of "
-"the key is 'N'."
-msgstr ""
-"Wenn wir uns die Histogramme genauer anschauen sehen wir einige Unterschiede "
-"in der Verteilung. 'S' kommt am häufigsten vor. In einem durchschnittlichen "
-"deutschen Text ist 'E' der häufigste. Also könnte 'S' vor der "
-"Verschlüsselung ein 'E' gewesen sein. Wir rechnen also 'S' - 'E' = 19 - 5 = "
-"15. Das heißt, das erste Zeichen unsres Schlüssels ist 'N'."
-
-#: ../src/edu/kit/iks/Cryptographics/Vigenere/Explanation/SecondExplanationController.java:89
-#: ../src/edu/kit/iks/Cryptographics/Vigenere/Explanation/SecondExplanationController.java:137
-msgid "Very nice! We found the key 'NJ', now we can decrypt the message:"
-msgstr ""
-"Sehr gut! Wir haben den Schlüssel 'NJ' gefunden. Nun können wir die "
-"Nachricht entschlüsseln:"
-
-#: ../src/edu/kit/iks/Cryptographics/Vigenere/Explanation/SecondExplanationController.java:114
-#: ../src/edu/kit/iks/Cryptographics/Vigenere/Explanation/SecondExplanationView.java:192
-msgid ""
-"Now it's your turn! You have to find the second character of the key. I was "
-"kind enough to give you a diagram of every second character encrypted with "
-"the second part of the key.You know what to do:"
-msgstr ""
-"Nun bist du dran! Du musst das zweite Zeichen des Schlüssels finden. Ich war "
-"nett genug dir die Diagramme jedes zweiten verschlüsselten Zeichens zu "
-"geben, welches mit dem zweiten Zeichens des Schlüssels verschlüsselt wurden. "
-"Du weißt was zu tun ist:"
-
-#: ../src/edu/kit/iks/Cryptographics/Vigenere/Explanation/SecondExplanationController.java:185
-msgid ""
-"Check the peaks in the histogram and compare them to the other histogram, do "
-"you see any similarities?"
-msgstr ""
-"Prüfe die Spitzen des Histogramms und vergleiche sie mit dem anderen "
-"Histogramm. Siehst du Ähnlichkeiten?"
-
-#: ../src/edu/kit/iks/Cryptographics/Vigenere/Explanation/SecondExplanationView.java:189
-msgid "Go to Information"
-msgstr "Weitere Informationen"
-
-#: ../src/edu/kit/iks/Cryptographics/Vigenere/Explanation/SecondExplanationView.java:190
-msgid "Return to Explanation"
-msgstr "Zurück zur Erklärung"
-
-#: ../src/edu/kit/iks/Cryptographics/Vigenere/Explanation/SecondExplanationView.java:201
-msgid ""
-"Look at the peaks of both histograms and calculate the second part of the "
-"key! Your answer:"
-msgstr ""
-"Schau dir die Spitzen beider Histogramme an und berechne den zweiten Teil "
-"des Schlüssels. Deine Antwort:"
-
-#: ../src/edu/kit/iks/CryptographicsLib/AbstractVisualizationInfo.java:171
+#: ../src/edu/kit/iks/cryptographicslib/AbstractVisualizationInfo.java:188
 msgid "Easy"
 msgstr "Einfach"
 
-#: ../src/edu/kit/iks/CryptographicsLib/AbstractVisualizationInfo.java:172
+#: ../src/edu/kit/iks/cryptographicslib/AbstractVisualizationInfo.java:189
 msgid "Medium"
 msgstr "Mittel"
 
-#: ../src/edu/kit/iks/CryptographicsLib/AbstractVisualizationInfo.java:173
+#: ../src/edu/kit/iks/cryptographicslib/AbstractVisualizationInfo.java:190
 msgid "Hard"
 msgstr "Schwer"
 
-#: ../src/edu/kit/iks/CryptographicsLib/AbstractVisualizationInfo.java:174
+#: ../src/edu/kit/iks/cryptographicslib/AbstractVisualizationInfo.java:191
 msgid "Not Interactive"
 msgstr "Nicht interaktiv"
 
-#: ../src/edu/kit/iks/CryptographicsLib/InformationController.java:76
+#: ../src/edu/kit/iks/cryptographicslib/controller/InformationController.java:100
 #, java-format
 msgid ""
 "Here you can learn more about {0}. You can also scan the QR code at the "
@@ -1474,17 +236,1052 @@ msgstr ""
 "der Seite einscannen, um die Informationen mit nach Hause nehmen. Wenn du "
 "fertig bist, drücke einfach den 'Beenden'-Button."
 
-#: ../src/edu/kit/iks/CryptographicsLib/KeyboardView.java:194
+#: ../src/edu/kit/iks/cryptographicslib/views/partials/KeyboardView.java:216
 msgid "keyboard-y"
 msgstr "Z"
 
-#: ../src/edu/kit/iks/CryptographicsLib/KeyboardView.java:202
+#: ../src/edu/kit/iks/cryptographicslib/views/partials/KeyboardView.java:224
 msgid "keyboard-z"
 msgstr "Y"
 
-#: ../src/edu/kit/iks/CryptographicsLib/VisualizationView.java:42
-msgid "Back"
-msgstr "Zurück"
+#~ msgid "Welcome"
+#~ msgstr "Willkommen"
+
+#~ msgid ""
+#~ "This is Cryptographics, a small tool with the aim to show how basic and "
+#~ "advanced cryptographic procedures work in principle. Below you can see a "
+#~ "timeline with some procedures. Tap on the dots representing their date of "
+#~ "invention to view a small description and start the visualization."
+#~ msgstr ""
+#~ "Das ist Cryptographics, ein kleines Programm um zu zeigen, wie einfache "
+#~ "und fortgeschrittene kryptographische Verfahren im Prinzip funktionieren. "
+#~ "Unten siehst du eine Zeitleiste mit einigen Verfahren. Berühre die Punkte "
+#~ "die das Erfindungsjahr repräsentieren, um eine kleine Übersicht zu sehen "
+#~ "und die Visualisierung zu starten."
+
+#~ msgid "Key"
+#~ msgstr "Schlüssel"
+
+#~ msgid ""
+#~ "Great work oh mighty Caesar. May your enemies shutter over your "
+#~ "intelligence. Now we can move on to the real experiment and test your "
+#~ "skills."
+#~ msgstr ""
+#~ "Gute Arbeit, oh mächtiger Caesar. Mögen deine Feinde vor deiner "
+#~ "Intelligenz erzittern. Nun können wir fortfahren um deine Fähigkeiten zu "
+#~ "prüfen."
+
+#~ msgid "Very nice! Let's encrypt the rest of your name. Touch proceed."
+#~ msgstr "Sehr gut! Nun verschlüssle noch den Rest. Drücke 'Weiter'."
+
+#~ msgid "Only {0} left."
+#~ msgid_plural "Only {0} left."
+#~ msgstr[0] "Es ist {0} übrig."
+#~ msgstr[1] "Es sind {0} übrig."
+
+#~ msgid ""
+#~ "Because of your inferior intelligence you look at the first letter of "
+#~ "your name: C. Then you look at the 3rd letter after C and take F. Great! "
+#~ "Now you encrypted the first letter of your name. Touch proceed."
+#~ msgstr ""
+#~ "Aufgrund deiner überragenden Intelligenz schaust du dir den ersten "
+#~ "Buchstabens des Namens an: C. Dann schaust du dir den dritten Buchstaben "
+#~ "nach dem C an und wählst das F. Super! Nun hast du schon den ersten "
+#~ "Buchstaben deines Namens verschlüsselt. Drücke 'Weiter'."
+
+#~ msgid ""
+#~ "Now try to encrypt the next letter yourself. If you need help, you can "
+#~ "always use the help button."
+#~ msgstr ""
+#~ "Versuche nun den nächsten Buchstaben selbst zu verschlüsseln. Wenn du "
+#~ "Hilfe brauchst, kannst du jederzeit den Hilfe-Button drücken."
+
+#~ msgid ""
+#~ "Oh mighty Caesar. No one will ever be able to destroy you! Because of "
+#~ "that fact lets end this childish games and finish the rest of the fields "
+#~ "fast. Then we can send the courier again but this time your enemies will "
+#~ "have no idea who wrote it and you will conquer the world."
+#~ msgstr ""
+#~ "Oh mächtiger Caesar. Keiner wird jemals in der Lage sein dich zu "
+#~ "zerstören! Verschlüssle nun schnell noch die restlichen Buchstaben, dann "
+#~ "können wir den Kurier erneut losschicken, doch dieses Mal wird der Feind "
+#~ "keine Ahnung haben, wer die Nachricht gesendet hat, und du wirst die Welt "
+#~ "erobern."
+
+#~ msgid ""
+#~ "Remember: Position of C in the alphabet is 3 and the key is also 3. C + "
+#~ "key = C + 3 = 3 + 3 = 6. And 6 is the position of letter F in the "
+#~ "alphabet. Et voila you encrypted C with the key of 3."
+#~ msgstr ""
+#~ "Denke dran: Die Position von C im Alphabet ist 3 und der Schlüssel ist "
+#~ "auch 3. C + Schlüssel = C + 3 = 3 + 3 = 6, was die Position von F im "
+#~ "Alphabet ist. Et voila, du hast C mit dem Schlüssel 3 verschlüsselt."
+
+#~ msgid ""
+#~ "Imagine now you are the mighty Caesar! Of course your first idea is to "
+#~ "substitute each letter from your name with another one from the alphabet. "
+#~ "But which one? Press proceed to move on."
+#~ msgstr ""
+#~ "Stell dir nun vor du wärst der mächtige Caesar! Natürlich ist deine erste "
+#~ "Idee, Buchstaben des Alphabets auf andere abzubilden. Doch nur auf "
+#~ "welche? Drücke 'Weiter'."
+
+#~ msgid "To Caesar's idea"
+#~ msgstr "Zu Caesars Idee"
+
+#~ msgid ""
+#~ "If you want to hear the awesome legend about Caesar and Kryptolix press "
+#~ "the button below the text. Otherwise you can skip this with the button in "
+#~ "the top right corner!"
+#~ msgstr ""
+#~ "Wenn du die großartige Legende über Caesar und Kryptolix hören möchtest, "
+#~ "drücke den Button unterhalb des Texts. Andernfalls überspringe diesen "
+#~ "Schritt mit dem 'Überspringen'-Button."
+
+#~ msgid "Skip the introduction"
+#~ msgstr "Einführung überspringen"
+
+#~ msgid ""
+#~ "Remember: If you want to decrypt for example D with the key of 3. You "
+#~ "need to substract 3 from the position of D in the alphabet. D - key = 4 - "
+#~ "3 = 1 = A. And if you get a negative Value add 26. For example: A - 8 = 1 "
+#~ "- 8 = -7. Now add 26 + (-7) = 19 = S."
+#~ msgstr ""
+#~ "Denke dran: Wenn du beispielsweise D mit dem Schlüssel 3 entschlüsseln "
+#~ "willst, musst du 3 von der Position von D im Alphabet abziehen. D - "
+#~ "Schlüssel = 4 - 3 = 1 = A. Wenn der Wert negativ wird, addiere einfach "
+#~ "26. Beispiel: A - 8 = 1 - 8 = -7 => -7 + 26 = 19 = S."
+
+#~ msgid ""
+#~ "Remember: If you want to encrypt for example A with the key of 3. You "
+#~ "need to add 3 to the position of A in the alphabet. A + key = 1 + 3 = 4 = "
+#~ "D. And if you get a value that is bigger then 26 then substract 26 from "
+#~ "it. For example: S + 8 = 19 + 8 = 27. Now substract 26: 27 - 26 = 1 = A."
+#~ msgstr ""
+#~ "Denke dran: Wenn du z.B. A mit dem Schlüssel 3 verschlüsseln willst, "
+#~ "musst du 3 an die Position von A addieren. A + Schlüssel = 1 + 3 = 4 = D. "
+#~ "Wenn das Ergebnis größer als 26 wird, musst du 26 subtrahieren. Beispiel: "
+#~ "S + 8 = 19 + 8 = 27 => 27 - 26 = 1 = A."
+
+#~ msgid "All done right!"
+#~ msgstr "Alles richtig!"
+
+#~ msgid ""
+#~ "The next step is to decrypt a given message! Let's move on to decrypting."
+#~ msgstr ""
+#~ "Der nächste Schritt ist das entschlüsseln einer gegebenen Nachricht. "
+
+#~ msgid ""
+#~ "In the next stage of the visualization you will learn how to decrypt "
+#~ "without a key."
+#~ msgstr ""
+#~ "Im nächsten Schritt wirst du sehen, wie man ohne einen Schlüssel "
+#~ "entschlüsseln kann."
+
+#~ msgid "You have {0} left!"
+#~ msgid_plural "You have {0} left!"
+#~ msgstr[0] "Es ist {0} übrig."
+#~ msgstr[1] "Es sind {0} übrig."
+
+#~ msgid ""
+#~ "You have already learned much. But you've probably already asked "
+#~ "yourself: How do I decrypt?"
+#~ msgstr ""
+#~ "Du hast nun schon viel gelernt, doch du hast dich sicher schon gefragt, "
+#~ "wie man eine Nachricht jetzt entschlüsselt?"
+
+#~ msgid ""
+#~ "It's simple: subtract the key from a given letter. And if you get a "
+#~ "negative value add 26 to it."
+#~ msgstr ""
+#~ "Es ist einfach: Du musst den Schlüssel einfach von jedem Buchstaben "
+#~ "subtrahieren. Wenn das Ergebnis negativ wird, addiere 26 dazu."
+
+#~ msgid "Go to Histograms"
+#~ msgstr "Zu den Histogrammen"
+
+#~ msgid "Your input is invalid. Please try another one!"
+#~ msgstr "Die Eingabe ist ungültig. Versuch einen anderen!"
+
+#~ msgid "This input is ok. Now only the key is left."
+#~ msgstr "Die Eingabe ist in Ordnung. Nun noch der Schlüssel."
+
+#~ msgid ""
+#~ "This key is not valid. Please put a number between 1 and 26. For "
+#~ "demonstration purposes the keys between -1 and -26 are not necessary "
+#~ "therefore not possible, but could be used in general as keys too."
+#~ msgstr ""
+#~ "Der Schlüssel ist ungültig. Bitte wähle eine Zahl zwischen 1 und 26. Aus "
+#~ "Demonstrationsgründen seien die Schlüssel von -1 bis -26 nicht weiter von "
+#~ "Belangen und demnach auch nicht möglich, aber im Allgemeinen können sie "
+#~ "durchaus auch als Schlüssel verwendet werden."
+
+#~ msgid "The key field is empty!"
+#~ msgstr "Der Schlüssel ist leer!"
+
+#~ msgid "This key is ok. Now put your name into the bigger box to the left."
+#~ msgstr ""
+#~ "Der Schlüssel ist okay. Nun schreibe noch deinen Namen in das Feld links."
+
+#~ msgid "Back to Demonstration"
+#~ msgstr "Zurück zur Demonstration"
+
+#~ msgid "Go to Decryption"
+#~ msgstr "Zur Entschlüsselung"
+
+#~ msgid ""
+#~ "In the demonstration you encrypted with the key 3. On further thought it "
+#~ "seems logical that this key can vary from 1 to 26."
+#~ msgstr ""
+#~ "In der Demonstration hast du mit dem Schlüssel 3 verschlüsselt. Wenn man "
+#~ "den Gedanken weiterspinnt, ist es logisch, dass der Schlüssel zwischen 1 "
+#~ "bis 26 liegen kann."
+
+#~ msgid "Now you have 2 options:"
+#~ msgstr "Du hast zwei Möglichkeiten:"
+
+#~ msgid "1. You can either put your own key and plaintext into the textfield,"
+#~ msgstr "1. Du gibst deinen Namen und einen Schlüssel in das Textfeld ein,"
+
+#~ msgid ""
+#~ "2. or you just click \"Generate\" and this awesome program will generate "
+#~ "a key and plaintext for you."
+#~ msgstr ""
+#~ "2. oder du drückst einfach den 'Generiere Namen'-Button und das Programm "
+#~ "wird es für dich generieren."
+
+#~ msgid ""
+#~ "Let's test what you have learned. If help needed touch the help button."
+#~ msgstr ""
+#~ "Sehen wir was du gelernt hast. Wenn du Hilfe benötigst, drücke den "
+#~ "'Hilfe'-Button"
+
+#~ msgid "Put your name in here!"
+#~ msgstr "Wähle hier deinen Namen!"
+
+#~ msgid "Or"
+#~ msgstr "Oder"
+
+#~ msgid "Generate letters"
+#~ msgstr "Generiere Buchstaben"
+
+#~ msgid "Oh no. What a pity! It went wrong!"
+#~ msgstr "Oh nein. Schade! Das stimmt nicht!"
+
+#~ msgid "No my friend. This one doesn't work!"
+#~ msgstr "Nein mein Freund... das klappt nicht!"
+
+#~ msgid "Sorry, that was wrong. Don't give up now!"
+#~ msgstr "Leider war das falsch. Gib nicht auf!"
+
+#~ msgid "Great work, oh mighty Caesar!"
+#~ msgstr "Gute Arbeit, oh mächtiger Caesar."
+
+#~ msgid "Very nice. I like!"
+#~ msgstr "Sehr gut. Gefällt mir!"
+
+#~ msgid "No one could've done it better!"
+#~ msgstr "Niemand hätte es besser machen können!"
+
+#~ msgid "BANANA"
+#~ msgstr "BANANE"
+
+#~ msgid "SECRET"
+#~ msgstr "GEHEIM"
+
+#~ msgid ""
+#~ "The diagram you see here shows the frequency of each letter in the text "
+#~ "you are reading at the moment. It is called a Histogram. If you would "
+#~ "count all E's in this explanation you would get the number you see in the "
+#~ "diagram on the column above the letter E. Now the program will encrypt "
+#~ "this explanation with an unknown key in a most awesome way and we will "
+#~ "see the  histogram of the cipher. Click Proceed and see the magic!"
+#~ msgstr ""
+#~ "Die Diagramme die du hier siehst zeigen die Häufigkeit jedes Buchstabens "
+#~ "in dem Text den du gerade liest. Es nennt sich ein Histogramm. Würdest du "
+#~ "alle E's in dieser Erklärung zählen, würdest du auf die Zahl kommen die "
+#~ "in der Spalte über dem Buchstaben E steht. Das Programm wird nun diese "
+#~ "Erklärung mit einem unbekannten Schlüssel verschlüsseln und du wirst das "
+#~ "Histogramm des Chiffrats sehen. Klicke auf 'Weiter' und sieh es dir an."
+
+#~ msgid ""
+#~ "Remember 'E' is in most cases the most frequent letter in a text. The "
+#~ "column in the histogram above E would be the tallest one. So the tallest "
+#~ "column in the histogram of a cipher would be the value E was shifted to. "
+#~ "For example, 'H' is the tallest one. Simply 'H'- 'E' = 8 - 5 = 3. Et "
+#~ "voila 3 is the key."
+#~ msgstr ""
+#~ "Denke dran: 'E' ist in den meisten Fällen der häufigste Buchstabe in "
+#~ "einem Text. Die Spalte für 'E' im Histogramm müsste also die größte sein. "
+#~ "Also ist die größte Spalte im Histogramm des Chifrats jene, nach der 'E' "
+#~ "geschoben wurde. Beispiel: 'H' ist die größte Spalte. 'H' - 'E' = 8 - 5 = "
+#~ "3. Et voila, 3 ist der Schlüssel."
+
+#~ msgid ""
+#~ "In order to find an unknown key you must try all of them. If you are "
+#~ "lucky, you dont have to try many. In the worst case you have to try all "
+#~ "of them."
+#~ msgstr ""
+#~ "Um einen unbekannten Schlüssel zu finden, musst du alle probieren. Wenn "
+#~ "du Glück hast findest du ihn schnell. Im schlechtesten Fall musst du alle "
+#~ "probieren."
+
+#~ msgid ""
+#~ "You found the right key! See how easy it is with histograms? If you want "
+#~ "to try one more press proceed. Otherwise you can go directly to further "
+#~ "information. There you can learn more about caesar's cipher."
+#~ msgstr ""
+#~ "Du hast den Schlüssel gefunden! Siehst du wie einfach das mit "
+#~ "Histogrammen ist? Wenn du nochmal eines ausprobieren möchtest, klicke auf "
+#~ "'Weiter'. Andernfalls kannst du zu den weiterführenden Informationen "
+#~ "gehen. Dort erfährst du noch mehr über die Caesar-Chiffre."
+
+#~ msgid "The key was wrong."
+#~ msgstr "Der Schlüssel ist falsch."
+
+#~ msgid ""
+#~ "This key is invalid. Please type a number between 1 and 26. If you dont "
+#~ "understand why, it is recommended to go to early stages."
+#~ msgstr ""
+#~ "Der Schlüssel ist ungültig. Bitte wähle eine Zahl zwischen 1 und 26. Wenn "
+#~ "du nicht verstehst warum, dann schau dir die vorherigen Schritte nochmals "
+#~ "an."
+
+#~ msgid "The key field was empty!"
+#~ msgstr "Der Schlüssel ist leer!"
+
+#~ msgid ""
+#~ "You found the secret key and are now able to read the secret message. The "
+#~ "Key is"
+#~ msgstr ""
+#~ "Du hast den geheimen Schlüssel gefunden und bist nun in der Lage die "
+#~ "geheime Nachricht zu lesen. Der Schlüssel war"
+
+#~ msgid "Now only the histogram technique left."
+#~ msgstr "Nun ist nur noch die Histogramm-Methode ürbig."
+
+#~ msgid "The Key was"
+#~ msgstr "Der Schlüssel war"
+
+#~ msgid "Congratulations! Yeay! Now lets try to break it with histograms."
+#~ msgstr "Glückwunsch! Yeay! Lass es uns nun mit Histogrammen versuchen."
+
+#~ msgid ""
+#~ "Or: If you want to try a more elaborate way breaking Caesar-cipher you "
+#~ "can try histogram technique by pressing the button below."
+#~ msgstr ""
+#~ "Oder: Wenn du eine vornehmere Methode anwenden willst, um die Caesar-"
+#~ "Chiffre zu brechen, kannst du die Histogramm-Methode probieren. Drücke "
+#~ "den Button unten."
+
+#~ msgid "Try histogram technique"
+#~ msgstr "Versuche Histogramm-Methode"
+
+#~ msgid ""
+#~ "When you look at the histogram of the cipher you can see that 'H' is now "
+#~ "the most frequent one. It is obvious that the letter 'E' was shifted to "
+#~ "'H'. When we substract 'H' - 'E' we get the key. Put the key 3 in the box "
+#~ "below and let the programm decrypt the cipher with it."
+#~ msgstr ""
+#~ "Wenn du dir das Histogramm des Chiffrats ansiehst, erkennst du, dass 'H' "
+#~ "der häufigste Buchstabe ist. Offenbar wurde also 'E' nach 'H' verschoben. "
+#~ "Wenn du 'E' von 'H' subtrahierst, erhälst du den Schlüssel 3. Gib den "
+#~ "Schlüssel in das Feld unten ein und das Programm wird das Chiffrat "
+#~ "entschlüsseln."
+
+#~ msgid "Ok lets try another one!"
+#~ msgstr "Okay, nochmal eins!"
+
+#~ msgid ""
+#~ "Cryptologists call it 'breaking a cipher' when someone tries to decrypt "
+#~ "text without knowing the key."
+#~ msgstr ""
+#~ "Kryptologen nennen es 'die Chiffre brechen' wenn jemand einen Text "
+#~ "entschlüsselt, ohne den Schlüssel zu kennen."
+
+#~ msgid "There are always 2 options when it comes to this."
+#~ msgstr "Es gibt immer 2 Möglichkeiten dies zu tun."
+
+#~ msgid ""
+#~ "1. You use literally brute force, meaning you simply try each possible "
+#~ "key."
+#~ msgstr ""
+#~ "1. Du verwendest Brute-Force, das bedeutet du versuchst einfach jeden "
+#~ "Schlüssel."
+
+#~ msgid "2. You use elaborate cryptology techniques."
+#~ msgstr "2. Du verwendest kryptographische Verfahren."
+
+#~ msgid "Lets try brute force"
+#~ msgstr "Versuche Brute-Force"
+
+#~ msgid ""
+#~ "Brute force means trying to decrypt with each possible key, till you find "
+#~ "the right one.The Key is in the middle. And pressing buttons increments "
+#~ "or decrements it. Let's search."
+#~ msgstr ""
+#~ "Brute-Force bedeutet, dass man alle möglichen Schlüssel durchprobiert, "
+#~ "bis man den richtigen gefunden hat. Der Schlüssel ist in der Mitte. Die "
+#~ "Buttons erhöhen oder erniedrigen den Schlüssel. Und los."
+
+#~ msgid "&darr;Histogram of the cipher.&darr;"
+#~ msgstr "&darr;Histogramm des Chiffrats.&darr;"
+
+#~ msgid "&darr;Histogram of the original text.&darr;"
+#~ msgstr "&darr;Histogramm des Originaltexts.&darr;"
+
+#~ msgid "Type your key in this&darr; box and click 'Enter'."
+#~ msgstr "Wähle den Schlüssel hier&darr; und drücke 'Eingabe'."
+
+#~ msgid "Back to Experiment"
+#~ msgstr "Zurück zum Selbstversuch"
+
+#~ msgid "Skip the Histograms"
+#~ msgstr "Histogramme überspringen"
+
+#~ msgid ""
+#~ "The infamous Diffie-Hellman Key-Exchange explained with a color-mixing "
+#~ "analogy. Establish a shared secret, without an eavesdropper getting the "
+#~ "secret, too!"
+#~ msgstr ""
+#~ "Der berüchtigte Diffie-Hellman Schlüsseltausch, erklärt durch eine "
+#~ "Farbenanalogie. Baue ein gemeinsames Geheimnis auf, ohne dass ein "
+#~ "Angreifer das Geheimnis auch erfährt!"
+
+#~ msgid "Diffie-Hellman"
+#~ msgstr "Diffie-Hellman"
+
+#~ msgid "http://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange"
+#~ msgstr "http://de.wikipedia.org/wiki/Diffie-Hellman-Schl%C3%BCsselaustausch"
+
+#~ msgid "No help"
+#~ msgstr "Keine Hilfe"
+
+#~ msgid ""
+#~ "We use a simple analogy as the one-way function. Mixing colors is an easy "
+#~ "process, determining which colors were originally used is a difficult "
+#~ "process, thus this acts like an one-way function"
+#~ msgstr ""
+#~ "Wir verwenden eine einfache Analogie als Einwegfunktion. Das "
+#~ "Farbenmischen ist einfach, aber herauszufinden aus welchen Farben eine "
+#~ "Mixtur besteht, sehr schwer. Das fungiert als Einwegfunktion."
+
+#~ msgid "Go to Demo"
+#~ msgstr "Zur Demo"
+
+#~ msgid "easy"
+#~ msgstr "einfach"
+
+#~ msgid "hard"
+#~ msgstr "schwer"
+
+#~ msgid ""
+#~ "To achieve this, we use something called one-way function. This type of "
+#~ "function is easy to compute in one direction, but difficult to reverse."
+#~ msgstr ""
+#~ "Um das zu erreichen, verwenden wir eine Einwegfunktion. Diese Funktion "
+#~ "ist in eine Richtung leicht zu berechnen, aber sehr schwer umzukehren."
+
+#~ msgid ""
+#~ "Now to our Diffie-Hellman Key-Exchange Analogy. Here is how the protocol "
+#~ "in principle works. Alice chooses a public color and sends it to Bob. As "
+#~ "Eve listens to the channel she gets a copy."
+#~ msgstr ""
+#~ "Nun zu unserer Diffie-Hellman Schlüsselaustausch Analogie. Hier siehst "
+#~ "du, wie das Protokoll im Prinzip funktioniert. Alice wählt eine "
+#~ "öffentliche Farbe und sendet sie an Bob. Da Eve den Kanal abhorcht, "
+#~ "erhält sie eine Kopie."
+
+#~ msgid ""
+#~ "Next, Alice chooses a private color, that she keeps for herself, she does "
+#~ "not send it. Then she mixes her private color with the previously sent "
+#~ "public color and sends the mixture to Bob. Note that because we use the "
+#~ "mixing of colors as a one-way function, Eve cannot compute which private "
+#~ "color Alice used to get the mixture. Keep this in mind, as this is "
+#~ "critical to understand why this protocol works. As previously Bob and Eve "
+#~ "have the sent color, that means the mixture of Alice."
+#~ msgstr ""
+#~ "Als nächstes wählt Alice eine geheime Farbe, die sie für sich behält und "
+#~ "nicht sendet. Dann mischt sie ihre geheime Farbe mit der zuvor gesendeten "
+#~ "öffentlichen Farbe und sendet die Mixtur an Bob. Beachte, dass wir das "
+#~ "Farbenmischen als Einwegfunktion betrachten, also kann Eve die geheime "
+#~ "Farbe nicht berechnen. Behalte das im Hinterkopf, denn das ist wichtig um "
+#~ "zu verstehen wie das Protokoll funktioniert. Wie zuvor haben Bob und Eve "
+#~ "die gesendete, gemischte Farbe von Alice."
+
+#~ msgid ""
+#~ "Now Bob does the exact same thing like Alice did in the previous step. He "
+#~ "chooses a private color. Mixes it with the public color, and sends the "
+#~ "mixture to Alice. Eve gets a copy, but can't compute the private color of "
+#~ "Bob, because of the one-way function property"
+#~ msgstr ""
+#~ "Nun macht Bob das gleiche wie Alice zuvor. Er wählt eine geheime Farbe, "
+#~ "mischt sie mit seiner öffentlichen Farbe, und sendet die Mixtur an Alice. "
+#~ "Eve erhält auch dieses Mal eine Kopie, doch kann wieder nicht berechnen, "
+#~ "was die geheime Farbe von Bob ist."
+
+#~ msgid ""
+#~ "Here we will produce the secret that Alice and Bob know, but Eve doesn't. "
+#~ "Alice will mix her private color to the mixture of Bob and Bob will mix "
+#~ "his private color to the mixture of Alice. The trick lies in the "
+#~ "combination of the private Colors, that are kept private, through the use "
+#~ "of the one-way function and that it doesn't matter in which order we mix "
+#~ "the colors. So mixing first the public color with Alices private color "
+#~ "and then Bobs private color yields the same color as mixing first the "
+#~ "public color with Bobs private color and then Alices private color."
+#~ msgstr ""
+#~ "Hier erstellen wir ein Geheimnis, welches nur Alice und Bob kennen, aber "
+#~ "Eve nicht. Alice mischt ihre geheime Farbe mit der Mixtur von Bob, und "
+#~ "Bob mischt seine geheime Farbe mit der Mixtur von Alice. Der Trick liegt "
+#~ "in der Kombination der geheimen Farben, die geheim gehalten werden durch "
+#~ "das Verwenden der Einwegfunktion, dabei macht die Reihenfolge des "
+#~ "Mischens kein Unterschied. Das heißt, das Mischen der öffentlichen Farbe "
+#~ "mit Alice's geheimer Farbe und dann Bob's geheimer Farbe ist das gleiche "
+#~ "wie die öffentliche Farbe, gemischt mit Bob's Farbe, gemischt mit Alice' "
+#~ "Farbe."
+
+#~ msgid "Skip the Demonstration"
+#~ msgstr "Demonstration überspringen"
+
+#~ msgid ""
+#~ "Our aim is to exchange a secret on a public channel, without Eve getting "
+#~ "the secret too. Therefore we can't simply send the secret, as shown in "
+#~ "the figure above as Eve would get the secret too. Thus we need to "
+#~ "exchange the secret in a different way"
+#~ msgstr ""
+#~ "Unser Ziel ist es, ein Geheimnis über einen öffentlichen Kanal zu "
+#~ "verschicken, ohne das auch Eve das Geheimnis erfährt. Deshalb können wir "
+#~ "das Geheimnis nicht einfach verschicken, wie in der Animation oben "
+#~ "gezeigt wird. Daher müssen wir das Geheimnis auf einen anderen Weg "
+#~ "tauschen"
+
+#~ msgid "Skip the Introduction"
+#~ msgstr "Einführung überspringen"
+
+#~ msgid "P - The base color"
+#~ msgstr "P - Die Basisfarbe"
+
+#~ msgid "SA - Alice's secret color"
+#~ msgstr "SA - Alice's geheime Farbe"
+
+#~ msgid "SB - Bob's secret color"
+#~ msgstr "SB - Bob's geheime Farbe"
+
+#~ msgid "MA - Mixture of SA and P"
+#~ msgstr "MA - Mischung von SA und P"
+
+#~ msgid "MB - Mixture of SB and P"
+#~ msgstr "MB - Mischung von SB und P"
+
+#~ msgid ""
+#~ "To achive this, we use something called one-way function. This function "
+#~ "is easy to compute in one direction, but difficult to reverse."
+#~ msgstr ""
+#~ "Um das zu erreichen, verwenden wir eine Einwegfunktion. Diese Funktion "
+#~ "ist in eine Richtung leicht zu berechnen, aber sehr schwer umzukehren."
+
+#~ msgid "Congratulations"
+#~ msgstr "Glückwunsch"
+
+#~ msgid "Next"
+#~ msgstr "Weiter"
+
+#~ msgid ""
+#~ "Now it is your turn! Choose a public color, which will be the basis for "
+#~ "the coming operations. When you're are done, click the 'send color' "
+#~ "button to send it to Bob."
+#~ msgstr ""
+#~ "Nun bist du dran! Wähle eine öffentliche Farbe, welche die Grundlage des "
+#~ "Selbstversuchs sein wird. Wenn du eine Farbe gewählt hast, Klicke 'Farbe "
+#~ "senden' um sie an Bob zu schicken."
+
+#~ msgid ""
+#~ "Now you can choose a private color which you can mix with the public "
+#~ "color you previously send to Bob. When you're done, click the 'Mix with "
+#~ "public color' button."
+#~ msgstr ""
+#~ "Nun wähle eine geheime Farbe welche du mit der öffentlichen Farbe mischen "
+#~ "kannst die du zuvor an Bob geschickt hast. Wenn du eine Farbe die dir "
+#~ "gefällt gewählt hast, klicke 'Mische mit öffentlicher Farbe'."
+
+#~ msgid ""
+#~ "The next step is to send the right color to Bob, as shown in the "
+#~ "demonstration. You have three possible colors to send and one is the "
+#~ "right color. If you need help click the 'Help' button."
+#~ msgstr ""
+#~ "Der nächste Schritt ist das Senden der richtigen Farbe an Bob, wie in der "
+#~ "Demonstration gezeigt. Du hast drei mögliche Farben zum verschicken, aber "
+#~ "nur eine ist die richtige. Wenn du Hilfe benötigst, klicke den dafür "
+#~ "vorgesehenen Button."
+
+#~ msgid ""
+#~ "Oh no. You chose the private color. This color is meant to be private. If "
+#~ "you had sent this color, Eve would be able to get the secret too, "
+#~ "afterwards. Please try again, by choosing another color and clicking the "
+#~ "'send color' button."
+#~ msgstr ""
+#~ "Oh nein. Du hast die geheime Farbe gewählt. Diese Farbe soll auch geheim "
+#~ "bleiben. Wenn du diese Farbe gesendet hättest, wäre Eve in der Lage das "
+#~ "Geheimnis zu erlangen. Versuche es nochmal mit einer anderen Farbe und "
+#~ "klicke den 'Farbe senden' Button."
+
+#~ msgid ""
+#~ "Oh no. You chose the public color. While Eve won't be able to get the "
+#~ "secret shared color, you still didn't follow the protocol instructions. "
+#~ "Try again by choosing another color."
+#~ msgstr ""
+#~ "Oh nein. Du hast die öffentliche Farbe gewählt. Eve wird zwar nicht in "
+#~ "der Lage sein, das Geheimnis zu erfahren, aber genausowenig wird Bob es "
+#~ "erlangen können. Versuche eine andere Farbe."
+
+#~ msgid "Good. You sent your mixture to Bob. This is the right choice."
+#~ msgstr ""
+#~ "Gut. Du hast die richtige Farbe an Bob geschickt. Das war die richtige "
+#~ "Wahl."
+
+#~ msgid ""
+#~ "Now it is Bobs turn. Click the continue button, so that Bob will choose "
+#~ "his private color and send you his mixture."
+#~ msgstr ""
+#~ "Nun ist Bob an der Reihe. Klicke den 'Weiter' Button, sodass Bob seine "
+#~ "geheime Farbe wählen, und die Mixtur schicken kann."
+
+#~ msgid ""
+#~ "This is the last step in the protocol. Choose the right colors to produce "
+#~ "the final secret, just like how it was explained at the demonstration."
+#~ msgstr ""
+#~ "Dies ist der letzte Schritt des Protokolls. Wähle die richtige Farbe um "
+#~ "das endgültige Geheimnis zu erstellen, genau so, wie in der Demonstration "
+#~ "erklärt."
+
+#~ msgid ""
+#~ "Congratulations, you chose the right colors to mix, you and Bob "
+#~ "established a shared secret that Eve does not know."
+#~ msgstr ""
+#~ "Glückwunsch, du hast die richtige Farbe gewählt. Du und Bob habt nun ein "
+#~ "gemeinsames Geheimnis erstellt, welches Eve nicht kennt."
+
+#~ msgid ""
+#~ "You have to choose a public color, to choose a different color you have "
+#~ "to click the '->' or '<-' Button. You can't do much wrong. When you are "
+#~ "ready click the 'send color' button."
+#~ msgstr ""
+#~ "Du musst eine öffentliche Farbe wählen. Um eine Farbe zu wählen, drücke "
+#~ "die Pfeilbuttons. Du kannst dabei nichts falsch machen. Wenn du fertig "
+#~ "bist, klicke den 'Farbe senden' Button."
+
+#~ msgid ""
+#~ "You have to choose a private color, which is not the same as the public "
+#~ "color. To choose a color, you have to click the '->' or the '<-' Button. "
+#~ "You can't do much wrong. When you are ready, click the 'mix colors' "
+#~ "button."
+#~ msgstr ""
+#~ "Du musst eine geheime Farbe wählen, welche eine andere sein soll als die "
+#~ "öffentliche Farbe. Verwende die Pfeilbuttons um eine auszuwählen, und "
+#~ "klicke den 'Farben mischen' Button."
+
+#~ msgid ""
+#~ "You have to send the right color, the right color is the one you have not "
+#~ "already sent, and the one you don't want to keep private. If you still "
+#~ "have no clue, try the three different colors."
+#~ msgstr ""
+#~ "Du musst die richtige Farbe wählen. Das ist diejenige, die du noch nicht "
+#~ "gesendet hast und die die du nicht geheim halten willst. Wenn du es immer "
+#~ "noch nicht weißt, probier herum."
+
+#~ msgid ""
+#~ "Just click the continue button and Bob will mix his color and will send "
+#~ "it to you."
+#~ msgstr ""
+#~ "Klicke einfach auf den 'Weiter' Button und Bob wird seine Farben mischen "
+#~ "und sie dir zuschicken."
+
+#~ msgid ""
+#~ "You have to choose the two colors that will be mixed to the final shared "
+#~ "secret. Tip: Why can't Eve compute the secret. Right, you have a color "
+#~ "that Eve does not have, so you have to use that one. It is the color with "
+#~ "the label SA. The other color is the one you got from Bob which is the "
+#~ "mixture of Bob, MB"
+#~ msgstr ""
+#~ "Du musst die Farben wählen die gemischt werden müssen um das endgültige "
+#~ "Geheimnis zu erzeugen. Tipp: Warum kann Eve das Geheimnis nicht "
+#~ "berechnen? Richtig, du hast eine Farbe die Eve nicht hat, also musst du "
+#~ "diese verwenden, also SA. Die andere Farbe ist die, die du von Bob "
+#~ "bekommen hast, also MB"
+
+#~ msgid "Mix with public color"
+#~ msgstr "Mische mit öffentlicher Farbe"
+
+#~ msgid "Mix colors to final secret"
+#~ msgstr "Endgültiges Geheimnis mischen"
+
+#~ msgid "The private color can't be the same as the public color"
+#~ msgstr "Die geheime Farbe kann nicht die gleiche sein wie die öffentliche"
+
+#~ msgid "Send color"
+#~ msgstr "Farbe senden"
+
+#~ msgid "You chose the wrong colors, try again"
+#~ msgstr "Du hast die falsche Farbe gewählt, versuch's nochmal"
+
+#~ msgid "Skip the Experiment"
+#~ msgstr "Selbstversuch überspringen"
+
+#~ msgid "Start Experiment"
+#~ msgstr "Selbstversuch starten"
+
+#~ msgid ""
+#~ "Now it's your turn! Now you are Alice and try to establish a shared "
+#~ "secret with Bob, without Eve getting the secret. Your task will be to mix "
+#~ "the right Colors and to send the right Colors, just like in the "
+#~ "Demonstration"
+#~ msgstr ""
+#~ "Nun bist du an der Reihe! Nun bist du Alice und versuchst ein gemeinsames "
+#~ "Geheimnis mit Bob aufzubauen, ohne das Eve es erfährt. Deine Aufgabe ist "
+#~ "das richtige Mischen und Senden der Farben, genau wie in der Demonstration"
+
+#~ msgid ""
+#~ "Get to know how Vigenère fixed the weaknesses of Caesar to make a "
+#~ "'secure' cipher for many hundred years!"
+#~ msgstr ""
+#~ "Seh dir an, wie Vigenère die Schwäche der Caesar-Chiffre beseitigte, und "
+#~ "eine für viele hunderte Jahre 'sichere' Chiffre erschuf."
+
+#~ msgid "http://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher"
+#~ msgstr ""
+#~ "http://de.wikipedia.org/wiki/Polyalphabetische_Substitution#Vigen.C3.A8re-"
+#~ "Verschl.C3.BCsselung"
+
+#~ msgid ""
+#~ "After Caesar's cipher was broken, Vigenère started to create his own "
+#~ "cipher which would fix the weaknesses of Caesar. He also used the same "
+#~ "logic by addition and subtraction of characters but this time the key "
+#~ "would not be a simple number but a whole string. To understand how "
+#~ "Vigenères cipher works, we need to know how 'modulo' works..."
+#~ msgstr ""
+#~ "Nachdem die Caesar-Chiffre gebrochen wurde, fing Vigenère an, seine "
+#~ "eigene Chiffre zu erstellen, welche die Schwächen von Caesar beheben "
+#~ "soll. Er verwendete die gleiche Logik, jedoch mit einem Schlüssel der "
+#~ "mehr als nur ein Zeichen enthält. Um zu wissen wie die Vigenère-Chiffre "
+#~ "funktioniert, müssen wir erst sehen wie 'Modulo' funktioniert..."
+
+#~ msgid ""
+#~ "We use modulo in our daily life without maybe noticing it: If you look at "
+#~ "your clock, you have a cyclic sequence of numbers. Like you see in the "
+#~ "picture at the bottom, 4 hours after 9 means it's 1. So our clock uses a "
+#~ "modulo of 12, because we have only 12 steps in it. If we overflow, we "
+#~ "start from the beginnig. The same system will now be used with the "
+#~ "alphabet (which has 26 characters) to create Vigenère's cipher..."
+#~ msgstr ""
+#~ "Wir verwenden Modulo täglich in unserem Leben ohne es vielleicht zu "
+#~ "merken: Wenn du auf die Uhr schaust, hast du eine zyklische Sequenz von "
+#~ "Zahlen. Wie du in dem Bild unten sehen kannst, ist 4 Stunden nach 9: 1. "
+#~ "Also verwendet unsere Uhr den Modulo von 12, da wir nur 12 Ziffern haben. "
+#~ "Wenn es überläuft, fängt es von vorne an. Das selbe System wird nun für "
+#~ "das Alphabet verwendet, welches 26 Zeichen hat..."
+
+#~ msgid "Go to Encryption"
+#~ msgstr "Zur Verschlüsselung"
+
+#~ msgid ""
+#~ "Now we want to encrypt 'ANNA'. First of all we add the position of evey "
+#~ "character, as you can see in the bottom, in the alphabet under each "
+#~ "character."
+#~ msgstr ""
+#~ "Nun wollen wir 'ANNA' verschlüsseln. Zuerst fügen wir unter jedem "
+#~ "Buchstaben im Alphabet eine Position hinzu, wie du unten sehen kannst."
+
+#~ msgid ""
+#~ "This is the key for the encryption. Now we go to the next step and "
+#~ "encrypt the first character."
+#~ msgstr ""
+#~ "Das ist der Schlüssel für die Verschlüsselung. Nun gehen wir zum nächsten "
+#~ "Schritt und verschlüsseln das erste Zeichen."
+
+#~ msgid ""
+#~ "The position of 'A' in the alphabet is 1. The position of 'O' is 14. Now "
+#~ "we calculate 1 + 14 and get 15."
+#~ msgstr ""
+#~ "Die Position von 'A' im Alphabet ist 1. Die Position von 'O' ist 14. Also "
+#~ "berechnen wir 1 + 14 und erhalten 15."
+
+#~ msgid ""
+#~ "The number 16 represents 'P' in the alphabet. So the first encrypted "
+#~ "character is 'P'. Lets go to the next one."
+#~ msgstr ""
+#~ "Die Zahl 16 repräsentiert 'P' im Alphabet. Also ist das erste "
+#~ "verschlüsselte Zeichen 'P'. Weiter gehts mit dem nächsten."
+
+#~ msgid ""
+#~ "Now get to the next character. It's an 'N', which represents the number "
+#~ "14. The second character of the key is 'K', which is the 11. 14+11 = 25 -"
+#~ "> 'Y'!"
+#~ msgstr ""
+#~ "Nun zum nächsten Buchstaben. Es ist ein 'N' welches durch 14 "
+#~ "repräsentiert wird. Das zweite Zeichen des Schlüssels ist 'K', also 11. "
+#~ "14 + 11 = 25 -> 'Y'!"
+
+#~ msgid "Now we continue..."
+#~ msgstr "Nun fahren wir fort..."
+
+#~ msgid ""
+#~ "The position of 'A' in the alphabet is 1. The position of 'O' is 15. Now "
+#~ "we calculate 1 + 15 and get 16."
+#~ msgstr ""
+#~ "Die Position von 'A' im Alphabet ist 1. Die Position von 'O' ist 15. Also "
+#~ "berechnen wir 1 + 15 und erhalten 16."
+
+#~ msgid ""
+#~ "E = 5 and Y = 25. 25 + 5 = 30, but our alphabet doesnt have 30 "
+#~ "characters. So we now use the modulo: 30 modulo 26 = 4."
+#~ msgstr ""
+#~ "E = 5 und Y = 25. 25 + 5 = 30, aber unser Alphabet hat nur 26 Buchstaben. "
+#~ "Also verwenden wir Modulo: 30 modulo 26 = 4."
+
+#~ msgid "Follow the explanations!"
+#~ msgstr "Folge den Anweisungen!"
+
+#~ msgid "Plaintext-Char"
+#~ msgstr "Klartextzeichen"
+
+#~ msgid "Key-Char"
+#~ msgstr "Schlüssel-Zeichen"
+
+#~ msgid "Result"
+#~ msgstr "Ergebnis"
+
+#~ msgid ""
+#~ "Now we want to encrypt 'ANNE'. First of all we add the position of every "
+#~ "character, as you can see in the bottom, in the alphabet under each "
+#~ "character."
+#~ msgstr ""
+#~ "Nun wollen wir 'ANNA' verschlüsseln. Zuerst fügen wir unter jedem "
+#~ "Buchstaben im Alphabet eine Position hinzu, wie du unten sehen kannst."
+
+#~ msgid "Vigenere Key"
+#~ msgstr "Vigenère Schlüssel"
+
+#~ msgid "Return to Introduction"
+#~ msgstr "Zurück zur Einführung"
+
+#~ msgid ""
+#~ "Now we want to decrypt 'ENQM'. Instead of adding up, we use substraction "
+#~ "to decrypt it! So let's go..."
+#~ msgstr ""
+#~ "Nun wollen wir 'ENQM' entschlüsseln. Anstatt nun zu addieren, "
+#~ "subtrahieren wir um zu entschlüsseln. Los geht's..."
+
+#~ msgid ""
+#~ "'E' = 5 and 'K' = 11. 3 - 11 = -6. What now? Well it's easy, just reverse "
+#~ "the modulo..."
+#~ msgstr ""
+#~ "'E' = 5 und 'K' = 11. 3 - 11 = -6. Was jetzt? Ganz einfach, wir "
+#~ "invertieren Modulo..."
+
+#~ msgid ""
+#~ "Negative numbers mean you start from the 'Z' and go 7 steps backwards. So "
+#~ "we get 'T' = 20!"
+#~ msgstr ""
+#~ "Negative Zahlen bedeuten, du fängst bei 'Z' an und gehst 7 Schritte "
+#~ "zurück. So erhalten wir 'T' = 20!"
+
+#~ msgid "'N' = 14 and 'I' = 9. 14 - 9 = 5 -> 'E'"
+#~ msgstr "'N' = 14 und 'I' = 9. 14 - 9 = 5 -> 'E'"
+
+#~ msgid ""
+#~ "'Q' = 17 and 'S' = 19. 17 - 19 = -2 -> Go 2 Steps backwards from 'Z' -> "
+#~ "'X'"
+#~ msgstr ""
+#~ "'Q' = 17 und 'S' = 19. 17 - 19 = -2 -> Gehe 2 Schritte zurück von 'Z' aus "
+#~ "-> 'X'"
+
+#~ msgid ""
+#~ "'M' = 13 and 'S' = 19. 13 - 19 = -6 -> Go 6 Steps backwards from 'Z' -> "
+#~ "'T'"
+#~ msgstr ""
+#~ "'M' = 13 und 'S' = 19. 13 - 19 = -6 -> Gehe 6 Schritte zurück von 'Z' aus "
+#~ "-> 'T'"
+
+#~ msgid "Go To Experiment"
+#~ msgstr "Zum Selbstversuch"
+
+#~ msgid "Return to Encryption"
+#~ msgstr "Zurück zur Verschlüsselung"
+
+#~ msgid "Very nice, now the second character!"
+#~ msgstr "Sehr gut, nun der zweite Buchstabe!"
+
+#~ msgid "Second strike! Three left..."
+#~ msgstr "Zweiter strike! Drei übrig..."
+
+#~ msgid "Not much left, 2 to go..."
+#~ msgstr "Nur noch zwei übrig..."
+
+#~ msgid "Almost done, last character..."
+#~ msgstr "Fast geschafft, letztes Zeichen..."
+
+#~ msgid "Nicely done!"
+#~ msgstr "Sehr gut!"
+
+#~ msgid ""
+#~ "'T' = 20 and 'A' = 1, so just substract 1 from 20 and you have the answer!"
+#~ msgstr ""
+#~ "'T' = 20 und 'A' = 1, also subtrahierst du 1 von 20 und du hast das "
+#~ "Ergebnis!"
+
+#~ msgid ""
+#~ "'W' = 23 and 'B' = 2, so just substract 2 from 23 and you have the answer!"
+#~ msgstr ""
+#~ "'W' = 23 und 'B' = 2, also subtrahierst du 2 von 23 und du hast das "
+#~ "Ergebnis!"
+
+#~ msgid ""
+#~ "'S' = 19 and 'C' = 3, so just substract 3 from 19 and you have the answer!"
+#~ msgstr ""
+#~ "'S' = 19 und 'C' = 3, also subtrahierst du 3 von 19 und du hast das "
+#~ "Ergebnis!"
+
+#~ msgid ""
+#~ "'I' = 9 and 'D' = 4, so just substract 4 from 9 and you have the answer!"
+#~ msgstr ""
+#~ "'I' = 9 und 'D' = 4, also subtrahierst du 4 von 9 und du hast das "
+#~ "Ergebnis!"
+
+#~ msgid ""
+#~ "'W' = 23 and 'E' = 5, so just substract 5 from 23 and you have the answer!"
+#~ msgstr ""
+#~ "'W' = 23 und 'E' = 5, also subtrahierst du 5 von 23 und du hast das "
+#~ "Ergebnis!"
+
+#~ msgid "Now it's your turn! Decrypt this string..."
+#~ msgstr "Nun bist du dran! Entschlüsse den Text..."
+
+#~ msgid "Wrong Answer! Try again!"
+#~ msgstr "Falsche Antwort! Versuchs nochmal!"
+
+#~ msgid "Go to Explanation"
+#~ msgstr "Zur Erklärung"
+
+#~ msgid "Return to Decryption"
+#~ msgstr "Zurück zur Entschlüsselung"
+
+#~ msgid ""
+#~ "Vigenère fixed a few weaknesses of Caesar, but still has flaws. If the "
+#~ "key is shorter than the text to encrypt, Vigenère simply concatinates it "
+#~ "with itself until the key is long enough. This again makes it weak "
+#~ "against key-length-guessing. As soon as we guess the key-length, we can "
+#~ "use a histogram (explained in Caesar) to make a static analysis. So let's "
+#~ "crack this chiffre by guessing the key-length (we will use the Kasiski "
+#~ "test for it)"
+#~ msgstr ""
+#~ "Vigenère behob ein paar Schwächen von Caesar, hat aber immernoch ein "
+#~ "paar. Wenn der Schlüssel kürzer als der Text ist, konkateniert Vigenère "
+#~ "ihn einfach an sich selbst bis er lang genug ist. Das wiederrum macht ihn "
+#~ "schwach für Schlüssellängeraten. Sobald wir die Schlüssellänge wissen, "
+#~ "können wir Histogramme verwenden (wie in Caesar). Los geht's mit dem "
+#~ "Brechen der Chiffre durch Raten der Schlüssellänge (wir verwenden den "
+#~ "Kasiski-Test dafür)"
+
+#~ msgid "Length of key: 2"
+#~ msgstr "Länge des Schlüssels: 2"
+
+#~ msgid ""
+#~ "Since we know that the key-length is 2, every second character will be "
+#~ "encrypted with the first character of the key. To guess which is the "
+#~ "first character of the key we need the histogram of every second "
+#~ "character in the chiffre"
+#~ msgstr ""
+#~ "Da wir wissen, dass die Schlüssellänge 2 ist, wird jedes zweite Zeichen "
+#~ "mit dem ersten Buchstaben des Schlüssels verschlüsselt. Um "
+#~ "herauszufinden, was der erste Buchstabe des Schlüssels ist, erstellen wir "
+#~ "ein Histogramm mit jedem zweiten Buchstaben der Chiffre"
+
+#~ msgid "Just read the instructions!"
+#~ msgstr "Les' einfach die Anleitungen!"
+
+#~ msgid "Go to Cracking"
+#~ msgstr "Zum Knacken"
+
+#~ msgid "Return to Experiment"
+#~ msgstr "Zurück zum Selbstversuch"
+
+#~ msgid ""
+#~ "Vigenère fixed a few weaknesses of Caesar, but still has flaws. If the "
+#~ "key is shorter then the text to encrypt, Vigenère simply concatinates it "
+#~ "with itself until the key is long enough. This again makes it weak "
+#~ "against key-length-guessing. As soon as we guess the key-length, we can "
+#~ "use a histogram (explained in Caesar) to make a static analysis. So lets "
+#~ "crack this chiffre by guessing the key-length (we will use the Kasiski "
+#~ "test for it)"
+#~ msgstr ""
+#~ "Vigenère behob ein paar Schwächen von Caesar, hat aber immernoch ein "
+#~ "paar. Wenn der Schlüssel kürzer als der Text ist, konkateniert Vigenère "
+#~ "ihn einfach an sich selbst bis er lang genug ist. Das wiederrum macht ihn "
+#~ "schwach für Schlüssellängeraten. Sobald wir die Schlüssellänge wissen, "
+#~ "können wir Histogramme verwenden (wie in Caesar). Los geht's mit dem "
+#~ "Brechen der Chiffre durch Raten der Schlüssellänge (wir verwenden den "
+#~ "Kasiski-Test dafür)"
+
+#~ msgid "This is the average distribution of the characters in English texts:"
+#~ msgstr "Das ist die durchschnittliche Verteilung eines deutschen Texts:"
+
+#~ msgid "Find Key-Length"
+#~ msgstr "Finde Schlüssellänge"
+
+#~ msgid "Length of key: ?"
+#~ msgstr "Länge des Schlüssels: ?"
+
+#~ msgid ""
+#~ "When we look closer at the histogram we see some differences in the "
+#~ "distribution of the characters; 'S' is has the most common occurance. In "
+#~ "an average normal English text 'E' is the most common one. So maybe our "
+#~ "'S' could've been an 'E' before the encryption. We calculate 19 (position "
+#~ "of 'S') - 5 (position of 'E') and we get 14, which means the first "
+#~ "character of the key is 'N'."
+#~ msgstr ""
+#~ "Wenn wir uns die Histogramme genauer anschauen sehen wir einige "
+#~ "Unterschiede in der Verteilung. 'S' kommt am häufigsten vor. In einem "
+#~ "durchschnittlichen deutschen Text ist 'E' der häufigste. Also könnte 'S' "
+#~ "vor der Verschlüsselung ein 'E' gewesen sein. Wir rechnen also 'S' - 'E' "
+#~ "= 19 - 5 = 15. Das heißt, das erste Zeichen unsres Schlüssels ist 'N'."
+
+#~ msgid "Very nice! We found the key 'NJ', now we can decrypt the message:"
+#~ msgstr ""
+#~ "Sehr gut! Wir haben den Schlüssel 'NJ' gefunden. Nun können wir die "
+#~ "Nachricht entschlüsseln:"
+
+#~ msgid ""
+#~ "Now it's your turn! You have to find the second character of the key. I "
+#~ "was kind enough to give you a diagram of every second character encrypted "
+#~ "with the second part of the key.You know what to do:"
+#~ msgstr ""
+#~ "Nun bist du dran! Du musst das zweite Zeichen des Schlüssels finden. Ich "
+#~ "war nett genug dir die Diagramme jedes zweiten verschlüsselten Zeichens "
+#~ "zu geben, welches mit dem zweiten Zeichens des Schlüssels verschlüsselt "
+#~ "wurden. Du weißt was zu tun ist:"
+
+#~ msgid ""
+#~ "Check the peaks in the histogram and compare them to the other histogram, "
+#~ "do you see any similarities?"
+#~ msgstr ""
+#~ "Prüfe die Spitzen des Histogramms und vergleiche sie mit dem anderen "
+#~ "Histogramm. Siehst du Ähnlichkeiten?"
+
+#~ msgid "Go to Information"
+#~ msgstr "Weitere Informationen"
+
+#~ msgid "Return to Explanation"
+#~ msgstr "Zurück zur Erklärung"
+
+#~ msgid ""
+#~ "Look at the peaks of both histograms and calculate the second part of the "
+#~ "key! Your answer:"
+#~ msgstr ""
+#~ "Schau dir die Spitzen beider Histogramme an und berechne den zweiten Teil "
+#~ "des Schlüssels. Deine Antwort:"
+
+#~ msgid "Back"
+#~ msgstr "Zurück"
 
 #~ msgid ""
 #~ "Vigenère fixed a few weaknesses of Caesar, but still has flaws. If the "

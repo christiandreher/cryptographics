@@ -22,7 +22,6 @@
 /src/edu/.metadata/
 /statistics.csv
 /error.log
-/compile_po.bat
 /po/*.mo
 /diagrams/Temp.ucls
 /bin

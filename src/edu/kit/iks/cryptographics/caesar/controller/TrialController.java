@@ -14,6 +14,8 @@
 
 package edu.kit.iks.cryptographics.caesar.controller;
 
+import java.util.Random;
+
 import org.xnap.commons.i18n.I18n;
 
 import edu.kit.iks.cryptographics.caesar.view.trial.TrialView;
@@ -43,10 +45,15 @@ public class TrialController extends AbstractSteppableVisualizationController {
         // Navigation labels and various
         private static String nextButtonLabel = Strings.i18n.tr("Skip experiment");
         private static String backButtonLabel = Strings.i18n.tr("Back to demonstration");
-        private static String stepButtonLabel = Strings.i18n.tr("Proceed");
+        private static String skipButtonLabel = Strings.i18n.tr("Use random name");
+        private static String proceedButtonLabel = Strings.i18n.tr("Proceed");
         
-        private static String trialExplanation = Strings.i18n.tr("test");
+        private static String trialExplanation = Strings.i18n.tr("Now lets try to encrypt your name with "
+                + "the key {0}. Just enter your name in the text field below or press the button "
+                + "to use a random one.", TrialController.randomKey);
     };
+    
+    private static int randomKey = (new Random()).nextInt((8 - 5) + 1) + 5;
     
     /**
      * @param visualizationInfo
@@ -66,7 +73,8 @@ public class TrialController extends AbstractSteppableVisualizationController {
         
         vh.add("nextButtonLabel", TrialController.Strings.nextButtonLabel);
         vh.add("backButtonLabel", TrialController.Strings.backButtonLabel);
-        vh.add("stepButtonLabel", TrialController.Strings.stepButtonLabel);
+        vh.add("skipButtonLabel", TrialController.Strings.skipButtonLabel);
+        vh.add("proceedButtonLabel", TrialController.Strings.proceedButtonLabel);
         
         this.view = new TrialView(this, vh.toList());
         

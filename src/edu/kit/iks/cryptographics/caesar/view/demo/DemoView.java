@@ -11,6 +11,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
+
 package edu.kit.iks.cryptographics.caesar.view.demo;
 
 import java.awt.event.ActionListener;

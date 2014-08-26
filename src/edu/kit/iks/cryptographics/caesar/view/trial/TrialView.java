@@ -37,5 +37,9 @@ public class TrialView extends AbstractVisualizationView {
      */
     public TrialView(ActionListener al, List<SimpleEntry<String, String>> variables) {
         super(al, variables);
+        
+        this.setNextButton(this.getVariableValue("nextButtonLabel"));
+        this.setBackButton(this.getVariableValue("backButtonLabel"));
+        this.setStepButton(this.getVariableValue("skipButtonLabel"));
     }
 }

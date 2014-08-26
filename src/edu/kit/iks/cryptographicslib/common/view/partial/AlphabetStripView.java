@@ -85,7 +85,7 @@ public class AlphabetStripView extends JPanel {
 			nums[i] = new JLabel("" + (i+1));
 			nums[i].setVerticalAlignment(JLabel.CENTER);
 			nums[i].setHorizontalAlignment(JLabel.CENTER);
-			Highlighter.normal(chars[i]);
+			Highlighter.normal(nums[i]);
 			
 			this.wrapper.add(nums[i]);
 		}

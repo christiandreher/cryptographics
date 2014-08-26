@@ -19,15 +19,13 @@
 
 package edu.kit.iks.cryptographicslib.common.view.partial;
 
-import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.GridBagLayout;
 import java.awt.GridLayout;
 
-import javax.swing.BorderFactory;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import javax.swing.border.Border;
+import edu.kit.iks.cryptographicslib.util.Highlighter;
 
 /**
  * @author Matthias Jaenicke.
@@ -46,10 +44,6 @@ public class AlphabetStripView extends JPanel {
 	
 	private JLabel[] chars;
 	private JLabel[] nums;
-	
-	private static final Border NORMAL_BORDER = BorderFactory.createLineBorder(Color.DARK_GRAY);
-	private static final Border RED_BORDER = BorderFactory.createLineBorder(Color.RED);
-	private static final Border GREEN_BORDER = BorderFactory.createLineBorder(Color.GREEN);
 	
 	/**
 	 * Generates the alphabet strip with default dimension
@@ -78,9 +72,10 @@ public class AlphabetStripView extends JPanel {
 		chars = new JLabel[26];
 		for (int i = 0; i < 26; i++) {
 			chars[i] = new JLabel(String.valueOf((char) (i + asciiA)));
-			chars[i].setBorder(NORMAL_BORDER);
 			chars[i].setVerticalAlignment(JLabel.CENTER);
 			chars[i].setHorizontalAlignment(JLabel.CENTER);
+			Highlighter.normal(chars[i]);
+			
 			this.wrapper.add(chars[i]);
 		}
 		
@@ -88,9 +83,10 @@ public class AlphabetStripView extends JPanel {
 		nums = new JLabel[26];
 		for (int i = 0; i < 26; i++) {
 			nums[i] = new JLabel("" + (i+1));
-			nums[i].setBorder(NORMAL_BORDER);
 			nums[i].setVerticalAlignment(JLabel.CENTER);
 			nums[i].setHorizontalAlignment(JLabel.CENTER);
+			Highlighter.normal(chars[i]);
+			
 			this.wrapper.add(nums[i]);
 		}
 		
@@ -99,34 +95,18 @@ public class AlphabetStripView extends JPanel {
 		this.add(this.wrapper);
 	}
 	
-	public void highlightGreenByLetter(String letter) {
+	public void highlightBlue(String letter) {
 		for (int i = 0; i < this.chars.length; i++) {
 			if (this.chars[i].getText().equals(letter)) {
-				this.highlightGreenByIndex(i);
+				this.highlightBlueByIndex(i);
 				return;
 			}
 		}
 	}
 	
-	public void highlightRedByLetter(String letter) {
-		for (int i = 0; i < this.chars.length; i++) {
-			if (this.chars[i].getText().equals(letter)) {
-				this.highlightRedByIndex(i);
-				return;
-			}
-		}
-	}
-	
-	public void highlightGreenByIndex(int index) {
-		this.chars[index].setBorder(AlphabetStripView.GREEN_BORDER);
-		this.nums[index].setBorder(AlphabetStripView.GREEN_BORDER);
-		
-		this.repaint();
-	}
-	
-	public void highlightRedByIndex(int index) {
-		this.chars[index].setBorder(AlphabetStripView.RED_BORDER);
-		this.nums[index].setBorder(AlphabetStripView.RED_BORDER);
+	public void highlightBlueByIndex(int index) {
+	    Highlighter.info(this.chars[index]);
+	    Highlighter.info(this.nums[index]);
 		
 		this.repaint();
 	}
@@ -139,8 +119,8 @@ public class AlphabetStripView extends JPanel {
 	public void unHighlight(int key) {
 		assert (key >= 0 && key < 26);
 		
-		chars[key].setBorder(NORMAL_BORDER);
-		nums[key].setBorder(NORMAL_BORDER);
+		Highlighter.normal(chars[key]);
+		Highlighter.normal(nums[key]);
 		
 		this.repaint();
 	}

@@ -19,13 +19,11 @@
 
 package edu.kit.iks.cryptographicslib.common.view.partial;
 
-import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
 import java.awt.Insets;
 
-import javax.swing.BorderFactory;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
@@ -33,6 +31,7 @@ import javax.swing.JTextField;
 import org.xnap.commons.i18n.I18n;
 
 import edu.kit.iks.cryptographicslib.util.Configuration;
+import edu.kit.iks.cryptographicslib.util.Highlighter;
 
 /**
  * @author Christian Dreher
@@ -48,19 +47,7 @@ public class EncryptDecryptView extends JPanel {
 	private static I18n i18n = Configuration.getInstance().getI18n(EncryptDecryptView.class);
 
 	private String key = EncryptDecryptView.i18n.tr("Key");
-	
-	private static class COLORS_SUCCESS {
-	    public final static Color FONT = new Color(0x31708f);
-	    public final static Color BORDER = new Color(0xbce8f1);
-	    public final static Color BACKGROUND = new Color(0xd9edf7);
-	}
-	
-	private static class COLORS_ERROR {
-        public final static Color FONT = new Color(0xa94442);
-        public final static Color BORDER = new Color(0xebccd1);
-        public final static Color BACKGROUND = new Color(0xf2dede);
-	}
-	
+
 	private static class Layout {
 		public static GridBagConstraints gbc;
 		public static Dimension dimension = new Dimension(25, 25);
@@ -103,32 +90,28 @@ public class EncryptDecryptView extends JPanel {
 	}
 	
 	public void highlightLabel(int index) {
-		this.labels[index].setBorder(BorderFactory.createLineBorder(Color.GREEN));
+	    Highlighter.info(this.labels[index]);
 		this.revalidate();
 	}
 	
+    public void highlightInputInfo(int index) {
+        Highlighter.info(this.inputs[index]);
+        this.revalidate();
+    }
+	
 	public void highlightInputSuccess(int index) {
-	    this.inputs[index].setForeground(EncryptDecryptView.COLORS_SUCCESS.FONT);
-	    this.inputs[index].setBorder(BorderFactory.createLineBorder(COLORS_SUCCESS.BORDER));
-	    this.inputs[index].setBackground(EncryptDecryptView.COLORS_SUCCESS.BACKGROUND);
+	    Highlighter.success(this.inputs[index]);
 	    this.revalidate();
 	}
 	
 	public void highlightInputError(int index) {
-        this.inputs[index].setForeground(EncryptDecryptView.COLORS_ERROR.FONT);
-        this.inputs[index].setBorder(BorderFactory.createLineBorder(COLORS_ERROR.BORDER));
-        this.inputs[index].setBackground(EncryptDecryptView.COLORS_ERROR.BACKGROUND);
+	    Highlighter.error(this.inputs[index]);
         this.revalidate();
     }
 	
-	public void highlightInputBorder(int index) {
-		this.inputs[index].setBorder(BorderFactory.createLineBorder(Color.RED));
-		this.revalidate();
-	}
-	
 	public void unhighlightAll() {
 		for (int i = 0; i < this.inputs.length; i++) {
-			this.labels[i].setBorder(null);
+		    Highlighter.normalNoBorder(this.labels[i]);
 		}
 	}
 	
@@ -173,9 +156,7 @@ public class EncryptDecryptView extends JPanel {
 			this.inputs[i].setEditable(false);
 			this.inputs[i].setHorizontalAlignment(JTextField.CENTER);
 			this.inputs[i].setPreferredSize(EncryptDecryptView.Layout.dimension);
-			this.inputs[i].setBorder(BorderFactory.createLineBorder(Color.darkGray));
-            this.inputs[i].setBackground(Color.WHITE);
-            this.inputs[i].setOpaque(true);
+			Highlighter.normal(this.inputs[i]);
 			
 			// Questionmark to indicate input possibility 
 			this.inputs[i].setText("?");

@@ -31,11 +31,11 @@ import edu.kit.iks.cryptographicslib.common.view.partial.ImageView;
  * @author Christian Dreher <uaeef@student.kit.edu>
  *
  */
-public class Utility {
+public class IO {
 	
 	public static String procedureId = null;
 	
-	private Utility() {
+	private IO() {
 		
 	}
 	
@@ -51,7 +51,7 @@ public class Utility {
 			name = "/" + name;
 		}
 		
-		InputStream is = Utility.class.getResourceAsStream(name);
+		InputStream is = IO.class.getResourceAsStream(name);
 		
 		return is;
 	}
@@ -61,7 +61,7 @@ public class Utility {
 		String path = "";
 
 		// Obtain file object
-		InputStream is = Utility.class.getResourceAsStream("/" + Utility.procedureId + "/" + "resources.xml");
+		InputStream is = IO.class.getResourceAsStream("/" + IO.procedureId + "/" + "resources.xml");
 
 		try {
 			// Converted file to document object

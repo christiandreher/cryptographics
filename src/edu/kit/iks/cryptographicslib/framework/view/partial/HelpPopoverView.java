@@ -17,7 +17,7 @@
  * THE SOFTWARE.
  */
 
-package edu.kit.iks.cryptographics.main.view.partial;
+package edu.kit.iks.cryptographicslib.framework.view.partial;
 
 import javax.swing.JLabel;
 

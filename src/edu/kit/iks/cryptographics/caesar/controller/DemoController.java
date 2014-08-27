@@ -198,6 +198,7 @@ public class DemoController extends AbstractSteppableVisualizationController {
 	protected final void tryNextLetter() {
 		this.view().useCharKeyboard();
 		this.view().setKeyboardAction("tryNextLetterParameterized");
+		this.view().hideStepButton();
 		this.view().showKeyboard();
 		
 		this.tryEncryptCaesar.encryptFirst(this.model);
@@ -218,6 +219,7 @@ public class DemoController extends AbstractSteppableVisualizationController {
 			if (this.model.next()) {
 				this.tryEncryptCaesar.encryptNext(this.model);
 			} else {
+			    this.view().hideKeyboard();
 				this.view().showStepButton();
 				this.view().setDefaultStepButtonAction();
 				this.defaultStepAction();

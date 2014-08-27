@@ -14,15 +14,16 @@
 
 package edu.kit.iks.cryptographics.caesar.controller;
 
-import java.util.Random;
-
 import org.xnap.commons.i18n.I18n;
 
+import edu.kit.iks.cryptographics.caesar.model.TrialModel;
 import edu.kit.iks.cryptographics.caesar.view.trial.TrialView;
 import edu.kit.iks.cryptographics.caesar.view.trial.partial.EnterName;
 import edu.kit.iks.cryptographicslib.framework.controller.AbstractSteppableVisualizationController;
 import edu.kit.iks.cryptographicslib.framework.model.AbstractVisualizationInfo;
 import edu.kit.iks.cryptographicslib.util.Configuration;
+import edu.kit.iks.cryptographicslib.util.Logger;
+import edu.kit.iks.cryptographicslib.util.Random;
 
 /**
  * @author Christian Dreher
@@ -52,8 +53,10 @@ public class TrialController extends AbstractSteppableVisualizationController {
                 + "the key {0}. Just enter your name in the text field below or press the button "
                 + "to use a random one.", TrialController.randomKey);
     };
+   
+    private static int randomKey = Random.integer(5, 8);
     
-    private static int randomKey = (new Random()).nextInt((8 - 5) + 1) + 5;
+    private TrialModel model = new TrialModel();
     
     /**
      * @param visualizationInfo
@@ -95,8 +98,22 @@ public class TrialController extends AbstractSteppableVisualizationController {
      */
     @Override
     public final boolean routeAction(final String callerId) {
-        // TODO Auto-generated method stub
-        return false;
+        switch (callerId) {
+            case "randomName":
+                this.useRandomName();
+                break;
+            case "customName":
+                this.useCustomName();
+                break;
+            case "keyPressed":
+                String input = this.view().getUserInput();
+                this.keyPressed(input);
+                break;
+            default:
+                return false;
+        }
+    
+        return true;
     }
     
     /* (non-Javadoc)
@@ -106,6 +123,36 @@ public class TrialController extends AbstractSteppableVisualizationController {
     public final String helpAction() {
         // TODO Auto-generated method stub
         return null;
+    }
+    
+    /**
+     * Default Action.
+     * 
+     * Overridden, because the partial view will be reused for the
+     * next step, therefore the default behavior is undesired
+     * 
+     * @see edu.kit.iks.cryptographicslib.framework.controller.AbstractSteppableVisualizationController#indexAction()
+     */
+    @Override
+    protected final void indexAction() {
+        this.view().useStringKeyboard();
+        this.view().showKeyboard();
+        this.view().setStepButtonAction("randomName");
+        this.view().setKeyboardAction("keyPressed");
+        super.indexAction();
+    }
+    
+    protected final void useRandomName() {
+        
+    }
+    
+    protected final void useCustomName() {
+        
+    }
+    
+    protected final void keyPressed(String input) {
+        Logger.debug("", "", "Input: " + input);
+        this.model.setName(input);
     }
     
     /**
@@ -123,5 +170,9 @@ public class TrialController extends AbstractSteppableVisualizationController {
         vh.add("explanation", TrialController.Strings.trialExplanation);
         
         return new EnterName(vh.toList());
+    }
+    
+    private TrialView view() {
+        return (TrialView) this.view;
     }
 }

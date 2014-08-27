@@ -17,7 +17,7 @@
  * THE SOFTWARE.
  */
 
-package edu.kit.iks.cryptographics.main.controller;
+package edu.kit.iks.cryptographicslib.framework.controller;
 
 import java.awt.AWTEvent;
 import java.awt.BorderLayout;
@@ -31,15 +31,13 @@ import java.util.List;
 
 import javax.swing.Timer;
 
-import edu.kit.iks.cryptographics.main.view.VisualizationContainerView;
-import edu.kit.iks.cryptographics.main.view.partial.HelpPopoverView;
-import edu.kit.iks.cryptographics.main.view.partial.IdlePopoverView;
-import edu.kit.iks.cryptographicslib.framework.controller.AbstractController;
-import edu.kit.iks.cryptographicslib.framework.controller.AbstractVisualizationController;
 import edu.kit.iks.cryptographicslib.framework.model.AbstractVisualizationInfo;
+import edu.kit.iks.cryptographicslib.framework.view.VisualizationContainerView;
+import edu.kit.iks.cryptographicslib.framework.view.partial.HelpPopoverView;
+import edu.kit.iks.cryptographicslib.framework.view.partial.IdlePopoverView;
 import edu.kit.iks.cryptographicslib.util.Configuration;
 import edu.kit.iks.cryptographicslib.util.Logger;
-import edu.kit.iks.cryptographicslib.util.Utility;
+import edu.kit.iks.cryptographicslib.util.IO;
 
 /**
  * An instance of this class is a wrapper for visualization controller to
@@ -107,7 +105,7 @@ public class VisualizationContainerController extends AbstractController {
     public VisualizationContainerController(
             AbstractVisualizationInfo visualizationInfo) {
         this.visualizationInfo = visualizationInfo;
-        Utility.procedureId = this.visualizationInfo.getId();
+        IO.procedureId = this.visualizationInfo.getId();
         this.childClasses = this.visualizationInfo.getControllerClasses();
         this.idleDetectionListener = new AWTEventListener() {
             @Override

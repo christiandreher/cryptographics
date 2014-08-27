@@ -27,7 +27,6 @@ import java.util.List;
 
 import javax.swing.JComponent;
 
-import edu.kit.iks.cryptographics.main.controller.VisualizationContainerController;
 import edu.kit.iks.cryptographicslib.framework.model.AbstractVisualizationInfo;
 
 /**

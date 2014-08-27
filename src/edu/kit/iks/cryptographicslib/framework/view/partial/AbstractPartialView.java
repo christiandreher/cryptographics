@@ -28,7 +28,7 @@ import javax.swing.text.StyledDocument;
 
 import edu.kit.iks.cryptographicslib.common.view.partial.ImageView;
 import edu.kit.iks.cryptographicslib.framework.view.AbstractView;
-import edu.kit.iks.cryptographicslib.util.Utility;
+import edu.kit.iks.cryptographicslib.util.IO;
 
 /**
  * @author Christian Dreher <uaeef@student.kit.edu>
@@ -112,7 +112,7 @@ public abstract class AbstractPartialView extends AbstractView {
 	 * @returnID to identify the object for modifying or removing it
 	 */
 	public int addImageFromResource(String resourceId) {
-		ImageView imageFromResource = Utility.getImageViewFromResourceId(resourceId);
+		ImageView imageFromResource = IO.getImageViewFromResourceId(resourceId);
 		
 		return this.addPartialView(imageFromResource);
 	}

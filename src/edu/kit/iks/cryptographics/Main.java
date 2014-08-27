@@ -21,7 +21,7 @@ package edu.kit.iks.cryptographics;
 
 import javax.swing.SwingUtilities;
 
-import edu.kit.iks.cryptographics.main.controller.MainController;
+import edu.kit.iks.cryptographicslib.framework.controller.MainController;
 import edu.kit.iks.cryptographicslib.util.Configuration;
 import edu.kit.iks.cryptographicslib.util.Logger;
 

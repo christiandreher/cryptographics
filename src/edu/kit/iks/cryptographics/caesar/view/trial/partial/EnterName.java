@@ -14,14 +14,11 @@
 
 package edu.kit.iks.cryptographics.caesar.view.trial.partial;
 
-import java.awt.Dimension;
 import java.util.AbstractMap.SimpleEntry;
 import java.util.List;
 
-import javax.swing.JTextField;
-
+import edu.kit.iks.cryptographicslib.common.view.partial.InputView;
 import edu.kit.iks.cryptographicslib.framework.view.partial.AbstractPartialView;
-import edu.kit.iks.cryptographicslib.util.Highlighter;
 
 /**
  * @author Christian Dreher
@@ -34,7 +31,7 @@ public class EnterName extends AbstractPartialView {
      */
     private static final long serialVersionUID = -4431691560844814000L;
 
-    private JTextField nameInput;
+    private InputView nameInput;
     
     /**
      * @param variables
@@ -48,14 +45,11 @@ public class EnterName extends AbstractPartialView {
      */
     @Override
     public void preparePartialView() {
+        // Explanation
         this.addText(this.getVariableValue("explanation"));
-        this.initNameInput();
+        
+        // Name Input field
+        this.nameInput = new InputView();
         this.addElement(this.nameInput);
-    }
-    
-    private void initNameInput() {
-        this.nameInput = new JTextField();
-        this.nameInput.setPreferredSize(new Dimension(400, 30));
-        Highlighter.normal(this.nameInput);
     }
 }

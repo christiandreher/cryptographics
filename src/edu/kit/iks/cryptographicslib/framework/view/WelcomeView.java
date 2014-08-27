@@ -17,7 +17,7 @@
  * THE SOFTWARE.
  */
 
-package edu.kit.iks.cryptographics.main.view;
+package edu.kit.iks.cryptographicslib.framework.view;
 
 import java.awt.Font;
 import java.awt.FontFormatException;
@@ -35,7 +35,7 @@ import org.xnap.commons.i18n.I18n;
 
 import edu.kit.iks.cryptographicslib.util.Configuration;
 import edu.kit.iks.cryptographicslib.util.Logger;
-import edu.kit.iks.cryptographicslib.util.Utility;
+import edu.kit.iks.cryptographicslib.util.IO;
 
 /**
  * An instance of this class represents the view of the welcome screen.
@@ -191,7 +191,7 @@ public class WelcomeView extends JPanel {
 		
 		try {
 			font = Font.createFont(Font.TRUETYPE_FONT,
-					Utility.getResourceAsInputStream("fonts/capture_smallz/Capsmall.ttf"));
+					IO.getResourceAsInputStream("fonts/capture_smallz/Capsmall.ttf"));
 			
 			font = font.deriveFont(Font.PLAIN, size);
 		} catch (FontFormatException | IOException e) {

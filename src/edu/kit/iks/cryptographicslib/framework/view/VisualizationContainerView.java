@@ -17,7 +17,7 @@
  * THE SOFTWARE.
  */
 
-package edu.kit.iks.cryptographics.main.view;
+package edu.kit.iks.cryptographicslib.framework.view;
 
 import java.awt.BorderLayout;
 import java.awt.GridBagConstraints;

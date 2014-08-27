@@ -17,7 +17,7 @@
  * THE SOFTWARE.
  */
 
-package edu.kit.iks.cryptographics.main.controller;
+package edu.kit.iks.cryptographicslib.framework.controller;
 
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
@@ -36,14 +36,13 @@ import org.jdom2.Element;
 import org.jdom2.JDOMException;
 import org.jdom2.input.SAXBuilder;
 
-import edu.kit.iks.cryptographics.main.view.WelcomeView;
-import edu.kit.iks.cryptographics.main.view.partial.TimelinePopoverView;
-import edu.kit.iks.cryptographics.main.view.partial.TimelineView;
-import edu.kit.iks.cryptographics.main.view.partial.VisualizationButtonView;
 import edu.kit.iks.cryptographicslib.common.view.partial.ImageView;
-import edu.kit.iks.cryptographicslib.framework.controller.AbstractController;
 import edu.kit.iks.cryptographicslib.framework.model.AbstractVisualizationInfo;
 import edu.kit.iks.cryptographicslib.framework.model.VisualizationInfoLoader;
+import edu.kit.iks.cryptographicslib.framework.view.WelcomeView;
+import edu.kit.iks.cryptographicslib.framework.view.partial.TimelinePopoverView;
+import edu.kit.iks.cryptographicslib.framework.view.partial.TimelineView;
+import edu.kit.iks.cryptographicslib.framework.view.partial.VisualizationButtonView;
 import edu.kit.iks.cryptographicslib.util.Logger;
 
 /**

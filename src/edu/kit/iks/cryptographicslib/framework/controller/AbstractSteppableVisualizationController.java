@@ -19,7 +19,6 @@ import java.util.LinkedList;
 
 import javax.swing.JComponent;
 
-import edu.kit.iks.cryptographics.main.controller.VisualizationContainerController;
 import edu.kit.iks.cryptographicslib.framework.model.AbstractVisualizationInfo;
 import edu.kit.iks.cryptographicslib.framework.view.AbstractVisualizationView;
 import edu.kit.iks.cryptographicslib.framework.view.partial.AbstractPartialView;

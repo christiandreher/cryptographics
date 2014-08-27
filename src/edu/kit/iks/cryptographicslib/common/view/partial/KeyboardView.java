@@ -93,7 +93,7 @@ public class KeyboardView extends JPanel implements ActionListener {
 	/**
 	 * The text field passed through the constructor.
 	 */
-	private String input;
+	private String input = "";
 
 	/**
 	 * The matrix of all buttons that this view paints.

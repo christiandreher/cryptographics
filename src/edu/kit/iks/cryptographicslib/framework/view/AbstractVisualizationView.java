@@ -21,7 +21,9 @@ package edu.kit.iks.cryptographicslib.framework.view;
 
 import java.awt.BorderLayout;
 import java.awt.Dimension;
-import java.awt.FlowLayout;
+import java.awt.GridBagConstraints;
+import java.awt.GridBagLayout;
+import java.awt.Insets;
 import java.awt.event.ActionListener;
 import java.util.AbstractMap.SimpleEntry;
 import java.util.List;
@@ -133,6 +135,47 @@ public abstract class AbstractVisualizationView extends AbstractView {
 		}
 	}
 	
+	private class FooterContainer extends JPanel {
+	    
+	    /**
+         * Serial version UID
+         */
+        private static final long serialVersionUID = -8879643812151705769L;
+        
+        private KeyboardView keyboard;
+	    private JButton stepButton;
+	    private GridBagConstraints gbc;
+	    
+	    public FooterContainer() {
+	        super(new GridBagLayout());
+	        
+	        this.gbc = new GridBagConstraints();
+	        gbc.gridx = 0;
+	    }
+	    
+	    public void showKeyboard(KeyboardView keyboard) {
+	        this.keyboard = keyboard;
+	        this.gbc.gridy = 0;
+	        this.gbc.insets = new Insets(0,0,0,0);
+	        this.add(this.keyboard, this.gbc);
+	    }
+	    
+	    public void hideKeyboard() {
+	        this.remove(this.keyboard);
+	    }
+	    
+	    public void showStepButton(JButton stepButton) {
+	        this.stepButton = stepButton;
+	        this.gbc.gridy = 1;
+	        this.gbc.insets = new Insets(10,0,0,0);
+	        this.add(this.stepButton, this.gbc);
+	    }
+	    
+	    public void hideStepButton() {
+	        this.remove(this.stepButton);
+	    }
+	}
+	
 	/**
 	 * Instance of the navigation container.
 	 */
@@ -157,7 +200,7 @@ public abstract class AbstractVisualizationView extends AbstractView {
 	/**
 	 * JPanel wrapping the step button.
 	 */
-	private JPanel footerContainer;
+	private FooterContainer footerContainer;
 	
 	/**
 	 * Constructor initializing a new instance of VisualizationView.
@@ -219,7 +262,7 @@ public abstract class AbstractVisualizationView extends AbstractView {
 			this.stepButton.setPreferredSize(buttonSize);
 			this.stepButton.addActionListener(this.globalActionListener);
 			
-			this.footerContainer.add(this.stepButton);
+			this.footerContainer.showStepButton(this.stepButton);
 		}
 		
 		this.stepButton.setText(label);
@@ -259,8 +302,7 @@ public abstract class AbstractVisualizationView extends AbstractView {
 	}
 	
 	public void showStepButton() {
-		this.hideKeyboard();
-		this.footerContainer.add(this.stepButton);
+		this.footerContainer.showStepButton(this.stepButton);
 		this.revalidate();
 	}
 	
@@ -268,18 +310,17 @@ public abstract class AbstractVisualizationView extends AbstractView {
 	 * Unsets the step button.
 	 */
 	public void hideStepButton() {
-		this.footerContainer.remove(this.stepButton);
+		this.footerContainer.hideStepButton();
 		this.revalidate();
 	}
 	
 	public void showKeyboard() {
-		this.hideStepButton();
-		this.footerContainer.add(this.keyboardView);
+		this.footerContainer.showKeyboard(this.keyboardView);
 		this.revalidate();
 	}
 	
 	public void hideKeyboard() {
-		this.footerContainer.remove(this.keyboardView);
+		this.footerContainer.hideKeyboard();
 		this.keyboardView.clearInput();
 		this.revalidate();
 	}
@@ -390,7 +431,7 @@ public abstract class AbstractVisualizationView extends AbstractView {
 	 * Sets up the footer container.
 	 */
 	private void setupFooterContainer() {
-		this.footerContainer = new JPanel(new FlowLayout(FlowLayout.CENTER));
+		this.footerContainer = new FooterContainer();
 		
 		this.add(this.footerContainer, BorderLayout.SOUTH);
 	}

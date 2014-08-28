@@ -75,6 +75,13 @@ abstract public class AbstractController {
 	public abstract void loadView();
 
 	/**
+	 * This method will be called as soon as the view is loaded
+	 */
+	public void viewLoaded() {
+	    
+	}
+	
+	/**
 	 * Unloads the view of this controller.
 	 */
 	public abstract void unloadView();

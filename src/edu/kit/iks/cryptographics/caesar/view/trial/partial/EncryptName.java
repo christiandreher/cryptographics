@@ -17,28 +17,37 @@ package edu.kit.iks.cryptographics.caesar.view.trial.partial;
 import java.util.AbstractMap.SimpleEntry;
 import java.util.List;
 
-import edu.kit.iks.cryptographics.caesar.model.TrialModel;
-import edu.kit.iks.cryptographicslib.common.view.partial.InputView;
+import edu.kit.iks.cryptographicslib.common.view.partial.EncryptDecryptView;
 import edu.kit.iks.cryptographicslib.framework.view.partial.AbstractPartialView;
 
 /**
  * @author Christian Dreher
  *
  */
-public class EnterName extends AbstractPartialView {
+public class EncryptName extends AbstractPartialView {
 
     /**
      * Serial version UID
      */
-    private static final long serialVersionUID = -4431691560844814000L;
-
-    private InputView nameInput;
+    private static final long serialVersionUID = -5538835293926835178L;
+    
+    private EncryptDecryptView encryptNameView; 
+    private String name;
+    private String key;
     
     /**
      * @param variables
      */
-    public EnterName(List<SimpleEntry<String, String>> variables) {
+    public EncryptName(List<SimpleEntry<String, String>> variables) {
         super(variables);
+    }
+    
+    public void setName(String name) {
+        this.name = name;
+    }
+    
+    public void setKey(int key) {
+        this.key = Integer.toString(key);
     }
 
     /* (non-Javadoc)
@@ -46,20 +55,11 @@ public class EnterName extends AbstractPartialView {
      */
     @Override
     public void preparePartialView() {
-        // Explanation
         this.addText(this.getVariableValue("explanation"));
         
-        // Name Input field
-        this.nameInput = new InputView();
-        this.addElement(this.nameInput);
+        this.encryptNameView = new EncryptDecryptView(this.name, this.key);
+        this.encryptNameView.enable(0);
+        this.addElement(this.encryptNameView);
     }
-    
-    public void focusInput() {
-        this.nameInput.focus();
-    }
-    
-    public void setInputValue(TrialModel model) {
-        this.nameInput.setValue(model.getName());
-        this.nameInput.focus();
-    }
+
 }

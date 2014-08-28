@@ -382,6 +382,7 @@ public class VisualizationContainerController extends AbstractController {
         newController.loadView();
         this.view().getContentView().add(newController.getView(), BorderLayout.CENTER);
         this.view().revalidate();
+        newController.viewLoaded();
     }
 
     /**

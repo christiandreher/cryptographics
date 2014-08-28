@@ -69,4 +69,8 @@ public class InputView extends JPanel {
     public void setValue(String value) {
         this.input.setText(value);
     }
+    
+    public void focus() {
+        this.input.requestFocus();
+    }
 }

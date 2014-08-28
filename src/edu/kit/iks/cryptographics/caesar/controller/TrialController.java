@@ -18,11 +18,11 @@ import org.xnap.commons.i18n.I18n;
 
 import edu.kit.iks.cryptographics.caesar.model.TrialModel;
 import edu.kit.iks.cryptographics.caesar.view.trial.TrialView;
+import edu.kit.iks.cryptographics.caesar.view.trial.partial.EncryptName;
 import edu.kit.iks.cryptographics.caesar.view.trial.partial.EnterName;
 import edu.kit.iks.cryptographicslib.framework.controller.AbstractSteppableVisualizationController;
 import edu.kit.iks.cryptographicslib.framework.model.AbstractVisualizationInfo;
 import edu.kit.iks.cryptographicslib.util.Configuration;
-import edu.kit.iks.cryptographicslib.util.Logger;
 import edu.kit.iks.cryptographicslib.util.Random;
 
 /**
@@ -52,6 +52,8 @@ public class TrialController extends AbstractSteppableVisualizationController {
         private static String trialExplanation = Strings.i18n.tr("Now lets try to encrypt your name with "
                 + "the key {0}. Just enter your name in the text field below or press the button "
                 + "to use a random one.", TrialController.randomKey);
+        private static String encryptNameExplanation = Strings.i18n.tr("Okay, lets go. If you need help, tap "
+                + "the button in the upper right corner.");
     };
    
     /**
@@ -62,6 +64,7 @@ public class TrialController extends AbstractSteppableVisualizationController {
     private TrialModel model = new TrialModel();
     
     private EnterName enterName;
+    private EncryptName encryptName;
     
     /**
      * @param visualizationInfo
@@ -87,6 +90,11 @@ public class TrialController extends AbstractSteppableVisualizationController {
         this.view = new TrialView(this, vh.toList());
         
         this.defineRunningOrder(roh);
+    }
+    
+    @Override
+    public void viewLoaded() {
+        this.enterName.focusInput();
     }
 
     /* (non-Javadoc)
@@ -147,14 +155,6 @@ public class TrialController extends AbstractSteppableVisualizationController {
         super.indexAction();
     }
     
-    protected final void useRandomName() {
-        
-    }
-    
-    protected final void useCustomName() {
-        
-    }
-    
     protected final void keyPressed(String input) {
         if (input.equals("")) {
             this.view().stepButtonLabelRandomName();
@@ -168,6 +168,25 @@ public class TrialController extends AbstractSteppableVisualizationController {
         this.enterName.setInputValue(this.model);
     }
     
+    protected final void useRandomName() {
+        this.model.useRandomName();
+        this.goToEncrypt();
+    }
+    
+    protected final void useCustomName() {
+        this.goToEncrypt();
+    }
+    
+    protected final void goToEncrypt() {
+        this.encryptName.setName(this.model.getName());
+        this.encryptName.setKey(TrialController.randomKey);
+        this.view().hideStepButton();
+        this.view().hideKeyboard();
+        this.defaultStepAction();
+        this.view().useCharKeyboard();
+        this.view().showKeyboard();
+    }
+    
     /**
      * Helper to define the running order.
      * 
@@ -175,6 +194,7 @@ public class TrialController extends AbstractSteppableVisualizationController {
      */
     private void defineRunningOrder(final RunningOrderHelper roh) {
         roh.enqueue(this.prepareEnterName());
+        roh.enqueue(this.prepareEncryptName());
     }
     
     private EnterName prepareEnterName() {
@@ -184,6 +204,15 @@ public class TrialController extends AbstractSteppableVisualizationController {
         
         this.enterName = new EnterName(vh.toList());
         return this.enterName;
+    }
+    
+    private EncryptName prepareEncryptName() {
+        VariableHelper vh = new VariableHelper();
+        
+        vh.add("explanation", TrialController.Strings.encryptNameExplanation);
+        
+        this.encryptName = new EncryptName(vh.toList());
+        return this.encryptName;
     }
     
     private TrialView view() {

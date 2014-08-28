@@ -17,6 +17,7 @@ package edu.kit.iks.cryptographics.caesar.view.trial.partial;
 import java.util.AbstractMap.SimpleEntry;
 import java.util.List;
 
+import edu.kit.iks.cryptographics.caesar.model.TrialModel;
 import edu.kit.iks.cryptographicslib.common.view.partial.InputView;
 import edu.kit.iks.cryptographicslib.framework.view.partial.AbstractPartialView;
 
@@ -51,5 +52,9 @@ public class EnterName extends AbstractPartialView {
         // Name Input field
         this.nameInput = new InputView();
         this.addElement(this.nameInput);
+    }
+    
+    public void setInputValue(TrialModel model) {
+        this.nameInput.setValue(model.getName());
     }
 }

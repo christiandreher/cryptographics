@@ -28,6 +28,7 @@ import java.util.List;
 import javax.swing.JComponent;
 
 import edu.kit.iks.cryptographicslib.framework.model.AbstractVisualizationInfo;
+import edu.kit.iks.cryptographicslib.util.Logger;
 
 /**
  * Abstract visualization controller specialized for
@@ -87,6 +88,7 @@ public abstract class AbstractVisualizationController extends AbstractController
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		String callerId = ((JComponent) e.getSource()).getName();
+		Logger.debug("AbstractVisualizationController", "actionPerformed", "Action \"" + callerId + "\" triggered.");
 		
 		if (!this.routeAction(callerId)) {
 			this.routeNextBackAction(callerId);

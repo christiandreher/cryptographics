@@ -22,6 +22,7 @@ import javax.swing.JComponent;
 import edu.kit.iks.cryptographicslib.framework.model.AbstractVisualizationInfo;
 import edu.kit.iks.cryptographicslib.framework.view.AbstractVisualizationView;
 import edu.kit.iks.cryptographicslib.framework.view.partial.AbstractPartialView;
+import edu.kit.iks.cryptographicslib.util.Logger;
 
 /**
  * @author Christian Dreher <uaeef@student.kit.edu>
@@ -84,6 +85,7 @@ public abstract class AbstractSteppableVisualizationController extends AbstractV
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		String callerId = ((JComponent) e.getSource()).getName();
+		Logger.debug("AbstractVisualizationController", "actionPerformed", "Action \"" + callerId + "\" triggered.");
 		
 		if (!this.routeAction(callerId)) {
 			if (!this.routeNextBackAction(callerId)) {

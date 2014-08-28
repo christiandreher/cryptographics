@@ -46,17 +46,22 @@ public class TrialController extends AbstractSteppableVisualizationController {
         // Navigation labels and various
         private static String nextButtonLabel = Strings.i18n.tr("Skip experiment");
         private static String backButtonLabel = Strings.i18n.tr("Back to demonstration");
-        private static String skipButtonLabel = Strings.i18n.tr("Use random name");
-        private static String proceedButtonLabel = Strings.i18n.tr("Proceed");
+        private static String stepButtonLabelRandomName = Strings.i18n.tr("Use random name");
+        private static String stepButtonLabel = Strings.i18n.tr("Proceed");
         
         private static String trialExplanation = Strings.i18n.tr("Now lets try to encrypt your name with "
                 + "the key {0}. Just enter your name in the text field below or press the button "
                 + "to use a random one.", TrialController.randomKey);
     };
    
+    /**
+     * Keys below 5 are not very challenging, but 8 is enough
+     */
     private static int randomKey = Random.integer(5, 8);
     
     private TrialModel model = new TrialModel();
+    
+    private EnterName enterName;
     
     /**
      * @param visualizationInfo
@@ -76,8 +81,8 @@ public class TrialController extends AbstractSteppableVisualizationController {
         
         vh.add("nextButtonLabel", TrialController.Strings.nextButtonLabel);
         vh.add("backButtonLabel", TrialController.Strings.backButtonLabel);
-        vh.add("skipButtonLabel", TrialController.Strings.skipButtonLabel);
-        vh.add("proceedButtonLabel", TrialController.Strings.proceedButtonLabel);
+        vh.add("stepButtonLabelRandomName", TrialController.Strings.stepButtonLabelRandomName);
+        vh.add("stepButtonLabel", TrialController.Strings.stepButtonLabel);
         
         this.view = new TrialView(this, vh.toList());
         
@@ -151,8 +156,16 @@ public class TrialController extends AbstractSteppableVisualizationController {
     }
     
     protected final void keyPressed(String input) {
-        Logger.debug("", "", "Input: " + input);
+        if (input.equals("")) {
+            this.view().stepButtonLabelRandomName();
+            this.view().setStepButtonAction("randomName");
+        } else {
+            this.view().stepButtonLabelProceed();
+            this.view().setStepButtonAction("customName");
+        }
+        
         this.model.setName(input);
+        this.enterName.setInputValue(this.model);
     }
     
     /**
@@ -169,7 +182,8 @@ public class TrialController extends AbstractSteppableVisualizationController {
         
         vh.add("explanation", TrialController.Strings.trialExplanation);
         
-        return new EnterName(vh.toList());
+        this.enterName = new EnterName(vh.toList());
+        return this.enterName;
     }
     
     private TrialView view() {

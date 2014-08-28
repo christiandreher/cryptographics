@@ -237,7 +237,7 @@ public class KeyboardView extends JPanel implements ActionListener {
 			
 			// Second row
 			{kf("A"), kf("S"), kf("D"), kf("F"), kf("G"), kf("H"), kf("J"), 
-				kf("K"), kf("L"), kf("Enter", "e")},
+				kf("K"), kf("L") /*, kf("Enter", "e")*/},
 				
 			// Third row
 			{kf(i18n.tr("keyboard-z")), kf("X"), kf("C"), kf("V"), kf("B"), kf("N"), kf("M")}

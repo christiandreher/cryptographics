@@ -16,14 +16,15 @@ package edu.kit.iks.cryptographics.caesar.controller;
 
 import org.xnap.commons.i18n.I18n;
 
+import edu.kit.iks.cryptographics.caesar.model.CryptoModel;
 import edu.kit.iks.cryptographics.caesar.model.TrialModel;
 import edu.kit.iks.cryptographics.caesar.view.trial.TrialView;
 import edu.kit.iks.cryptographics.caesar.view.trial.partial.EncryptName;
 import edu.kit.iks.cryptographics.caesar.view.trial.partial.EnterName;
+import edu.kit.iks.cryptographics.caesar.view.trial.partial.ResultEncryptName;
 import edu.kit.iks.cryptographicslib.framework.controller.AbstractSteppableVisualizationController;
 import edu.kit.iks.cryptographicslib.framework.model.AbstractVisualizationInfo;
 import edu.kit.iks.cryptographicslib.util.Configuration;
-import edu.kit.iks.cryptographicslib.util.Random;
 
 /**
  * @author Christian Dreher
@@ -51,20 +52,16 @@ public class TrialController extends AbstractSteppableVisualizationController {
         
         private static String trialExplanation = Strings.i18n.tr("Now lets try to encrypt your name with "
                 + "the key {0}. Just enter your name in the text field below or press the button "
-                + "to use a random one.", TrialController.randomKey);
+                + "to use a random one.", TrialModel.key);
         private static String encryptNameExplanation = Strings.i18n.tr("Okay, lets go. If you need help, tap "
                 + "the button in the upper right corner.");
     };
-   
-    /**
-     * Keys below 5 are not very challenging, but 8 is enough
-     */
-    private static int randomKey = Random.integer(5, 8);
     
     private TrialModel model = new TrialModel();
     
     private EnterName enterName;
     private EncryptName encryptName;
+    private ResultEncryptName resultEncryptName;
     
     /**
      * @param visualizationInfo
@@ -110,7 +107,9 @@ public class TrialController extends AbstractSteppableVisualizationController {
      * #routeAction(java.lang.String)
      */
     @Override
-    public final boolean routeAction(final String callerId) {
+    public final boolean routeAction(final String callerId) {    
+        String input;
+        
         switch (callerId) {
             case "randomName":
                 this.useRandomName();
@@ -118,10 +117,13 @@ public class TrialController extends AbstractSteppableVisualizationController {
             case "customName":
                 this.useCustomName();
                 break;
-            case "keyPressed":
-                String input = this.view().getUserInput();
-                this.keyPressed(input);
+            case "keyPressedName":
+                input = this.view().getUserInput();
+                this.keyPressedName(input);
                 break;
+            case "keyPressedEncrypt":
+                input = this.view().getUserInput();
+                this.keyPressedEncrypt(input);
             default:
                 return false;
         }
@@ -151,11 +153,11 @@ public class TrialController extends AbstractSteppableVisualizationController {
         this.view().useStringKeyboard();
         this.view().showKeyboard();
         this.view().setStepButtonAction("randomName");
-        this.view().setKeyboardAction("keyPressed");
+        this.view().setKeyboardAction("keyPressedName");
         super.indexAction();
     }
     
-    protected final void keyPressed(String input) {
+    protected final void keyPressedName(String input) {
         if (input.equals("")) {
             this.view().stepButtonLabelRandomName();
             this.view().setStepButtonAction("randomName");
@@ -179,12 +181,40 @@ public class TrialController extends AbstractSteppableVisualizationController {
     
     protected final void goToEncrypt() {
         this.encryptName.setName(this.model.getName());
-        this.encryptName.setKey(TrialController.randomKey);
+        this.encryptName.setKey(TrialModel.key);
         this.view().hideStepButton();
         this.view().hideKeyboard();
         this.defaultStepAction();
         this.view().useCharKeyboard();
         this.view().showKeyboard();
+        this.view().setKeyboardAction("keyPressedEncrypt");
+        this.encryptName.encryptNext(this.model);
+    }
+    
+    protected final void keyPressedEncrypt(String input) {
+        this.encryptName.setInput(this.model.getCurrentPosition(), input);
+
+        String expected = this.model.getCurrentCharEncrypted();
+        
+        if (input.equals(expected)) {
+            this.encryptName.correctInput(this.model);
+            if (this.model.next()) {
+                this.encryptName.encryptNext(this.model);
+            } else {
+                this.view().hideKeyboard();
+                this.view().showStepButton();
+                this.view().setDefaultStepButtonAction();
+                this.defaultStepAction();
+                this.resultEncryptName.displayResult(Strings.i18n.tr("Good job. \"{0}\" encrypted with the key {1} " +
+                        "is \"{2}\".", 
+                        this.model.getName(),
+                        TrialModel.key,
+                        CryptoModel.getInstance().enc(TrialModel.key, this.model.getName())
+                ));
+            }
+        } else {
+            this.encryptName.incorrectInput(this.model);
+        }
     }
     
     /**
@@ -195,6 +225,7 @@ public class TrialController extends AbstractSteppableVisualizationController {
     private void defineRunningOrder(final RunningOrderHelper roh) {
         roh.enqueue(this.prepareEnterName());
         roh.enqueue(this.prepareEncryptName());
+        roh.enqueue(this.prepareResultEncryptName());
     }
     
     private EnterName prepareEnterName() {
@@ -213,6 +244,12 @@ public class TrialController extends AbstractSteppableVisualizationController {
         
         this.encryptName = new EncryptName(vh.toList());
         return this.encryptName;
+    }
+    
+    private ResultEncryptName prepareResultEncryptName() {
+        this.resultEncryptName = new ResultEncryptName();
+        
+        return this.resultEncryptName;
     }
     
     private TrialView view() {

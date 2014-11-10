@@ -55,10 +55,17 @@ public class TrialModel {
         };
     };
     
+    private int currentPosition = 0;
+    
     /**
      * Name the user entered, or a random one, if he didn't set one
      */
     private String name = "";
+    
+    /**
+     * Keys below 5 are not very challenging, but 8 is enough
+     */
+    public static int key = Random.integer(5, 8);
     
     public void useRandomName() {
         int max = TrialModel.Strings.names.length - 1;
@@ -71,5 +78,31 @@ public class TrialModel {
     
     public void setName(String name) {
         this.name = name;
+    }
+    
+    public boolean next() {
+        this.currentPosition++;
+        
+        if (this.currentPosition >= this.name.length()) {
+            return false;
+        }
+        
+        return true;
+    }
+    
+    public String getCurrentChar() {
+        char[] nameCharArray = this.name.toCharArray();
+        
+        return nameCharArray[this.currentPosition] + "";
+    }
+    
+    public String getCurrentCharEncrypted() {
+        String currentChar = this.getCurrentChar();
+        
+        return CryptoModel.getInstance().enc(TrialModel.key, currentChar);
+    }
+    
+    public int getCurrentPosition() {
+        return this.currentPosition;
     }
 }

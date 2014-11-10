@@ -66,9 +66,10 @@ public class DemoController extends AbstractSteppableVisualizationController {
 				"the name on your own. If you need help, Use the upper right button.");
 		
 		// Conclusion after successfully encrypting Caesars name
-		private static String result = Strings.i18n.tr("Well done! That''s it. \"{0}\" encrypted with the key 3 " +
-				"is \"{1}\".", 
+		private static String result = Strings.i18n.tr("Well done! That''s it. \"{0}\" encrypted with the key {1} " +
+				"is \"{2}\".", 
 				Strings.caesarsName,
+				DemoController.DEMO_ENCRYPTION_KEY,
 				CryptoModel.getInstance().enc(DemoController.DEMO_ENCRYPTION_KEY, Strings.caesarsName));
 	};
 	

@@ -17,6 +17,8 @@ package edu.kit.iks.cryptographics.caesar.view.trial.partial;
 import java.util.AbstractMap.SimpleEntry;
 import java.util.List;
 
+import edu.kit.iks.cryptographics.caesar.model.TrialModel;
+import edu.kit.iks.cryptographicslib.common.view.partial.AlphabetStripView;
 import edu.kit.iks.cryptographicslib.common.view.partial.EncryptDecryptView;
 import edu.kit.iks.cryptographicslib.framework.view.partial.AbstractPartialView;
 
@@ -31,9 +33,33 @@ public class EncryptName extends AbstractPartialView {
      */
     private static final long serialVersionUID = -5538835293926835178L;
     
+    /**
+     * View to encrypt the users name letter by letter.
+     */
     private EncryptDecryptView encryptNameView; 
+    
+    /**
+     * View to display an alphabet strip with numbers to help the user.
+     */
+    private AlphabetStripView alphabetStripView;
+    
     private String name;
     private String key;
+    
+    /* (non-Javadoc)
+     * @see edu.kit.iks.cryptographicslib.framework.view.partial.AbstractPartialView#preparePartialView()
+     */
+    @Override
+    public void preparePartialView() {
+        this.addText(this.getVariableValue("explanation"));
+        
+        this.encryptNameView = new EncryptDecryptView(this.name, this.key);
+        
+        this.alphabetStripView = new AlphabetStripView();
+        
+        this.addElement(this.encryptNameView);
+        this.addElement(this.alphabetStripView);
+    }
     
     /**
      * @param variables
@@ -50,16 +76,34 @@ public class EncryptName extends AbstractPartialView {
         this.key = Integer.toString(key);
     }
 
-    /* (non-Javadoc)
-     * @see edu.kit.iks.cryptographicslib.framework.view.partial.AbstractPartialView#preparePartialView()
+    /**
+     * Sets the user input into the view as feedback after pressing keyboard keys.
+     * 
+     * @param position Position of the letter to be currently encrypted
+     * @param userInput User input
      */
-    @Override
-    public void preparePartialView() {
-        this.addText(this.getVariableValue("explanation"));
-        
-        this.encryptNameView = new EncryptDecryptView(this.name, this.key);
-        this.encryptNameView.enable(0);
-        this.addElement(this.encryptNameView);
+    public void setInput(int position, String userInput) {
+        this.encryptNameView.getInput(position).setText(userInput);
     }
-
+    
+    public void encryptNext(TrialModel trialModel) {
+        this.encryptNameView.enable(trialModel.getCurrentPosition());
+        this.alphabetStripView.unHighlightAll();
+        this.alphabetStripView.highlightBlue(trialModel.getCurrentChar());
+        this.revalidate();
+    }
+    
+    /**
+     * Restructures the view to let the user know that his input was correct.
+     */
+    public void correctInput(TrialModel trialModel) {
+        this.encryptNameView.highlightInputSuccess(trialModel.getCurrentPosition());
+    }
+    
+    /**
+     * Restructures the view to let the user know that his input was incorrect.
+     */
+    public void incorrectInput(TrialModel trialModel) {
+        this.encryptNameView.highlightInputError(trialModel.getCurrentPosition());
+    }
 }

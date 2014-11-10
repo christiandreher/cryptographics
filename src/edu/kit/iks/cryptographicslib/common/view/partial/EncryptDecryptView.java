@@ -75,6 +75,11 @@ public class EncryptDecryptView extends JPanel {
 		this.initInputs(key);
 	}
 	
+	/**
+	 * Enables the Input field at given index
+	 * 
+	 * @param index Index of input field to be focused
+	 */
 	public void enable(int index) {
 		this.unhighlightAll();
 		

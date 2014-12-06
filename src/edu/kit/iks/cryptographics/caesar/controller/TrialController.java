@@ -19,6 +19,7 @@ import org.xnap.commons.i18n.I18n;
 import edu.kit.iks.cryptographics.caesar.model.CryptoModel;
 import edu.kit.iks.cryptographics.caesar.model.TrialModel;
 import edu.kit.iks.cryptographics.caesar.view.trial.TrialView;
+import edu.kit.iks.cryptographics.caesar.view.trial.partial.DecryptIntro;
 import edu.kit.iks.cryptographics.caesar.view.trial.partial.EncryptName;
 import edu.kit.iks.cryptographics.caesar.view.trial.partial.EnterName;
 import edu.kit.iks.cryptographics.caesar.view.trial.partial.ResultEncryptName;
@@ -55,6 +56,9 @@ public class TrialController extends AbstractSteppableVisualizationController {
                 + "to use a random one.", TrialModel.key);
         private static String encryptNameExplanation = Strings.i18n.tr("Okay, lets go. If you need help, tap "
                 + "the button in the upper right corner.");
+        private static String decryptIntro = Strings.i18n.tr("Now, decrypting a text is very similar to en"
+                + "crypting. The only difference is, that when you encrypt a letter, you go to the right on "
+                + "the alphabet strip. When decrypting, you just go to the left then. Let\'s try it.");
     };
     
     private TrialModel model = new TrialModel();
@@ -107,7 +111,7 @@ public class TrialController extends AbstractSteppableVisualizationController {
      * #routeAction(java.lang.String)
      */
     @Override
-    public final boolean routeAction(final String callerId) {    
+    public final boolean routeAction(final String callerId) {
         String input;
         
         switch (callerId) {
@@ -202,6 +206,7 @@ public class TrialController extends AbstractSteppableVisualizationController {
                 this.encryptName.encryptNext(this.model);
             } else {
                 this.view().hideKeyboard();
+                this.view().stepButtonLabelProceed();
                 this.view().showStepButton();
                 this.view().setDefaultStepButtonAction();
                 this.defaultStepAction();
@@ -226,6 +231,7 @@ public class TrialController extends AbstractSteppableVisualizationController {
         roh.enqueue(this.prepareEnterName());
         roh.enqueue(this.prepareEncryptName());
         roh.enqueue(this.prepareResultEncryptName());
+        roh.enqueue(this.prepareDecryptIntro());
     }
     
     private EnterName prepareEnterName() {
@@ -250,6 +256,14 @@ public class TrialController extends AbstractSteppableVisualizationController {
         this.resultEncryptName = new ResultEncryptName();
         
         return this.resultEncryptName;
+    }
+    
+    private DecryptIntro prepareDecryptIntro() {
+        VariableHelper vh = new VariableHelper();
+        
+        vh.add("decryptIntro", Strings.decryptIntro);
+        
+        return new DecryptIntro(vh.toList());
     }
     
     private TrialView view() {

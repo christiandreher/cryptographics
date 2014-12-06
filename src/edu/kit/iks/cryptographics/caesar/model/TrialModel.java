@@ -63,9 +63,9 @@ public class TrialModel {
     private String name = "";
     
     /**
-     * Keys below 5 are not very challenging, but 8 is enough
+     * Keys below 4 are not very challenging, but 7 is enough
      */
-    public static int key = Random.integer(5, 8);
+    public static int key = Random.integer(4, 7);
     
     public void useRandomName() {
         int max = TrialModel.Strings.names.length - 1;
@@ -78,6 +78,7 @@ public class TrialModel {
     
     public void setName(String name) {
         this.name = name;
+        this.currentPosition = 0;
     }
     
     public boolean next() {

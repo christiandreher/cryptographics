@@ -14,24 +14,27 @@
 
 package edu.kit.iks.cryptographics.caesar.view.trial.partial;
 
+import java.util.List;
+import java.util.AbstractMap.SimpleEntry;
+
 import edu.kit.iks.cryptographicslib.framework.view.partial.AbstractPartialView;
 
 /**
  * @author Christian Dreher
  *
  */
-public class ResultEncryptName extends AbstractPartialView {
+public class DecryptIntro extends AbstractPartialView {
 
 	/**
 	 * Serial version UID.
 	 */
-	private static final long serialVersionUID = 4139653062499850190L;
+    private static final long serialVersionUID = -9211858993574634897L;
 
-	/**
+    /**
 	 * @param variables
 	 */
-	public ResultEncryptName() {
-		super(null);
+	public DecryptIntro(List<SimpleEntry<String, String>> variables) {
+	    super(variables);
 	}
 
 	/* (non-Javadoc)
@@ -39,10 +42,6 @@ public class ResultEncryptName extends AbstractPartialView {
 	 */
 	@Override
 	public void preparePartialView() {
-	    
-	}
-
-	public void displayResult(String text) {
-	    this.addText(text);
+	    this.addText(this.getVariableValue("decryptIntro"));
 	}
 }

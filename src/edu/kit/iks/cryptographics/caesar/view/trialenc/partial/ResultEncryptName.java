@@ -12,7 +12,7 @@
  * THE SOFTWARE.
  */
 
-package edu.kit.iks.cryptographics.caesar.view.trial.partial;
+package edu.kit.iks.cryptographics.caesar.view.trialenc.partial;
 
 import edu.kit.iks.cryptographicslib.framework.view.partial.AbstractPartialView;
 

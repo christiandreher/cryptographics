@@ -26,7 +26,8 @@ import org.xnap.commons.i18n.I18n;
 
 import edu.kit.iks.cryptographics.caesar.controller.DemoController;
 import edu.kit.iks.cryptographics.caesar.controller.IntroController;
-import edu.kit.iks.cryptographics.caesar.controller.TrialController;
+import edu.kit.iks.cryptographics.caesar.controller.TrialDecController;
+import edu.kit.iks.cryptographics.caesar.controller.TrialEncController;
 import edu.kit.iks.cryptographicslib.common.controller.InformationController;
 import edu.kit.iks.cryptographicslib.framework.controller.AbstractVisualizationController;
 import edu.kit.iks.cryptographicslib.framework.model.AbstractVisualizationInfo;
@@ -61,7 +62,8 @@ public class VisualizationInfo extends AbstractVisualizationInfo {
 
 		controllerClasses.add(IntroController.class);
 		controllerClasses.add(DemoController.class);
-		controllerClasses.add(TrialController.class);
+		controllerClasses.add(TrialEncController.class);
+		controllerClasses.add(TrialDecController.class);
 		controllerClasses.add(InformationController.class);
 
 		return controllerClasses;

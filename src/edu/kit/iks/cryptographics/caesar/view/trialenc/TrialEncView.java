@@ -12,7 +12,7 @@
  * THE SOFTWARE.
  */
 
-package edu.kit.iks.cryptographics.caesar.view.trial;
+package edu.kit.iks.cryptographics.caesar.view.trialenc;
 
 import java.awt.event.ActionListener;
 import java.util.AbstractMap.SimpleEntry;
@@ -24,7 +24,7 @@ import edu.kit.iks.cryptographicslib.framework.view.AbstractVisualizationView;
  * @author Christian Dreher
  *
  */
-public class TrialView extends AbstractVisualizationView {
+public class TrialEncView extends AbstractVisualizationView {
 
     /**
      * Serial version UID.
@@ -35,7 +35,7 @@ public class TrialView extends AbstractVisualizationView {
      * @param al
      * @param variables
      */
-    public TrialView(ActionListener al, List<SimpleEntry<String, String>> variables) {
+    public TrialEncView(ActionListener al, List<SimpleEntry<String, String>> variables) {
         super(al, variables);
         
         this.setNextButton(this.getVariableValue("nextButtonLabel"));

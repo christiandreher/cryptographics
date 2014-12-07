@@ -18,11 +18,10 @@ import org.xnap.commons.i18n.I18n;
 
 import edu.kit.iks.cryptographics.caesar.model.CryptoModel;
 import edu.kit.iks.cryptographics.caesar.model.TrialModel;
-import edu.kit.iks.cryptographics.caesar.view.trial.TrialView;
-import edu.kit.iks.cryptographics.caesar.view.trial.partial.DecryptIntro;
-import edu.kit.iks.cryptographics.caesar.view.trial.partial.EncryptName;
-import edu.kit.iks.cryptographics.caesar.view.trial.partial.EnterName;
-import edu.kit.iks.cryptographics.caesar.view.trial.partial.ResultEncryptName;
+import edu.kit.iks.cryptographics.caesar.view.trialenc.TrialEncView;
+import edu.kit.iks.cryptographics.caesar.view.trialenc.partial.EncryptName;
+import edu.kit.iks.cryptographics.caesar.view.trialenc.partial.EnterName;
+import edu.kit.iks.cryptographics.caesar.view.trialenc.partial.ResultEncryptName;
 import edu.kit.iks.cryptographicslib.framework.controller.AbstractSteppableVisualizationController;
 import edu.kit.iks.cryptographicslib.framework.model.AbstractVisualizationInfo;
 import edu.kit.iks.cryptographicslib.util.Configuration;
@@ -31,7 +30,7 @@ import edu.kit.iks.cryptographicslib.util.Configuration;
  * @author Christian Dreher
  *
  */
-public class TrialController extends AbstractSteppableVisualizationController {
+public class TrialEncController extends AbstractSteppableVisualizationController {
 
     /**
      * Localized strings used in this view.
@@ -43,10 +42,10 @@ public class TrialController extends AbstractSteppableVisualizationController {
         /**
          * Localization instance.
          */
-        private static I18n i18n = Configuration.getInstance().getI18n(TrialController.class);
+        private static I18n i18n = Configuration.getInstance().getI18n(TrialEncController.class);
         
         // Navigation labels and various
-        private static String nextButtonLabel = Strings.i18n.tr("Skip experiment");
+        private static String nextButtonLabel = Strings.i18n.tr("Skip encrypt experiment");
         private static String backButtonLabel = Strings.i18n.tr("Back to demonstration");
         private static String stepButtonLabelRandomName = Strings.i18n.tr("Use random name");
         private static String stepButtonLabel = Strings.i18n.tr("Proceed");
@@ -56,9 +55,6 @@ public class TrialController extends AbstractSteppableVisualizationController {
                 + "to use a random one.", TrialModel.key);
         private static String encryptNameExplanation = Strings.i18n.tr("Okay, lets go. If you need help, tap "
                 + "the button in the upper right corner.");
-        private static String decryptIntro = Strings.i18n.tr("Now, decrypting a text is very similar to en"
-                + "crypting. The only difference is, that when you encrypt a letter, you go to the right on "
-                + "the alphabet strip. When decrypting, you just go to the left then. Let\'s try it.");
     };
     
     private TrialModel model = new TrialModel();
@@ -70,7 +66,7 @@ public class TrialController extends AbstractSteppableVisualizationController {
     /**
      * @param visualizationInfo
      */
-    public TrialController(AbstractVisualizationInfo visualizationInfo) {
+    public TrialEncController(AbstractVisualizationInfo visualizationInfo) {
         super(visualizationInfo);
     }
 
@@ -83,12 +79,12 @@ public class TrialController extends AbstractSteppableVisualizationController {
     public final void loadView(final RunningOrderHelper roh) {
         VariableHelper vh = new VariableHelper();
         
-        vh.add("nextButtonLabel", TrialController.Strings.nextButtonLabel);
-        vh.add("backButtonLabel", TrialController.Strings.backButtonLabel);
-        vh.add("stepButtonLabelRandomName", TrialController.Strings.stepButtonLabelRandomName);
-        vh.add("stepButtonLabel", TrialController.Strings.stepButtonLabel);
+        vh.add("nextButtonLabel", TrialEncController.Strings.nextButtonLabel);
+        vh.add("backButtonLabel", TrialEncController.Strings.backButtonLabel);
+        vh.add("stepButtonLabelRandomName", TrialEncController.Strings.stepButtonLabelRandomName);
+        vh.add("stepButtonLabel", TrialEncController.Strings.stepButtonLabel);
         
-        this.view = new TrialView(this, vh.toList());
+        this.view = new TrialEncView(this, vh.toList());
         
         this.defineRunningOrder(roh);
     }
@@ -231,13 +227,12 @@ public class TrialController extends AbstractSteppableVisualizationController {
         roh.enqueue(this.prepareEnterName());
         roh.enqueue(this.prepareEncryptName());
         roh.enqueue(this.prepareResultEncryptName());
-        roh.enqueue(this.prepareDecryptIntro());
     }
     
     private EnterName prepareEnterName() {
         VariableHelper vh = new VariableHelper();
         
-        vh.add("explanation", TrialController.Strings.trialExplanation);
+        vh.add("explanation", TrialEncController.Strings.trialExplanation);
         
         this.enterName = new EnterName(vh.toList());
         return this.enterName;
@@ -246,7 +241,7 @@ public class TrialController extends AbstractSteppableVisualizationController {
     private EncryptName prepareEncryptName() {
         VariableHelper vh = new VariableHelper();
         
-        vh.add("explanation", TrialController.Strings.encryptNameExplanation);
+        vh.add("explanation", TrialEncController.Strings.encryptNameExplanation);
         
         this.encryptName = new EncryptName(vh.toList());
         return this.encryptName;
@@ -257,16 +252,8 @@ public class TrialController extends AbstractSteppableVisualizationController {
         
         return this.resultEncryptName;
     }
-    
-    private DecryptIntro prepareDecryptIntro() {
-        VariableHelper vh = new VariableHelper();
-        
-        vh.add("decryptIntro", Strings.decryptIntro);
-        
-        return new DecryptIntro(vh.toList());
-    }
-    
-    private TrialView view() {
-        return (TrialView) this.view;
+
+    private TrialEncView view() {
+        return (TrialEncView) this.view;
     }
 }

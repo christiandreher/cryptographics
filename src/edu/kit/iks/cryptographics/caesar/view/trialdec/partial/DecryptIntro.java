@@ -12,7 +12,7 @@
  * THE SOFTWARE.
  */
 
-package edu.kit.iks.cryptographics.caesar.view.trial.partial;
+package edu.kit.iks.cryptographics.caesar.view.trialdec.partial;
 
 import java.util.List;
 import java.util.AbstractMap.SimpleEntry;

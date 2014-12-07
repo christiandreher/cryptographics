@@ -3,4 +3,4 @@
  * 
  * @author Christian Dreher
  */
-package edu.kit.iks.cryptographics.caesar.view.trial.partial;
+package edu.kit.iks.cryptographics.caesar.view.trialenc.partial;
